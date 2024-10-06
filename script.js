@@ -1,8 +1,9 @@
-// Fetch data from the TSV file on GitHub and listen to input events
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
     let tsvData = [];
+    let isTSVLoaded = false;
+    let debounceTimeout;
 
     // Function to create a safe text node that will automatically HTML encode
     function htmlEncode(str) {
@@ -33,6 +34,41 @@ document.addEventListener('DOMContentLoaded', function() {
         return result;
     }
 
+    // Function to apply search
+    function applySearch(query) {
+        resultsList.innerHTML = ''; // Clear the results list
+
+        // Filter and display matching results
+        const filteredData = tsvData.filter(item =>
+            item.domain.toLowerCase().includes(query) ||
+            item.code.toLowerCase().includes(query)
+        );
+
+        // Display the results
+        filteredData.forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
+            resultsList.appendChild(li);
+        });
+    }
+
+    // Function to update the URL hash
+    function updateHash(query) {
+        if (query) {
+            window.location.hash = query;
+        } else {
+            window.history.replaceState(null, null, ' '); // Clear the hash if query is empty
+        }
+    }
+
+    // Debounce function
+    function debounce(func, delay) {
+        return function(...args) {
+            clearTimeout(debounceTimeout); // Clear the previous timeout
+            debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
     // Fetch the latest TSV file from GitHub repository
     const owner = 'renniepak'; 
     const repo = 'CSPBypass'; 
@@ -46,39 +82,31 @@ document.addEventListener('DOMContentLoaded', function() {
             'Accept': 'application/vnd.github.v3.raw', // Get raw file content
         },
     })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text(); // Assuming the TSV is a text file
-        })
-        .then(data => {
-            tsvData = parseTSV(data); // Parse the TSV data
-        })
-        .catch(error => {
-            console.error('Error fetching file:', error);
-        });
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text(); // Assuming the TSV is a text file
+    })
+    .then(data => {
+        tsvData = parseTSV(data); // Parse the TSV data
+        isTSVLoaded = true; // Indicate that the TSV has been loaded
 
-    // Listen to the input event on the search box
-    searchInput.addEventListener('input', function() {
-        const query = searchInput.value.toLowerCase();
-        resultsList.innerHTML = ''; // Clear the results list
-
-        // Filter and display matching results
-        const filteredData = tsvData.filter(item =>
-            item.domain.toLowerCase().includes(query) ||
-            item.code.toLowerCase().includes(query)
-        );
-
-        // Display the results
-        filteredData.forEach(item => {
-            const li = document.createElement('li');
-
-            // Combine the domain, two line breaks, and the code in one step
-            li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
-
-            resultsList.appendChild(li);
-        });
-
+        // Check if there's a hash in the URL and trigger the search
+        if (window.location.hash) {
+            const queryFromHash = window.location.hash.substring(1).toLowerCase(); // Remove the '#' and convert to lowercase
+            searchInput.value = queryFromHash; // Set the input field to the hash value
+            applySearch(queryFromHash); // Apply the search with the hash value
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching file:', error);
     });
+
+    // Listen to the input event on the search box with debounce
+    searchInput.addEventListener('input', debounce(function() {
+        const query = searchInput.value.toLowerCase();
+        applySearch(query);
+        updateHash(query); // Update the hash as the search query changes
+    }, 300)); // Set a debounce delay of 300ms
 });
