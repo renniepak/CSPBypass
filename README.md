@@ -28,7 +28,7 @@ We welcome contributions from the community! If you've discovered a new CSP bypa
 
 Here’s how you can contribute:
 1. Fork this repository.
-2. Add your CSP bypass gadget in the appropriate format. They must contain the domain name and a working PoC.
+2. Add your CSP bypass gadget in the appropriate format. They must contain the domain name and a working PoC. The minimum viable PoC is alert box without the ability to pass any arguments, or an alert box showing arbitrary data (caused by a JSONP response). Please try to keep data.tsv in alphabetical order. This helps to spot duplicates.
 3. Submit a pull request with your findings.
 
 Your contributions will help make the web safer for everyone by improving understanding of CSPs and how they can be strengthened against bypass techniques.
