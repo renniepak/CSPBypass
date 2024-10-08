@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const li = document.createElement('li');
             li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
 
-            // Add the author footnote if it exists
-            if (item.author) {
+            // Only add the author footnote if it exists and is not an empty string
+            if (item.author && item.author.trim() !== '') {
                 li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(item.author)}</div>`;
             }
 
