@@ -23,10 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentLine = lines[i].split('\t'); // Splitting by tab for TSV
 
             // Skip if the line is empty
-            if (currentLine.length !== headers.length) continue;
+            if (currentLine.length < 2) continue; // Ensure at least domain and code are present
 
             obj.domain = currentLine[0]; // Assuming the first column is Domain
             obj.code = currentLine[1]; // Assuming the second column is Code
+            obj.author = currentLine[2] || ''; // Assuming the optional third column is Author
 
             result.push(obj);
         }
@@ -48,9 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
         filteredData.forEach(item => {
             const li = document.createElement('li');
             li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
+
+            // Add the author footnote if it exists
+            if (item.author) {
+                li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(item.author)}</div>`;
+            }
+
             resultsList.appendChild(li);
         });
     }
+
 
     // Function to update the URL hash
     function updateHash(query) {
@@ -70,38 +78,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Fetch the latest TSV file from GitHub repository
-    const owner = 'renniepak'; 
-    const repo = 'CSPBypass'; 
-    const branch = 'main';  
-    const filePath = 'data.tsv'; 
+    const owner = 'renniepak';
+    const repo = 'CSPBypass';
+    const branch = 'main';
+    const filePath = 'data.tsv';
 
     const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${branch}`;
 
     fetch(apiUrl, {
-        headers: {
-            'Accept': 'application/vnd.github.v3.raw', // Get raw file content
-        },
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.text(); // Assuming the TSV is a text file
-    })
-    .then(data => {
-        tsvData = parseTSV(data); // Parse the TSV data
-        isTSVLoaded = true; // Indicate that the TSV has been loaded
+            headers: {
+                'Accept': 'application/vnd.github.v3.raw', // Get raw file content
+            },
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text(); // Assuming the TSV is a text file
+        })
+        .then(data => {
+            tsvData = parseTSV(data); // Parse the TSV data
+            isTSVLoaded = true; // Indicate that the TSV has been loaded
 
-        // Check if there's a hash in the URL and trigger the search
-        if (window.location.hash) {
-            const queryFromHash = window.location.hash.substring(1).toLowerCase(); // Remove the '#' and convert to lowercase
-            searchInput.value = queryFromHash; // Set the input field to the hash value
-            applySearch(queryFromHash); // Apply the search with the hash value
-        }
-    })
-    .catch(error => {
-        console.error('Error fetching file:', error);
-    });
+            // Check if there's a hash in the URL and trigger the search
+            if (window.location.hash) {
+                const queryFromHash = window.location.hash.substring(1).toLowerCase(); // Remove the '#' and convert to lowercase
+                searchInput.value = queryFromHash; // Set the input field to the hash value
+                applySearch(queryFromHash); // Apply the search with the hash value
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching file:', error);
+        });
 
     // Listen to the input event on the search box with debounce
     searchInput.addEventListener('input', debounce(function() {
