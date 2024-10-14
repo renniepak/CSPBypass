@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
-    const creditsList = document.getElementById('credits'); // Reference to the new credits list
+    const creditsSpan = document.getElementById('credits'); // Reference to the new credits span
     let tsvData = [];
     let debounceTimeout;
 
@@ -39,15 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.text())
             .then(data => {
                 // Split the credits data by new lines
-                const credits = data.split('\n');
-                creditsList.innerHTML = ''; // Clear any existing content
+                const credits = data.split('\n').filter(credit => credit.trim() !== '');
 
-                // Add each credit as a list item
-                credits.forEach(credit => {
-                    const li = document.createElement('li');
-                    li.textContent = credit;
-                    creditsList.appendChild(li);
-                });
+                // Join credits with a comma and space, then add to the span
+                creditsSpan.textContent = credits.join(', ');
             })
             .catch(error => console.error('Error fetching credits:', error));
     }
