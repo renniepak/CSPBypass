@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 li.innerHTML = `<strong>${htmlEncode(result.domain)}</strong><br><br>${htmlEncode(result.code)}`;
 
                 if (result.author && result.author.trim() !== '') {
-                    li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(result.author)}</div>`;
+                    li.innerHTML += `<div class="author-footnote">Acknowledgements: ${htmlEncode(result.author)}</div>`;
                 }
 
                 resultsList.appendChild(li);
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Only add the author footnote if it exists and is not an empty string
                 if (item.author && item.author.trim() !== '') {
-                    li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(item.author)}</div>`;
+                    li.innerHTML += `<div class="author-footnote">Acknowledgements: ${htmlEncode(item.author)}</div>`;
                 }
 
                 resultsList.appendChild(li);
