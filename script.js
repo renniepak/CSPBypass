@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.text())
             .then(data => {
                 // Split the credits data by new lines
-                const credits = data.split('\n').filter(credit => credit.trim() !== '');
+                const credits = data.split('\r\n').filter(credit => credit.trim() !== '');
 
                 // Join credits with a comma and space, then add to the span
                 creditsSpan.textContent = credits.join(', ');
