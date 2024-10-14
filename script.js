@@ -2,15 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
     let tsvData = [];
-    let isTSVLoaded = false;
     let debounceTimeout;
-
-    // Function to create a safe text node that will automatically HTML encode
-    function htmlEncode(str) {
-        const div = document.createElement('div');
-        div.textContent = str; // textContent automatically encodes the string
-        return div.innerHTML; // Retrieve the HTML-encoded string
-    }
 
     // Function to parse TSV data
     function parseTSV(tsv) {
@@ -35,38 +27,108 @@ document.addEventListener('DOMContentLoaded', function() {
         return result;
     }
 
-    // Function to apply search
-    function applySearch(query) {
-        resultsList.innerHTML = ''; // Clear the results list
+    // Function to apply the custom "script-src" search
+    function applyScriptSrcSearch(query) {
+        // Extract part between 'script-src' and the first semicolon
+        let scriptSrcPart = query.split("script-src")[1].split(";")[0].trim();
 
-        // Filter and display matching results
-        const filteredData = tsvData.filter(item =>
-            item.domain.toLowerCase().includes(query) ||
-            item.code.toLowerCase().includes(query)
-        );
+        // Split the remaining part by spaces
+        let items = scriptSrcPart.split(" ");
 
-        // Display the results
-        filteredData.forEach(item => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
+        // Process each item, handling items with and without "*"
+        let prefixedItems = items.flatMap(item => {
+            if (item.includes('*')) {
+                // Step 1: Remove "http://" and "https://"
+                item = item.replace(/https?:\/\//, '');
 
-            // Only add the author footnote if it exists and is not an empty string
-            if (item.author && item.author.trim() !== '') {
-                li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(item.author)}</div>`;
+                // Step 2: Handle "*", keeping the middle part
+                let parts = item.split('*');
+                if (parts.length >= 2) {
+                    item = `${parts[parts.length - 2]}${parts[parts.length - 1]}`;
+                }
+
+                // Step 3: Add / and . prefixes to the processed item
+                let prefixes = ['/' + item]; // Always add the '/' prefixed version
+                if (!item.startsWith('.')) {
+                    prefixes.push('.' + item); // Add '.' prefix only if it doesn't start with a dot
+                }
+
+                // Step 4: Remove double dots after adding the prefixes
+                return prefixes.map(prefixedItem => prefixedItem.replace('..', '.'));
             }
 
-            resultsList.appendChild(li);
+            // If no "*", return the item as-is
+            return [item];
+        });
+
+        // Filter out items that don't contain a dot (to ensure they're domains) or are empty strings
+        let processedItems = prefixedItems.filter(item => item.includes('.') && item.trim() !== '');
+
+        // Create a Set to store unique results (both domain and code must be unique)
+        let uniqueResults = new Set();
+
+        // Perform search for each prefixed item
+        resultsList.innerHTML = ''; // Clear previous results
+        processedItems.forEach(item => {
+            const filteredData = tsvData.filter(data =>
+                (data.domain.includes(item) || data.code.includes(item)) &&
+                !uniqueResults.has(`${data.domain}-${data.code}`) // Ensure uniqueness by domain-code combination
+            );
+
+            // Log the results found for this search term
+            console.log(`Search word: ${item}, Results found:`, filteredData);
+
+            // Add unique results to the set and display them
+            filteredData.forEach(result => {
+                uniqueResults.add(`${result.domain}-${result.code}`); // Mark this result as seen
+
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${htmlEncode(result.domain)}</strong><br><br>${htmlEncode(result.code)}`;
+
+                if (result.author && result.author.trim() !== '') {
+                    li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(result.author)}</div>`;
+                }
+
+                resultsList.appendChild(li);
+            });
         });
     }
 
 
-    // Function to update the URL hash
-    function updateHash(query) {
-        if (query) {
-            window.location.hash = query;
+
+    // Function to apply general search
+    function applySearch(query) {
+        if (query.includes("script-src")) {
+            applyScriptSrcSearch(query);
         } else {
-            window.history.replaceState(null, null, ' '); // Clear the hash if query is empty
+            resultsList.innerHTML = ''; // Clear the results list
+
+            // Filter and display matching results
+            const filteredData = tsvData.filter(item =>
+                item.domain.toLowerCase().includes(query) ||
+                item.code.toLowerCase().includes(query)
+            );
+
+            // Display the results
+            filteredData.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
+
+                // Only add the author footnote if it exists and is not an empty string
+                if (item.author && item.author.trim() !== '') {
+                    li.innerHTML += `<div class="author-footnote">Submitted by ${htmlEncode(item.author)}</div>`;
+                }
+
+                resultsList.appendChild(li);
+            });
         }
+    }
+
+    // Function to create a safe text node that will automatically HTML encode
+    function htmlEncode(str) {
+        const div = document.createElement('div');
+        div.textContent = str; // textContent automatically encodes the string
+        return div.innerHTML; // Retrieve the HTML-encoded string
     }
 
     // Debounce function
@@ -77,44 +139,31 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    // Fetch the latest TSV file from GitHub repository
-    const owner = 'renniepak';
-    const repo = 'CSPBypass';
-    const branch = 'main';
-    const filePath = 'data.tsv';
-
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${branch}`;
+    // Fetch TSV file from GitHub (as per your current logic)
+    const apiUrl = 'https://api.github.com/repos/renniepak/CSPBypass/contents/data.tsv?ref=main';
 
     fetch(apiUrl, {
             headers: {
                 'Accept': 'application/vnd.github.v3.raw', // Get raw file content
             },
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text(); // Assuming the TSV is a text file
-        })
+        .then(response => response.text())
         .then(data => {
-            tsvData = parseTSV(data); // Parse the TSV data
-            isTSVLoaded = true; // Indicate that the TSV has been loaded
+            tsvData = parseTSV(data);
 
-            // Check if there's a hash in the URL and trigger the search
+            // Trigger search if hash is present
             if (window.location.hash) {
-                const queryFromHash = decodeURI(window.location.hash.substring(1).toLowerCase()); // Remove the '#' and convert to lowercase
-                searchInput.value = queryFromHash; // Set the input field to the hash value
-                applySearch(queryFromHash); // Apply the search with the hash value
+                const queryFromHash = decodeURI(window.location.hash.substring(1).toLowerCase());
+                searchInput.value = queryFromHash;
+                applySearch(queryFromHash);
             }
         })
-        .catch(error => {
-            console.error('Error fetching file:', error);
-        });
+        .catch(error => console.error('Error fetching TSV file:', error));
 
-    // Listen to the input event on the search box with debounce
+    // Attach input event listener for search
     searchInput.addEventListener('input', debounce(function() {
         const query = searchInput.value.toLowerCase();
         applySearch(query);
-        updateHash(query); // Update the hash as the search query changes
-    }, 300)); // Set a debounce delay of 300ms
+        window.location.hash = query; // Update the URL hash
+    }, 300)); // Debounce of 300ms
 });
