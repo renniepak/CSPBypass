@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchCredits();
 
     // Function to apply the custom "script-src" search
-    function applyScriptSrcSearch(query) {
+    function applyScriptSrcSearch(query, cspSrc) {
         // Extract part between 'script-src' and the first semicolon
-        let scriptSrcPart = query.split("script-src")[1].split(";")[0].trim();
+        let scriptSrcPart = query.split(cspSrc)[1].split(";")[0].trim();
 
         // Split the remaining part by spaces
         let items = scriptSrcPart.split(" ");
@@ -120,7 +120,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to apply general search
     function applySearch(query) {
         if (query.includes("script-src")) {
-            applyScriptSrcSearch(query);
+            applyScriptSrcSearch(query, "script-src");
+        }
+        else if (query.includes("default-src")) {
+            applyScriptSrcSearch(query, "default-src");
         } else {
             resultsList.innerHTML = ''; // Clear the results list
 
