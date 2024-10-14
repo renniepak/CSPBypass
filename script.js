@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Check if there's a hash in the URL and trigger the search
             if (window.location.hash) {
-                const queryFromHash = window.location.hash.substring(1).toLowerCase(); // Remove the '#' and convert to lowercase
+                const queryFromHash = decodeURI(window.location.hash.substring(1).toLowerCase()); // Remove the '#' and convert to lowercase
                 searchInput.value = queryFromHash; // Set the input field to the hash value
                 applySearch(queryFromHash); // Apply the search with the hash value
             }
