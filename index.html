@@ -44,13 +44,30 @@
             text-align: center;
         }
 
-        .author-footnote {
-            color: grey;
-            font-size: 12px;
-            margin-top: 10px;
-            margin-bottom: 0;
-            text-align: right;
+        .credits-section {
+            margin-top: 20px;
+            text-align: left;
         }
+
+        .thank-you {
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #credits {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #credits li {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+
     </style>
 
 </head>
@@ -62,8 +79,15 @@
     <ul id="results"></ul>
 
     <div class="footer">
-        Contribute to this project on <a href="https://github.com/renniepak/CSPBypass" target="_blank">GitHub</a>.
+        Contribute to this project on 
+        <a href="https://github.com/renniepak/CSPBypass" target="_blank">GitHub</a>.
+        
+        <div class="credits-section">
+            <p class="thank-you">Thank you to the amazing contributors:</p>
+            <ul id="credits"></ul>
+        </div>
     </div>
+
 
     <script src="script.js"></script>
 

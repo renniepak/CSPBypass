@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
+    const creditsList = document.getElementById('credits'); // Reference to the new credits list
     let tsvData = [];
     let debounceTimeout;
 
@@ -19,13 +20,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
             obj.domain = currentLine[0]; // Assuming the first column is Domain
             obj.code = currentLine[1]; // Assuming the second column is Code
-            obj.author = currentLine[2] || ''; // Assuming the optional third column is Author
 
             result.push(obj);
         }
 
         return result;
     }
+
+    // Function to fetch and display credits
+    function fetchCredits() {
+        const creditsUrl = 'https://api.github.com/repos/renniepak/CSPBypass/contents/credits.txt?ref=main';
+
+        fetch(creditsUrl, {
+                headers: {
+                    'Accept': 'application/vnd.github.v3.raw',
+                },
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Split the credits data by new lines
+                const credits = data.split('\n');
+                creditsList.innerHTML = ''; // Clear any existing content
+
+                // Add each credit as a list item
+                credits.forEach(credit => {
+                    const li = document.createElement('li');
+                    li.textContent = credit;
+                    creditsList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error fetching credits:', error));
+    }
+
+    // Call the function to fetch credits
+    fetchCredits();
 
     // Function to apply the custom "script-src" search
     function applyScriptSrcSearch(query) {
@@ -87,10 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const li = document.createElement('li');
                 li.innerHTML = `<strong>${htmlEncode(result.domain)}</strong><br><br>${htmlEncode(result.code)}`;
 
-                if (result.author && result.author.trim() !== '') {
-                    li.innerHTML += `<div class="author-footnote">Acknowledgements: ${htmlEncode(result.author)}</div>`;
-                }
-
                 resultsList.appendChild(li);
             });
         });
@@ -115,11 +139,6 @@ document.addEventListener('DOMContentLoaded', function() {
             filteredData.forEach(item => {
                 const li = document.createElement('li');
                 li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
-
-                // Only add the author footnote if it exists and is not an empty string
-                if (item.author && item.author.trim() !== '') {
-                    li.innerHTML += `<div class="author-footnote">Acknowledgements: ${htmlEncode(item.author)}</div>`;
-                }
 
                 resultsList.appendChild(li);
             });

