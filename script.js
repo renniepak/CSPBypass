@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 let prefixes = ['/' + item]; // Always add the '/' prefixed version
                 if (!item.startsWith('.')) {
                     prefixes.push('.' + item); // Add '.' prefix only if it doesn't start with a dot
+                } else {
+                    prefixes.push(item);
                 }
 
                 // Step 4: Remove double dots after adding the prefixes
