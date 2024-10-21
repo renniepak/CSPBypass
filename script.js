@@ -1,197 +1,100 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
-    const creditsSpan = document.getElementById('credits'); // Reference to the new credits span
-    let tsvData = [];
-    let debounceTimeout;
+    const creditsSpan = document.getElementById('credits');
+    let tsvData = [], debounceTimeout;
 
-    // Function to parse TSV data
-    function parseTSV(tsv) {
-        const lines = tsv.split('\n');
-        const result = [];
-        const headers = lines[0].split('\t'); // Splitting by tab for TSV
+    const parseTSV = tsv => tsv.split('\n').slice(1)
+        .map(line => {
+            const [domain, code] = line.split('\t');
+            return domain && code ? { domain, code } : null;
+        }).filter(Boolean);
 
-        for (let i = 1; i < lines.length; i++) { // Skip the first row (header)
-            const obj = {};
-            const currentLine = lines[i].split('\t'); // Splitting by tab for TSV
+    const fetchCredits = () => {
+        fetch('https://api.github.com/repos/renniepak/CSPBypass/contents/credits.txt?ref=main', {
+            headers: { 'Accept': 'application/vnd.github.v3.raw' }
+        })
+        .then(response => response.text())
+        .then(data => creditsSpan.textContent = data.split('\r\n').filter(Boolean).join(', '))
+        .catch(console.error);
+    };
 
-            // Skip if the line is empty
-            if (currentLine.length < 2) continue; // Ensure at least domain and code are present
+    const displayResults = data => {
+        resultsList.innerHTML = data.length ? data.map(item => 
+            `<li><strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}</li>`
+        ).join('') : '<li>No results found</li>';
+    };
 
-            obj.domain = currentLine[0]; // Assuming the first column is Domain
-            obj.code = currentLine[1]; // Assuming the second column is Code
-
-            result.push(obj);
-        }
-
-        return result;
-    }
-
-    // Function to fetch and display credits
-    function fetchCredits() {
-        const creditsUrl = 'https://api.github.com/repos/renniepak/CSPBypass/contents/credits.txt?ref=main';
-
-        fetch(creditsUrl, {
-                headers: {
-                    'Accept': 'application/vnd.github.v3.raw',
-                },
-            })
-            .then(response => response.text())
-            .then(data => {
-                // Split the credits data by new lines
-                const credits = data.split('\r\n').filter(credit => credit.trim() !== '');
-
-                // Join credits with a comma and space, then add to the span
-                creditsSpan.textContent = credits.join(', ');
-            })
-            .catch(error => console.error('Error fetching credits:', error));
-    }
-
-    // Call the function to fetch credits
-    fetchCredits();
-
-    // Function to apply the custom "script-src" search
-    function applyScriptSrcSearch(query, cspSrc) {
-        // Extract part between 'script-src' and the first semicolon
-        let scriptSrcPart = query.split(cspSrc)[1].split(";")[0].trim();
-
-        // Split the remaining part by spaces
-        let items = scriptSrcPart.split(" ");
-
-        // Process each item, handling items with and without "*"
-        let prefixedItems = items.flatMap(item => {
+    const processItems = scriptSrcPart => {
+        return [...new Set(scriptSrcPart.split(" ").flatMap(item => {
             if (item.includes('*')) {
-                // Step 1: Remove "http://" and "https://"
-                item = item.replace(/https?:\/\//, '');
-
-                // Step 2: Handle "*", keeping the middle part
-                let parts = item.split('*');
-                if (parts.length >= 2) {
-                    item = `${parts[parts.length - 2]}${parts[parts.length - 1]}`;
-                }
-
-                // Step 3: Add / and . prefixes to the processed item
-                let prefixes = ['/' + item]; // Always add the '/' prefixed version
-                if (!item.startsWith('.')) {
-                    prefixes.push('.' + item); // Add '.' prefix only if it doesn't start with a dot
-                } else {
-                    prefixes.push(item);
-                }
-
-                // Step 4: Remove double dots after adding the prefixes
-                return prefixes.map(prefixedItem => prefixedItem.replace('..', '.'));
+                item = item.replace(/https?:\/\//, '').split('*').slice(-2).join('');
+                return ['/' + item, item.startsWith('.') ? item : '.' + item].map(i => i.replace('..', '.'));
             }
+            return item;
+        }).filter(i => i.includes('.')))];
+    };
 
-            // If no "*", return the item as-is
-            return [item];
-        });
-
-        // Filter out items that don't contain a dot (to ensure they're domains) or are empty strings
-        let processedItems = prefixedItems.filter(item => item.includes('.') && item.trim() !== '');
-
-        // Create a Set to store unique results (both domain and code must be unique)
-        let uniqueResults = new Set();
-
-        // Perform search for each prefixed item
-        resultsList.innerHTML = ''; // Clear previous results
-        processedItems.forEach(item => {
-            const filteredData = tsvData.filter(data =>
+    const filterAndDisplay = (queryItems) => {
+        const uniqueResults = new Set();
+        queryItems.forEach(item => {
+            tsvData.filter(data =>
                 (data.domain.includes(item) || data.code.includes(item)) &&
-                !uniqueResults.has(`${data.domain}-${data.code}`) // Ensure uniqueness by domain-code combination
-            );
-
-            // Log the results found for this search term
-            console.log(`Search word: ${item}, Results found:`, filteredData);
-
-            // Add unique results to the set and display them
-            filteredData.forEach(result => {
-                uniqueResults.add(`${result.domain}-${result.code}`); // Mark this result as seen
-
+                uniqueResults.add(`${data.domain}-${data.code}`)
+            ).forEach(result => {
                 const li = document.createElement('li');
                 li.innerHTML = `<strong>${htmlEncode(result.domain)}</strong><br><br>${htmlEncode(result.code)}`;
-
                 resultsList.appendChild(li);
             });
         });
-    }
+    };
 
-    // Function to apply general search
-    function applySearch(query) {
-        resultsList.innerHTML = ''; // Clear the results list
+    const applyScriptSrcSearch = (query, cspSrc) => {
+        let scriptSrcPart = query.split(cspSrc)[1]?.split(";")[0].trim() || '';
+        let processedItems = processItems(scriptSrcPart);
+        resultsList.innerHTML = '';
+        filterAndDisplay(processedItems);
+    };
 
-        // If the query is empty, return early to show no results
-        if (!query.trim()) {
-            return; // Do nothing, leaving the results empty
-        }
-
-        if (query.includes("script-src")) {
-            applyScriptSrcSearch(query, "script-src");
-        } else if (query.includes("default-src")) {
-            applyScriptSrcSearch(query, "default-src");
-        } else {
-            // Filter and display matching results
-            const filteredData = tsvData.filter(item =>
+    const applySearch = query => {
+        if (!query.trim()) return resultsList.innerHTML = '';
+        query.includes("script-src") || query.includes("default-src")
+            ? applyScriptSrcSearch(query, query.includes("script-src") ? "script-src" : "default-src")
+            : displayResults(tsvData.filter(item =>
                 item.domain.toLowerCase().includes(query) ||
                 item.code.toLowerCase().includes(query)
-            );
+            ));
+    };
 
-            // If no results found, display "No results" message
-            if (filteredData.length === 0) {
-                const noResultsMessage = document.createElement('li');
-                noResultsMessage.textContent = 'No results found';
-                resultsList.appendChild(noResultsMessage);
-            } else {
-                // Display the results
-                filteredData.forEach(item => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
-
-                    resultsList.appendChild(li);
-                });
-            }
-        }
-    }
-
-    // Function to create a safe text node that will automatically HTML encode
-    function htmlEncode(str) {
+    const htmlEncode = str => {
         const div = document.createElement('div');
-        div.textContent = str; // textContent automatically encodes the string
-        return div.innerHTML; // Retrieve the HTML-encoded string
-    }
+        div.textContent = str;
+        return div.innerHTML;
+    };
 
-    // Debounce function
-    function debounce(func, delay) {
-        return function(...args) {
-            clearTimeout(debounceTimeout); // Clear the previous timeout
-            debounceTimeout = setTimeout(() => func.apply(this, args), delay);
-        };
-    }
+    const debounce = (func, delay) => (...args) => {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+    };
 
-    // Fetch TSV file from GitHub (as per your current logic)
-    const apiUrl = 'https://api.github.com/repos/renniepak/CSPBypass/contents/data.tsv?ref=main';
+    fetchCredits();
+    fetch('https://api.github.com/repos/renniepak/CSPBypass/contents/data.tsv?ref=main', {
+        headers: { 'Accept': 'application/vnd.github.v3.raw' }
+    })
+    .then(response => response.text())
+    .then(data => {
+        tsvData = parseTSV(data);
+        if (window.location.hash) {
+            const query = decodeURI(window.location.hash.substring(1).toLowerCase());
+            searchInput.value = query;
+            applySearch(query);
+        }
+    })
+    .catch(console.error);
 
-    fetch(apiUrl, {
-            headers: {
-                'Accept': 'application/vnd.github.v3.raw', // Get raw file content
-            },
-        })
-        .then(response => response.text())
-        .then(data => {
-            tsvData = parseTSV(data);
-
-            // Trigger search if hash is present
-            if (window.location.hash) {
-                const queryFromHash = decodeURI(window.location.hash.substring(1).toLowerCase());
-                searchInput.value = queryFromHash;
-                applySearch(queryFromHash);
-            }
-        })
-        .catch(error => console.error('Error fetching TSV file:', error));
-
-    // Attach input event listener for search
-    searchInput.addEventListener('input', debounce(function() {
+    searchInput.addEventListener('input', debounce(() => {
         const query = searchInput.value.toLowerCase();
         applySearch(query);
-        window.location.hash = query; // Update the URL hash
-    }, 300)); // Debounce of 300ms
+        window.location.hash = query;
+    }, 300));
 });
