@@ -115,31 +115,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-
-
     // Function to apply general search
     function applySearch(query) {
+        resultsList.innerHTML = ''; // Clear the results list
+
+        // If the query is empty, return early to show no results
+        if (!query.trim()) {
+            return; // Do nothing, leaving the results empty
+        }
+
         if (query.includes("script-src")) {
             applyScriptSrcSearch(query, "script-src");
-        }
-        else if (query.includes("default-src")) {
+        } else if (query.includes("default-src")) {
             applyScriptSrcSearch(query, "default-src");
         } else {
-            resultsList.innerHTML = ''; // Clear the results list
-
             // Filter and display matching results
             const filteredData = tsvData.filter(item =>
                 item.domain.toLowerCase().includes(query) ||
                 item.code.toLowerCase().includes(query)
             );
 
-            // Display the results
-            filteredData.forEach(item => {
-                const li = document.createElement('li');
-                li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
+            // If no results found, display "No results" message
+            if (filteredData.length === 0) {
+                const noResultsMessage = document.createElement('li');
+                noResultsMessage.textContent = 'No results found';
+                resultsList.appendChild(noResultsMessage);
+            } else {
+                // Display the results
+                filteredData.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}`;
 
-                resultsList.appendChild(li);
-            });
+                    resultsList.appendChild(li);
+                });
+            }
         }
     }
 
