@@ -8,6 +8,7 @@ ajax.googleapis.com	<body ng-app ng-csp><script src="https://ajax.googleapis.com
 analytics.tiktok.com	<script src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=%22-alert`1`-%22"></script>
 anchor.digitalocean.com	<script src="https://anchor.digitalocean.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 ap.lijit.com	<script src="https://ap.lijit.com/rtb/bid?callback=alert&br={%22id%22:%221%22,%22site%22:{%22domain%22:%22x%22,%22page%22:%22x%22}}"></script>
+api.bazaarvoice.com	<script src="https://api.bazaarvoice.com/data/batch.json?passkey=e75powr7wqhg1ah5seu00zawf&callback=alert"></script>
 api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
 api.cxense.com	<script src="https://api.cxense.com/profile/user/segment?callback=alert"></script>
 api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>
