@@ -29,9 +29,9 @@ We welcome contributions from the community! If you've discovered a new CSP bypa
 Here’s how you can contribute:
 1. Fork this repository.
 2. Add your CSP bypass gadget in the appropriate format:
-
-`www.example.com[TAB]<script src=//www.example.com?cb=alert(1)><script/>`
-
+````
+www.example.com[TAB]<script src=//www.example.com?cb=alert(1)><script/>
+```
 The minimum viable PoC is an alert box without the ability to pass any arguments, or an alert box showing arbitrary data (caused by a JSONP response). However, if you have the possibility to pass arguments (like `alert(1)`) please submit a PoC that reflects that. Please try to keep data.tsv in alphabetical order. This helps to spot duplicates. Add your handle in credits.txt if you like to be creditted on cspbypass.com
 3. Submit a pull request with your findings.
 
