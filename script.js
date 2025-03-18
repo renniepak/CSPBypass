@@ -42,11 +42,34 @@ document.addEventListener('DOMContentLoaded', () => {
      * @returns {Array} - An array of parsed objects.
      */
     const parseTSV = (tsv) => {
-        return tsv.trim().split('\n').slice(1).map(line => {
-            const [domain, code] = line.split('\t');
-            return domain && code ? { domain: domain.trim(), code: code.trim() } : null;
-        }).filter(Boolean);
+        return tsv
+            .trim()
+            // Split on newlines, then ignore the first line (which is presumably headers)
+            .split('\n')
+            .slice(1)
+            .map(line => {
+                line = line.trim();
+                // This regex captures:
+                //   ^(\S+)       => first sequence of non-whitespace (domain)
+                //   \s+          => the first block of whitespace
+                //   (.*)         => everything else (the code) as the second capture
+                const match = line.match(/^(\S+)\s+(.*)$/);
+
+                // If the line doesn't match our pattern, skip it
+                if (!match) return null;
+
+                // match[1] = domain, match[2] = entire code block
+                const domain = match[1];
+                const code = match[2];
+
+                return domain && code ? {
+                    domain,
+                    code
+                } : null;
+            })
+            .filter(Boolean);
     };
+
 
     /**
      * Fetches and displays credits from GitHub.
@@ -54,7 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchCredits = async () => {
         try {
             const response = await fetch('https://api.github.com/repos/renniepak/CSPBypass/contents/credits.txt?ref=main', {
-                headers: { 'Accept': 'application/vnd.github.v3.raw' }
+                headers: {
+                    'Accept': 'application/vnd.github.v3.raw'
+                }
             });
             const data = await response.text();
             creditsSpan.textContent = data.trim().split('\r\n').join(', ');
@@ -68,9 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {Array} data - The data to display.
      */
     const displayResults = (data) => {
-        resultsList.innerHTML = data.length
-            ? data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}</li>`).join('')
-            : '<li>No results found</li>';
+        resultsList.innerHTML = data.length ?
+            data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}</li>`).join('') :
+            '<li>No results found</li>';
     };
 
     /**
@@ -135,7 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
         await fetchCredits();
         try {
             const response = await fetch('https://api.github.com/repos/renniepak/CSPBypass/contents/data.tsv?ref=main', {
-                headers: { 'Accept': 'application/vnd.github.v3.raw' }
+                headers: {
+                    'Accept': 'application/vnd.github.v3.raw'
+                }
             });
             const data = await response.text();
             tsvData = parseTSV(data);
