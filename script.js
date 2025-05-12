@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
     const creditsSpan = document.getElementById('credits');
+    const copyStatus = document.getElementById('copy-status'); // Screen‑reader only
+    const toast = document.getElementById('toast');            // Visible toast
 
     /**
      * Data variables
@@ -70,6 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(Boolean);
     };
 
+    /**
+     * Shows a short-lived toast message.
+     * @param {string} message - The message to display.
+     */
+    const showToast = (message) => {
+        toast.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(showToast.timeoutId);
+        showToast.timeoutId = setTimeout(() => toast.classList.remove('show'), 1500);
+    };
 
     /**
      * Fetches and displays credits from GitHub.
@@ -82,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             const data = await response.text();
-            creditsSpan.textContent = data.trim().split('\r\n').join(', ');
+            creditsSpan.textContent = data.trim().split(/\r?\n/).join(', ');
         } catch (error) {
             console.error('Error fetching credits:', error);
         }
@@ -94,9 +106,33 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const displayResults = (data) => {
         resultsList.innerHTML = data.length ?
-            data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br>${htmlEncode(item.code)}</li>`).join('') :
+            data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br><span class="code">${htmlEncode(item.code)}</span></li>`).join('') :
             '<li>No results found</li>';
     };
+
+    /**
+     * Copy handler (event delegation on the results <ul>).
+     */
+    resultsList.addEventListener('click', (event) => {
+        const li = event.target.closest('li');
+        if (!li || !resultsList.contains(li)) return;
+
+        const codeSpan = li.querySelector('.code');
+        if (!codeSpan) return;
+
+        const payload = codeSpan.textContent;
+
+        navigator.clipboard.writeText(payload)
+            .then(() => {
+                // Visual feedback
+                li.classList.add('copied');
+                setTimeout(() => li.classList.remove('copied'), 800);
+                showToast('Payload copied 📋');
+                // Screen‑reader feedback
+                copyStatus.textContent = 'Payload copied';
+            })
+            .catch(err => console.error('Clipboard copy failed:', err));
+    });
 
     /**
      * Processes script-src or default-src directives.

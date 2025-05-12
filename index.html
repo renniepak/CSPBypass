@@ -9,7 +9,9 @@
     <meta property="og:url" content="https://cspbypass.com">
     <meta property="og:type" content="website">
     <title>CSP Bypass Search</title>
+
     <style>
+        /* ---------- Layout & typography ---------- */
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -25,6 +27,7 @@
             resize: vertical; /* Optional: Allow users to resize the textarea vertically */
         }
 
+        /* ---------- Results list ---------- */
         ul {
             list-style-type: none;
             padding: 0;
@@ -37,6 +40,12 @@
             word-wrap: break-word;
             overflow-wrap: break-word;
             white-space: pre-wrap;
+            cursor: pointer;
+            transition: background-color .2s ease;
+        }
+
+        li.copied {
+            background-color: #e0ffe0;
         }
 
         .highlight {
@@ -65,15 +74,55 @@
             font-size: 14px;
             color: #555;
         }
+
+        /* ---------- Toast (visible copy confirmation) ---------- */
+        #toast {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: #333;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,.2);
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity .3s ease, transform .3s ease;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        #toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ---------- Screen‑reader only live region ---------- */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
     </style>
 
 </head>
 <body>
 
     <h1>CSP Bypass Search</h1>
+
     <textarea id="search" placeholder="Enter a search term or paste a complete CSP header..." rows="4" autofocus></textarea>
 
     <ul id="results"></ul>
+
+    <!-- Toast confirmation -->
+    <div id="toast" role="status" aria-live="polite"></div>
+    <!-- Invisible live region for assistive tech -->
+    <div id="copy-status" class="sr-only" aria-live="polite"></div>
 
     <div class="footer">
         Contribute to this project on 
@@ -86,6 +135,5 @@
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
