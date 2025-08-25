@@ -1,139 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="CSP Bypass Search">
-    <meta property="og:description" content="A tool designed to help ethical hackers bypass restrictive Content Security Policies">
-    <meta property="og:image" content="https://cspbypass.com/cspbypass.png">
-    <meta property="og:url" content="https://cspbypass.com">
-    <meta property="og:type" content="website">
-    <title>CSP Bypass Search</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="CSP Bypass Search" />
+  <meta property="og:description" content="A tool designed to help ethical hackers bypass restrictive Content Security Policies" />
+  <meta property="og:image" content="https://cspbypass.com/cspbypass.png" />
+  <meta property="og:url" content="https://cspbypass.com" />
+  <meta property="og:type" content="website" />
+  <title>CSP Bypass Search</title>
 
-    <style>
-        /* ---------- Layout & typography ---------- */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-        }
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #101419;
+      --muted: #a6b0c0;
+      --text: #e7edf5;
+      --border: #212934;
+      --accent: #66f0a7;
+      --accent-strong: #3ee68f;
+      --ring: rgba(102, 240, 167, 0.45);
+      --shadow: 0 10px 25px rgba(0,0,0,.35), 0 2px 8px rgba(0,0,0,.3);
+      --radius: 16px;
+      --radius-sm: 12px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial;
+    }
 
-        textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            resize: vertical; /* Optional: Allow users to resize the textarea vertically */
-        }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --muted: #5b6470;
+        --text: #11161c;
+        --border: #e8edf3;
+        --accent: #1fb87a;
+        --accent-strong: #149b66;
+        --ring: rgba(31, 184, 122, 0.3);
+        --shadow: 0 10px 24px rgba(16, 24, 40, 0.08), 0 2px 8px rgba(16, 24, 40, 0.06);
+      }
+    }
 
-        /* ---------- Results list ---------- */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: var(--sans);
+      color: var(--text);
+      background: radial-gradient(1200px 500px at 10% -10%, rgba(102,240,167,.12), transparent 60%),
+                  radial-gradient(900px 500px at 110% 10%, rgba(102,206,240,.12), transparent 60%),
+                  var(--bg);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-        li {
-            padding: 10px;
-            border: 1px solid #ddd;
-            margin-bottom: 5px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            white-space: pre-wrap;
-            cursor: pointer;
-            transition: background-color .2s ease;
-        }
+    .container {
+      max-width: 960px;
+      padding: 32px 20px 56px;
+      margin: 0 auto;
+    }
 
-        li.copied {
-            background-color: #e0ffe0;
-        }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
 
-        .highlight {
-            font-weight: bold;
-        }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
 
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            text-align: center;
-        }
+    .logo {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, rgba(102,240,167,.22), rgba(102,206,240,.16));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
 
-        .credits-section {
-            margin-top: 20px;
-            text-align: left;
-        }
+    .brand h1 {
+      margin: 0;
+      font-size: clamp(22px, 3vw, 28px);
+    }
 
-        .thank-you {
-            font-weight: bold;
-            font-size: 16px;
-            color: #333;
-            margin-bottom: 10px;
-        }
+    .header-actions {
+      margin-left: auto;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
 
-        #credits {
-            font-size: 14px;
-            color: #555;
-        }
+    .header a.cta {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform .08s ease, border-color .2s ease, box-shadow .2s ease;
+      box-shadow: var(--shadow);
+    }
+    .header a.cta:hover { transform: translateY(-1px); border-color: rgba(102,206,240,.4); }
 
-        /* ---------- Toast (visible copy confirmation) ---------- */
-        #toast {
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            background: #333;
-            color: #fff;
-            padding: 10px 16px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,.2);
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: opacity .3s ease, transform .3s ease;
-            z-index: 1000;
-            pointer-events: none;
-        }
+    .header .cta svg { opacity: .9 }
 
-        #toast.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .header a.cta.sponsor {
+      background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+      color: #072312;
+      border-color: transparent;
+      font-weight: 600;
+      box-shadow: 0 8px 16px rgba(31, 184, 122, .25);
+    }
+    .header a.cta.sponsor:hover { filter: brightness(1.03); }
 
-        /* ---------- Screen‑reader only live region ---------- */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0,0,0,0);
-            border: 0;
-        }
-    </style>
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)), var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
 
+    label { display: block; font-size: 13px; color: var(--muted); margin: 2px 0 10px; }
+
+    .textarea-wrap {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      overflow: hidden;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .textarea-wrap:focus-within { border-color: var(--accent); box-shadow: 0 0 0 6px var(--ring); }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      padding: 14px 16px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text);
+      background: transparent;
+      border: 0;
+      resize: vertical;
+      outline: none;
+    }
+
+    .results-wrap { margin-top: 16px; }
+
+    .results-head {
+      display: flex; align-items: center; justify-content: space-between;
+      color: var(--muted); font-size: 13px; margin: 8px 2px 10px;
+    }
+
+    ul { list-style: none; padding: 0; margin: 0; }
+
+    li {
+      position: relative;
+      padding: 14px 44px 14px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 10px;
+      word-wrap: break-word;
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.02));
+      cursor: pointer;
+      transition: border-color .18s ease, background .18s ease, transform .06s ease;
+    }
+    li:hover { border-color: rgba(102,206,240,.4); background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.04)); transform: translateY(-1px); }
+
+    li .copy-icon {
+      position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+      opacity: .7; pointer-events: none;
+    }
+    li:hover .copy-icon { opacity: 1; transform: translateY(-50%) scale(1.02); }
+
+    li.copied {
+      background: linear-gradient(180deg, rgba(102,240,167,.18), rgba(102,240,167,.06));
+      border-color: rgba(102,240,167,.45);
+    }
+
+    .footer { text-align: center; margin-top: 28px; color: var(--muted); font-size: 14px; }
+    .footer a { color: var(--text); text-underline-offset: 3px; }
+
+    .credits-section { text-align: left; max-width: 720px; margin: 12px auto 0; }
+    .thank-you { font-weight: 700; color: var(--text); margin: 14px 0 8px; }
+    #credits { color: var(--muted); font-size: 14px; }
+
+    #toast {
+      position: fixed; top: 1rem; right: 1rem;
+      background: var(--card); color: var(--text);
+      padding: 10px 14px; border-radius: 12px;
+      border: 1px solid var(--border); box-shadow: var(--shadow);
+      opacity: 0; transform: translateY(-10px);
+      transition: opacity .28s ease, transform .28s ease;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    #toast.show { opacity: 1; transform: translateY(0); }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3l7 3v5c0 5-3.5 8.7-7 10-3.5-1.3-7-5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.5" opacity=".9"/>
+            <path d="M9.5 11.5a2.5 2.5 0 115 0v1.5h-5v-1.5z" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h1>CSP Bypass Search</h1>
+      </div>
 
-    <h1>CSP Bypass Search</h1>
+      <div class="header-actions">
+        <a class="cta" href="https://github.com/renniepak/CSPBypass" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.61-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.04-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.76 1.05a9.3 9.3 0 015.02 0c1.92-1.32 2.76-1.05 2.76-1.05.55 1.42.2 2.47.1 2.73.65.72 1.04 1.64 1.04 2.76 0 3.95-2.34 4.81-4.57 5.07.36.32.69.94.69 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.26 10.26 0 0022 12.26C22 6.58 17.52 2 12 2z" fill="currentColor"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a class="cta sponsor" href="https://github.com/sponsors/renniepak" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                     2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                     C13.09 3.81 14.76 3 16.5 3
+                     19.58 3 22 5.42 22 8.5
+                     c0 3.78-3.4 6.86-8.55 11.54
+                     L12 21.35z" fill="currentColor"/>
+          </svg>
+          <span>Sponsor</span>
+        </a>
+      </div>
+    </header>
 
-    <textarea id="search" placeholder="Enter a search term or paste a complete CSP header..." rows="4" autofocus></textarea>
+    <section class="card" aria-labelledby="search-label">
+      <label id="search-label" for="search">Enter a search term or paste a complete CSP header</label>
+      <div class="textarea-wrap">
+        <textarea id="search" placeholder="e.g., script-src 'self' https://*.cdn.com 'unsafe-inline' ..." rows="4" autofocus></textarea>
+      </div>
+      <div class="results-wrap">
+        <div class="results-head">
+          <span>Results</span>
+          <span>Click any item to copy</span>
+        </div>
+        <ul id="results"></ul>
+      </div>
+    </section>
 
-    <ul id="results"></ul>
-
-    <!-- Toast confirmation -->
     <div id="toast" role="status" aria-live="polite"></div>
-    <!-- Invisible live region for assistive tech -->
     <div id="copy-status" class="sr-only" aria-live="polite"></div>
 
-    <div class="footer">
-        Contribute to this project on 
-        <a href="https://github.com/renniepak/CSPBypass" target="_blank">GitHub</a>.
-        
-        <div class="credits-section">
-            <p class="thank-you">Thank you to the amazing contributors:</p>
-            <span id="credits"></span>
-        </div>
-    </div>
+    <footer class="footer">
+      Contribute to this project on
+      <a href="https://github.com/renniepak/CSPBypass" target="_blank" rel="noopener">GitHub</a>.
+      <div class="credits-section">
+        <p class="thank-you">Thank you to the amazing contributors:</p>
+        <span id="credits"></span>
+      </div>
+    </footer>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
