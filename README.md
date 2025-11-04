@@ -6,6 +6,17 @@ Welcome to **CSPBypass.com**, a tool designed to help ethical hackers bypass res
 
 Visit [CSPBypass.com](https://cspbypass.com) to search for existing CSP bypass gadgets that allow you to gain XSS, or contribute your own findings.
 
+## Offline Usage
+
+Build the Docker image and run it locally to serve the static UI with the bundled dataset:
+
+```
+docker build -t cspbypass .
+docker run --rm -p 8080:80 cspbypass
+```
+
+Browse to http://localhost:8080/ and you can query the dataset without any external calls.
+
 ## What is a "CSP Bypass gadget"?
 
 Modern websites often use **Content Security Policies (CSP)** to protect against XSS attacks by restricting the sources of executable scripts and other content. In those cases, even when an attacker can inject HTML/javascript into a site, the CSP blocks the payload, allowing only certain whitelisted domains or resources to load.
@@ -42,5 +53,3 @@ Help improve CSPBypass.com by contributing today! We look forward to your pull r
 ## Contact
 
 For any inquiries, reach out to [@renniepak.nl on Bluesky](https://bsky.app/profile/renniepak.nl).
-
-
