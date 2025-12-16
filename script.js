@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
-    const resultsCount = dorucment.getElementById('resultsCount');
+    const resultsCount = document.getElementById('resultsCount');
     const creditsSpan = document.getElementById('credits');
     const copyStatus = document.getElementById('copy-status'); // Screen‑reader only
     const toast = document.getElementById('toast');            // Visible toast
