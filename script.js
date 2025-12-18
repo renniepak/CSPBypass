@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const searchInput = document.getElementById('search');
     const resultsList = document.getElementById('results');
+    const resultsCount = document.getElementById('resultsCount');
     const creditsSpan = document.getElementById('credits');
     const copyStatus = document.getElementById('copy-status'); // Screen‑reader only
     const toast = document.getElementById('toast');            // Visible toast
@@ -108,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsList.innerHTML = data.length ?
             data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br><span class="code">${htmlEncode(item.code)}</span></li>`).join('') :
             '<li>No results found</li>';
+        resultsCount.textContent = data.length;
     };
 
     /**
@@ -169,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const trimmedQuery = query.trim().toLowerCase();
         if (!trimmedQuery) {
             resultsList.innerHTML = '';
+            resultsCount.textContent = 0;
             return;
         }
 
