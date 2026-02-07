@@ -105,11 +105,22 @@ document.addEventListener('DOMContentLoaded', () => {
      * Displays the search results in the results list.
      * @param {Array} data - The data to display.
      */
-    const displayResults = (data) => {
-        resultsList.innerHTML = data.length ?
-            data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br><span class="code">${htmlEncode(item.code)}</span></li>`).join('') :
-            '<li>No results found</li>';
-        resultsCount.textContent = data.length;
+    const displayResults = (data, options = {}) => {
+        const { showUnsafeInline } = options;
+        const warningRow = showUnsafeInline
+            ? `<li class="result-warning"><strong>NOTICE</strong><br><br><span class="code">'unsafe-inline' allows the execution of unsafe in-page scripts and event handlers.</span></li>`
+            : '';
+
+        if (!data.length) {
+            resultsList.innerHTML = warningRow || '<li>No results found</li>';
+            resultsCount.textContent = showUnsafeInline ? 1 : 0;
+            return;
+        }
+
+        resultsList.innerHTML =
+            warningRow +
+            data.map(item => `<li><strong>${htmlEncode(item.domain)}</strong><br><br><span class="code">${htmlEncode(item.code)}</span></li>`).join('');
+        resultsCount.textContent = data.length + (showUnsafeInline ? 1 : 0);
     };
 
     /**
@@ -118,21 +129,29 @@ document.addEventListener('DOMContentLoaded', () => {
     resultsList.addEventListener('click', (event) => {
         const li = event.target.closest('li');
         if (!li || !resultsList.contains(li)) return;
+        if (li.classList.contains('result-warning')) return;
 
         const codeSpan = li.querySelector('.code');
         if (!codeSpan) return;
 
         const payload = codeSpan.textContent;
 
+        const onCopySuccess = () => {
+            // Visual feedback
+            li.classList.add('copied');
+            setTimeout(() => li.classList.remove('copied'), 800);
+            showToast('Payload copied 📋');
+            // Screen‑reader feedback
+            copyStatus.textContent = 'Payload copied';
+        };
+
+        if (!navigator.clipboard || !navigator.clipboard.writeText) {
+            console.error('Clipboard API not available.');
+            return;
+        }
+
         navigator.clipboard.writeText(payload)
-            .then(() => {
-                // Visual feedback
-                li.classList.add('copied');
-                setTimeout(() => li.classList.remove('copied'), 800);
-                showToast('Payload copied 📋');
-                // Screen‑reader feedback
-                copyStatus.textContent = 'Payload copied';
-            })
+            .then(onCopySuccess)
             .catch(err => console.error('Clipboard copy failed:', err));
     });
 
@@ -153,14 +172,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /**
-     * Filters the data based on query items and displays the results.
-     * @param {Array} queryItems - The items to filter by.
+     * Parses a CSP header into a directive -> value map.
+     * @param {string} csp - The full CSP string.
+     * @returns {Object} - Map of directive to value string.
      */
-    const filterAndDisplay = (queryItems) => {
-        const results = tsvData.filter(data =>
-            queryItems.some(item => data.domain.includes(item) || data.code.includes(item))
-        );
-        displayResults(results);
+    const parseCSPDirectives = (csp) => {
+        return csp
+            .split(';')
+            .map(part => part.trim())
+            .filter(Boolean)
+            .reduce((acc, part) => {
+                const [name, ...rest] = part.split(/\s+/);
+                if (!name) return acc;
+                acc[name.toLowerCase()] = rest.join(' ');
+                return acc;
+            }, {});
     };
 
     /**
@@ -175,12 +201,19 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        const directives = parseCSPDirectives(trimmedQuery);
+        const effectiveScriptSrc = directives['script-src'] || directives['default-src'] || '';
+        const showUnsafeInline = effectiveScriptSrc.includes("'unsafe-inline'");
+
         if (trimmedQuery.includes('script-src') || trimmedQuery.includes('default-src')) {
             const directive = trimmedQuery.includes('script-src') ? 'script-src' : 'default-src';
             const cspDirective = trimmedQuery.split(directive)[1]?.split(';')[0]?.trim();
             if (cspDirective) {
                 const processedItems = processCSPDirective(cspDirective);
-                filterAndDisplay(processedItems);
+                const results = tsvData.filter(data =>
+                    processedItems.some(item => data.domain.includes(item) || data.code.includes(item))
+                );
+                displayResults(results, { showUnsafeInline });
                 return;
             }
         }
@@ -189,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.domain.toLowerCase().includes(trimmedQuery) ||
             item.code.toLowerCase().includes(trimmedQuery)
         );
-        displayResults(results);
+        displayResults(results, { showUnsafeInline });
     };
 
     /**
