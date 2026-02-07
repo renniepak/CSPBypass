@@ -177,8 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
      * @returns {Object} - Map of directive to value string.
      */
     const parseCSPDirectives = (csp) => {
-        return csp
-            .split(';')
+        const normalized = csp.replace(/\s+/g, ' ').trim();
+        return normalized.split(';')
             .map(part => part.trim())
             .filter(Boolean)
             .reduce((acc, part) => {
@@ -194,7 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {string} query - The search query.
      */
     const applySearch = (query) => {
-        const trimmedQuery = query.trim().toLowerCase();
+        const normalizedQuery = query.replace(/\s+/g, ' ').trim();
+        const trimmedQuery = normalizedQuery.toLowerCase();
         if (!trimmedQuery) {
             resultsList.innerHTML = '';
             resultsCount.textContent = 0;
