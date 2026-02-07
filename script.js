@@ -203,7 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const directives = parseCSPDirectives(trimmedQuery);
         const effectiveScriptSrc = directives['script-src'] || directives['default-src'] || '';
-        const showUnsafeInline = effectiveScriptSrc.includes("'unsafe-inline'");
+        const hasNonceOrHash = /(^|\s)'?nonce-[^\s']+'?/i.test(effectiveScriptSrc) ||
+            /(^|\s)'?sha(256|384|512)-[^\s']+'?/i.test(effectiveScriptSrc);
+        const showUnsafeInline = effectiveScriptSrc.includes("'unsafe-inline'") && !hasNonceOrHash;
 
         if (trimmedQuery.includes('script-src') || trimmedQuery.includes('default-src')) {
             const directive = trimmedQuery.includes('script-src') ? 'script-src' : 'default-src';
