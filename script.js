@@ -165,8 +165,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (item.includes('*')) {
                 const cleanItem = item.replace(/https?:\/\//, '').split('*').slice(-2).join('');
                 return [cleanItem.startsWith('.') ? cleanItem : '.' + cleanItem];
+            } else {
+              const cleanItem = item.replace(/https?:\/\//, '').split('/')[0];
+              return cleanItem.includes('.') ? cleanItem : [];
             }
-            return item.includes('.') ? item : [];
         });
         return Array.from(new Set(items));
     };
