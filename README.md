@@ -21,7 +21,7 @@ Browse to http://localhost:8080/ and you can query the dataset without any exter
 
 Modern websites often use **Content Security Policies (CSP)** to protect against XSS attacks by restricting the sources of executable scripts and other content. In those cases, even when an attacker can inject HTML/javascript into a site, the CSP blocks the payload, allowing only certain whitelisted domains or resources to load.
 
-A **CSP bypass gadget** is a technique that allows the attacker to execute JavaScript despite the restrictive policy, exploiting loopholes in the policy configuration. These are often JSONP endpoints or Javascript libraries hosted on any of the whitelisted domains,
+A **CSP bypass gadget** is a technique that allows the attacker to execute JavaScript despite the restrictive policy, exploiting loopholes in the policy configuration. These are often JSONP endpoints or Javascript libraries hosted on any of the whitelisted domains.
 
 ## Purpose
 
@@ -38,17 +38,22 @@ This tool is intended to help protect web applications by identifying weaknesses
 We welcome contributions from the community! If you've discovered a new CSP bypass gadget, we would love for you to share it.
 
 Here’s how you can contribute:
-1. Fork this repository.
-2. Add your CSP bypass gadget in the appropriate format:
+1. Check that the domain used in your bypass is listed here: [https://cspbypass.com/csp-domains.html](https://cspbypass.com/csp-domains.html). This list is curated to domains commonly found in real-world CSP headers, if your domain isn't on it, we won't be able to merge the contribution.
+2. Fork this repository.
+3. Add your CSP bypass gadget in the appropriate format:
     ```
     www.example.com[TAB]<script src=https://www.example.com?cb=alert(1)></script>
     ```
-    The minimum viable PoC is an alert box without the ability to pass any arguments, or an alert box showing arbitrary data (caused by a JSONP response). However, if you have the possibility to pass arguments (like `alert(1)`), please submit a PoC that reflects that. Please try to keep data.tsv in alphabetical order. This helps to spot duplicates. Add your handle in credits.txt if you like to be creditted on cspbypass.com
-3. Submit a pull request with your findings.
+    The minimum viable PoC is an alert box without the ability to pass any arguments, or an alert box showing arbitrary data (caused by a JSONP response). However, if you have the possibility to pass arguments (like `alert(1)`), please submit a PoC that reflects that. Please try to keep data.tsv in alphabetical order. This helps to spot duplicates. Add your handle in credits.txt if you like to be credited on cspbypass.com
+4. Submit a pull request with your findings.
 
 Your contributions will help make the web safer for everyone by improving understanding of CSPs and how they can be strengthened against bypass techniques.
 
-Help improve CSPBypass.com by contributing today! We look forward to your pull requests and input.
+## csp_domains.json
+
+This file contains every domain extracted from `Content-Security-Policy` headers across a full Common Crawl dataset. Specifically, all `script-src` directives were collected, falling back to `default-src` where no `script-src` was present.
+
+The website at [csp-domains.html](https://cspbypass.com/csp-domains.html) only displays domains appearing in 10 or more CSPs for readability. The full unfiltered list is published here for anyone who finds it useful.
 
 ## Contact
 
