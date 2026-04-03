@@ -98,6 +98,7 @@ eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=al
 fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>
 forms.hsforms.com	<script src="https://forms.hsforms.com/embed/v3/form/1/00000000-0000-0000-0000-000000000000?callback=alert"></script>
 forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>
+g2.gumgum.com	<script src="https://g2.gumgum.com/hbid/imp?jsonp=alert(1)"></script>
 geolocation.onetrust.com	<script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location/alert"></script>
 gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>
