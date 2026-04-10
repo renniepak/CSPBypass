@@ -156,21 +156,118 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /**
-     * Processes script-src or default-src directives.
-     * @param {string} cspDirective - The CSP directive string.
-     * @returns {Array} - An array of processed items.
+     * Parses a single CSP source token into a structured object.
+     * Handles wildcards (*.example.com), exact hosts, path constraints,
+     * and protocol enforcement per the W3C CSP spec.
+     *
+     * @param {string} token - A single CSP source token.
+     * @returns {{ scheme: string|null, host: string, wildcardSubdomain: boolean, pathPrefix: string|null }}
      */
-    const processCSPDirective = (cspDirective) => {
-        const items = cspDirective.split(' ').flatMap(item => {
-            if (item.includes('*')) {
-                const cleanItem = item.replace(/https?:\/\//, '').split('*').slice(-2).join('');
-                return [cleanItem.startsWith('.') ? cleanItem : '.' + cleanItem];
-            } else {
-              const cleanItem = item.replace(/https?:\/\//, '').split('/')[0];
-              return cleanItem.includes('.') ? cleanItem : [];
+    const parseCSPSource = (token) => {
+        // Handle bare scheme like "https:" — matches all URLs with that scheme
+        if (/^[a-z][a-z0-9+\-.]*:$/i.test(token)) {
+            return { scheme: token.slice(0, -1).toLowerCase(), host: '*', wildcardSubdomain: false, pathPrefix: null };
+        }
+
+        // Extract scheme if present (e.g. https://)
+        let scheme = null;
+        let rest = token;
+        const schemeMatch = token.match(/^([a-z][a-z0-9+\-.]*):\/\//i);
+        if (schemeMatch) {
+            scheme = schemeMatch[1].toLowerCase();
+            rest = token.slice(schemeMatch[0].length);
+        }
+
+        // Separate host from path
+        const slashIdx = rest.indexOf('/');
+        let host = slashIdx === -1 ? rest : rest.slice(0, slashIdx);
+        // CSP path prefix: present only if a slash exists after the host
+        const pathPrefix = slashIdx === -1 ? null : rest.slice(slashIdx);
+
+        // Strip port number (CSP ports would need their own matching logic — for now ignored)
+        host = host.split(':')[0].toLowerCase();
+
+        // Detect wildcard subdomain (*.example.com)
+        const wildcardSubdomain = host.startsWith('*.');
+        if (wildcardSubdomain) {
+            host = host.slice(2); // remove "*."
+        }
+
+        return { scheme, host, wildcardSubdomain, pathPrefix };
+    };
+
+    /**
+     * Tests whether a TSV entry is allowed by a single parsed CSP source.
+     * Extracts the URL from the code snippet (src="...") and matches scheme,
+     * host, and path prefix per the CSP spec.
+     *
+     * Path matching rule: the CSP path is a prefix.
+     *   https://example.com/gtag/js  → allows /gtag/js and /gtag/js/anything
+     *                                   but NOT /gtag/jsloader or /gtag/other
+     *
+     * @param {string} entryDomain - Domain column from the TSV.
+     * @param {string} entryCode   - Code column (HTML snippet containing a URL).
+     * @param {object} cspSource   - Output of parseCSPSource().
+     * @returns {boolean}
+     */
+    const matchesCspSource = (entryDomain, entryCode, cspSource) => {
+        // Try to extract the URL from src="..." or href="..." in the code snippet.
+        // Only fall back to the domain column if the code has no explicit URL — otherwise
+        // the synthetic https:// fallback would bypass scheme-specific CSP tokens.
+        const urlMatch = entryCode.match(/(?:src|href)=["']?([^"' >]+)/i);
+        const candidateUrls = urlMatch
+            ? [urlMatch[1]]
+            : ['https://' + entryDomain];
+
+        for (const candidate of candidateUrls) {
+            const m = candidate.match(/^([a-z][a-z0-9+\-.]*):\/\/([^/?#]+)(\/[^?#]*)?/i);
+            if (!m) continue;
+
+            const urlScheme = m[1].toLowerCase();
+            const urlHost   = m[2].split(':')[0].toLowerCase(); // strip port
+            const urlPath   = m[3] || '/';
+
+            const { scheme, host, wildcardSubdomain, pathPrefix } = cspSource;
+
+            // 1. Scheme check — only enforced when the CSP token included a scheme
+            if (scheme && scheme !== urlScheme) continue;
+
+            // 2. Host check
+            if (host !== '*') {
+                if (wildcardSubdomain) {
+                    // *.example.com matches sub.example.com but NOT example.com itself
+                    if (!urlHost.endsWith('.' + host)) continue;
+                } else {
+                    if (urlHost !== host) continue;
+                }
             }
-        });
-        return Array.from(new Set(items));
+
+            // 3. Path prefix check (only when a path was specified in the CSP token)
+            if (pathPrefix && pathPrefix !== '/') {
+                // Per spec: path is a prefix match at a path-segment boundary.
+                // /gtag/js allows /gtag/js and /gtag/js/foo but NOT /gtag/jsloader
+                const prefixWithSlash = pathPrefix.endsWith('/') ? pathPrefix : pathPrefix + '/';
+                if (urlPath !== pathPrefix && !urlPath.startsWith(prefixWithSlash)) continue;
+            }
+
+            return true;
+        }
+        return false;
+    };
+
+    const processCSPDirective = (cspDirective) => {
+        const keywords = new Set([
+            "'self'", "'unsafe-inline'", "'unsafe-eval'", "'none'",
+            "'strict-dynamic'", "'wasm-unsafe-eval'", "'report-sample'"
+        ]);
+        return cspDirective
+            .split(/\s+/)
+            .filter(token =>
+                token &&
+                !keywords.has(token.toLowerCase()) &&
+                !token.match(/^'(nonce|sha(256|384|512))-/i)
+            )
+            .map(parseCSPSource);
     };
 
     /**
@@ -204,19 +301,25 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const directives = parseCSPDirectives(trimmedQuery);
+        // Use normalizedQuery (original case) for CSP parsing so URL paths match correctly
+        const directives = parseCSPDirectives(normalizedQuery);
         const effectiveScriptSrc = directives['script-src'] || directives['default-src'] || '';
-        const hasNonceOrHash = /(^|\s)'?nonce-[^\s']+'?/i.test(effectiveScriptSrc) ||
-            /(^|\s)'?sha(256|384|512)-[^\s']+'?/i.test(effectiveScriptSrc);
-        const showUnsafeInline = effectiveScriptSrc.includes("'unsafe-inline'") && !hasNonceOrHash;
+        // Per CSP3 spec: if a hash OR nonce is present, 'unsafe-inline' is ignored by the browser
+        // for ALL inline checks (script elements and event handlers alike).
+        // Hashes don't *allow* event handlers — they suppress unsafe-inline entirely.
+        // Only warn about unsafe-inline when there are no hashes or nonces neutralising it.
+        const hasNonceOrHash = /(^|\s)'nonce-[^\s']+'/i.test(effectiveScriptSrc) ||
+            /(^|\s)'sha(256|384|512)-[^\s']+'/i.test(effectiveScriptSrc);
+        const showUnsafeInline = /(^|\s)'unsafe-inline'/i.test(effectiveScriptSrc) && !hasNonceOrHash;
 
         if (trimmedQuery.includes('script-src') || trimmedQuery.includes('default-src')) {
             const directive = trimmedQuery.includes('script-src') ? 'script-src' : 'default-src';
-            const cspDirective = trimmedQuery.split(directive)[1]?.split(';')[0]?.trim();
+            // Use the case-preserved directive value for accurate URL matching
+            const cspDirective = directives[directive];
             if (cspDirective) {
                 const processedItems = processCSPDirective(cspDirective);
                 const results = tsvData.filter(data =>
-                    processedItems.some(item => data.domain.includes(item) || data.code.includes(item))
+                    processedItems.some(source => matchesCspSource(data.domain, data.code, source))
                 );
                 displayResults(results, { showUnsafeInline });
                 return;
