@@ -294,6 +294,7 @@ unpkg.com	<script src="https://unpkg.com/htmx.org"></script><any hx-trigger="x[1
 unpkg.com	<script src="https://unpkg.com/hyperscript.org"></script><x _="on load alert(1)">
 urs.pbs.org	<script src="https://urs.pbs.org/redirect/1/?format=jsonp&callback=alert(1)"></script>
 usercentrics.eu	<script src="https://usercentrics.eu/wp-json?_jsonp=window.alert"></script>
+vfw.amazon-adsystem.com	<script src="https://vfw.amazon-adsystem.com/dv/proxy/sts.js?jsCallback=%27-window.alert(window.origin)-%27"></script>
 vidyome.com	<script src="https://vidyome.com/wp-json?_jsonp=window.alert"></script>
 vimeo.com	<script src="https://vimeo.com/api/v2/video/1006042481.json?callback=window.alert"></script>
 visitor-service-ap-southeast-2.tealiumiq.com	<script src="https://visitor-service-ap-southeast-2.tealiumiq.com/bupa.au/main/01a0208752750019b0fc6835b72905075002006d009bd?callback=window.alert(window.origin)"></script>
