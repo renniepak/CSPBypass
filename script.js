@@ -214,9 +214,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // Try to extract the URL from src="..." or href="..." in the code snippet.
         // Only fall back to the domain column if the code has no explicit URL — otherwise
         // the synthetic https:// fallback would bypass scheme-specific CSP tokens.
-        const urlMatch = entryCode.match(/(?:src|href)=["']?([^"' >]+)/i);
-        const candidateUrls = urlMatch
-            ? [urlMatch[1]]
+        // Collect every src/href URL, then keep the first one that is absolute
+        // (scheme://host) or scheme-relative (//host). Scheme-relative URLs are
+        // normalised to https:// so they parse. Taking the first *usable* URL
+        // (rather than only the first URL) skips a leading relative src (e.g. "/%GG")
+        // that would otherwise hide the real gadget URL that follows it.
+        const firstUrl = [...entryCode.matchAll(/(?:src|href)=["']?([^"' >]+)/gi)]
+            .map(m => m[1])
+            .find(u => /^([a-z][a-z0-9+\-.]*:)?\/\//i.test(u));
+        const candidateUrls = firstUrl
+            ? [firstUrl.startsWith('//') ? 'https:' + firstUrl : firstUrl]
             : ['https://' + entryDomain];
 
         for (const candidate of candidateUrls) {
